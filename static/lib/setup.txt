@@ -1,0 +1,373 @@
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // INDEX
+  
+  // temp.tmenu
+  // temp.menuMain
+  // 
+  // temp.htmllink, temp.pdflink, temp.printlink
+  // temp.menuIcons, temp.menuIconsTop, temp.menuIconsBottom
+  // 
+  // lib.hfs.subparts
+  
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // temp.tmenu
+
+temp.tmenu = TMENU
+temp.tmenu {
+
+  NO = 1
+  NO.wrapItemAndSub (
+            <li class="no">
+              |
+            </li>
+  )
+  NO.ATagTitle.field = title
+  NO.stdWrap.htmlSpecialChars = 1
+
+  IFSUB = 1
+  IFSUB.wrapItemAndSub (
+            <li class="ifsub">
+              |
+            </li>
+  )
+  IFSUB.ATagTitle.field = title
+  IFSUB.stdWrap.htmlSpecialChars = 1
+  
+  CUR = 1
+  CUR.wrapItemAndSub (
+            <li class="cur">
+              |
+            </li>
+  )
+  CUR.ATagTitle.field = title
+  CUR.stdWrap.htmlSpecialChars = 1
+
+  CURIFSUB = 1
+  CURIFSUB.wrapItemAndSub (
+            <li class="curifsub">
+              |
+            </li>
+  )
+  CURIFSUB.ATagTitle.field = title
+  CURIFSUB.stdWrap.htmlSpecialChars = 1
+  
+  ACT = 1
+  ACT.wrapItemAndSub (
+            <li class="act">
+              |
+            </li>
+  )
+  ACT.ATagTitle.field = title
+  ACT.stdWrap.htmlSpecialChars = 1
+
+  ACTIFSUB = 1
+  ACTIFSUB.wrapItemAndSub (
+            <li class="actifsub">
+              |
+            </li>
+  )
+  ACTIFSUB.ATagTitle.field = title
+  ACTIFSUB.stdWrap.htmlSpecialChars = 1
+
+  SPC = 1
+  SPC {
+    wrapItemAndSub (
+            <li class="spc">
+              &nbsp;
+            </li>
+    )
+    doNotShowLink = 1
+  }
+
+  wrap = <ul>|</ul>
+}
+  // temp.tmenu
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  //
+  // temp.menuMain
+
+temp.menuMain = HMENU
+temp.menuMain {
+  # Menue ab Ebene 1
+  entry.level = 1
+  1 < temp.tmenu
+  2 < temp.tmenu
+  3 < temp.tmenu
+  4 < temp.tmenu
+}
+  // temp.menuMain
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  // 
+  // temp.htmllink, temp.pdflink, temp.printlink
+
+temp.htmllink = COA
+temp.htmllink {
+  10 = TEXT
+  10 {
+    value       = {getIndpEnv:TYPO3_SITE_URL}
+    insertData  = 1
+  }
+  20 = TEXT
+  20 {
+    typolink {
+      parameter = {page:uid},0
+      parameter.insertData = 1
+      additionalParams {
+        cObject = COA
+        cObject {
+          10 < plugin.tx_browser_pi1.template.add_parameter.browser
+          20 < plugin.tx_browser_pi1.template.add_parameter.extensions.org
+        }
+      }
+      returnLast = url
+    }
+  }
+}
+
+temp.pdflink = COA
+temp.pdflink {
+    // PDF icon
+  wrap = <li>|</li>
+  10 = IMAGE
+  10 {
+    file = EXT:base_hfsBerlin/res/icons/icon_16px/pdf.png
+    stdWrap.typolink {
+      parameter = {page:uid},123 _blank - "Seite als PDF-Datei herunterladen"
+      parameter.insertData = 1
+      additionalParams {
+        cObject = COA
+        cObject {
+          10 < plugin.tx_browser_pi1.template.add_parameter.browser
+          20 < plugin.tx_browser_pi1.template.add_parameter.extensions.org
+        }
+      }
+    }
+  }
+  10 >
+  10 = TEXT
+  10 {
+    value = PDF
+    typolink {
+      parameter = {page:uid},123 _blank - "Seite als PDF-Datei herunterladen"
+      parameter.insertData = 1
+      additionalParams {
+        cObject = COA
+        cObject {
+          10 < plugin.tx_browser_pi1.template.add_parameter.browser
+          20 < plugin.tx_browser_pi1.template.add_parameter.extensions.org
+        }
+      }
+    }
+  }
+}
+
+temp.printlink = COA
+temp.printlink {
+  // print icon
+  // 110426, dwildt: PDF-Link entfernt
+  //wrap = <li class="last">|</li>
+  wrap = <li>|</li>
+  10 = IMAGE
+  10 {
+    file = EXT:base_hfsBerlin/res/icons/icon_16px/printer.png
+    stdWrap.typolink {
+      parameter = {page:uid},98 _blank - "Artikel drucken"
+      parameter.insertData = 1
+      additionalParams {
+        cObject = COA
+        cObject {
+          10 < plugin.tx_browser_pi1.template.add_parameter.browser
+          20 < plugin.tx_browser_pi1.template.add_parameter.extensions.org
+        }
+      }
+    }
+  }
+  10 >
+  10 = TEXT
+  10 {
+    value = Drucken
+    typolink {
+      parameter = {page:uid},98 _blank - "Seite drucken"
+      parameter.insertData = 1
+      additionalParams {
+        cObject = COA
+        cObject {
+          10 < plugin.tx_browser_pi1.template.add_parameter.browser
+          20 < plugin.tx_browser_pi1.template.add_parameter.extensions.org
+        }
+      }
+    }
+  }
+}
+  // temp.pdflink, temp.printlink
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  // 
+  // temp.menuIcons, temp.menuIconsTop, temp.menuIconsBottom
+
+temp.menuIcons = COA
+temp.menuIcons {
+  // 110426, dwildt: PDF-Generator funktioniert nicht. Vermutlich DNS-Server-Problem
+  // 20 < temp.pdflink
+  30 < temp.printlink
+}
+
+temp.menuIconsTop < temp.menuIcons
+temp.menuIconsTop {
+  wrap = <ul id="nav_icons_top"> | </ul>
+
+}
+
+temp.menuIconsBottom < temp.menuIcons
+temp.menuIconsBottom {
+  wrap = <div id="nav_icons_bottom"><ul> | </ul></div>
+}
+  // temp.menuIcons, temp.menuIconsTop, temp.menuIconsBottom
+
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////////
+  // 
+  // lib.hfs.subparts
+
+lib.hfs.subparts {
+  10 {
+    comment = Startseite
+    box_header = COA
+    box_header {
+      10 = IMAGE
+      10 {
+        file {
+          import = uploads/media/
+          import {
+            field   = media
+            listNum = 0
+            override {
+              data = levelmedia: -1, slide
+            }
+          }
+          maxW = {$base_hfsBerlin.dims.header_image.maxW}
+          maxH = {$base_hfsBerlin.dims.header_image.maxH}
+        }
+        imageLinkWrap = 1
+        imageLinkWrap {
+          enable = 1
+          typolink {
+            parameter = {$base_hfsBerlin.pages.root}
+            title     = {$base_hfsBerlin.htmlhead.author}
+          }
+        }
+      }
+      20 = COA
+      20 {
+        wrap = <div id="quicknav">|</div>
+        10 < temp.menuIconsTop
+        20 = HMENU
+        20 {
+          special = directory
+          special {
+            value = {$base_hfsBerlin.pages.libraries.quicknav}
+          }
+          maxItems  = 1
+          begin     = 1
+          1 < temp.tmenu
+          1.IFSUB     >
+          1.CURIFSUB  >
+          1.ACTIFSUB  >
+          1.NO.wrapItemAndSub (
+                      <li class="no firstitem">
+                        |
+                      </li>
+          )
+          1.CUR.wrapItemAndSub (
+                      <li class="cur firstitem">
+                        |
+                      </li>
+          )
+        }
+        21 = HMENU
+        21 {
+          special = directory
+          special {
+            value = {$base_hfsBerlin.pages.libraries.quicknav}
+          }
+          begin     = 2
+          1 < temp.tmenu
+          1.IFSUB     >
+          1.CURIFSUB  >
+          1.ACTIFSUB  >
+        }
+      }
+    }
+    box_margin  < styles.content.get
+    box_margin {
+      select {
+        pidInList = {$base_hfsBerlin.pages.libraries.right_columns.level_01}
+      }
+      slide = -1
+    }
+    box_menu = COA
+    box_menu {
+      20 = COA
+      20 {
+        //wrap = <ul>|</ul>
+        20 = HMENU
+        20 {
+          special = list
+          special.value = {$base_hfsBerlin.pages.root}
+          1 < temp.tmenu
+          1.IFSUB     >
+          1.CURIFSUB  >
+          1.ACTIFSUB  >
+        }
+        21 = TEXT
+        21 {
+          value (
+             <ul>
+               <li class="spc">
+                  &nbsp;
+                </li>
+             </ul>
+          )
+        }
+        22 < temp.menuMain
+      }
+      30  < styles.content.get
+      30 {
+        select.pidInList = {$base_hfsBerlin.pages.libraries.menu}
+      }
+    }
+    box_content = COA
+    box_content {
+      10 < styles.content.get
+    }
+    box_footer = COA
+    box_footer {
+      10 < temp.menuIconsBottom
+      20 < styles.content.get
+      20 {
+        select.pidInList = {$base_hfsBerlin.pages.libraries.footer}
+      }
+    }
+  }
+  20 < .10
+  20 {
+    comment = Redaktionelle Seite
+    //box_content < styles.content.get
+  }
+}
+  // lib.hfs.subparts

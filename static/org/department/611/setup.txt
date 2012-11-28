@@ -1,0 +1,44 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      611: department HfS - right column
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        department_margin {
+          name      = Org: department HfS - margin
+          file      = EXT:base_hfsBerlin/res/html/org/department/611/default.tmpl
+          csvViews  = 611
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      611 = department (HfS) - margin
+      611 {
+        name = department (HfS) - margin
+      }
+    }
+    single {
+      611 = department (HfS) - margin
+    }
+  }
+
+}
+  // plugin.tx_browser_pi1

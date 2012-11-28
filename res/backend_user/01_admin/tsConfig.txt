@@ -1,0 +1,15 @@
+admPanel {
+  enable.edit = 1
+  enable.preview = 1
+  enable.cache = 1
+#  module.edit.forceDisplayIcons = 1
+#  module.edit.forceDisplayFieldIcons = 1
+#  module.edit.forcenoPopup = 1
+  hide = 0
+}
+
+options {
+  pageTree {
+    showPageIdWithTitle = 1
+  }
+}

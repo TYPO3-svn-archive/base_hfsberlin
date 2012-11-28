@@ -1,0 +1,63 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    marker
+  //    views
+  //      601: +HfS: Org Department
+  //    _LOCAL_LANG
+
+
+
+  ////////////////////////////////////////
+  //
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        department {
+          name      = +HfS: Org Department
+          file      = EXT:base_hfsBerlin/res/html/org/department/601/default.tmpl
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      601 = +HfS: Org Department
+      601 {
+        name    = +HfS: Org Department
+      }
+    }
+    single {
+      601 = +HfS: Org Department
+      601 {
+        fe_users {
+          first_name {
+            10 {
+              lang.de = Ansprechpartner
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  _LOCAL_LANG {
+    de {
+      list_mode_601               = HfS-Berlin: Abteilungen
+      list_mode_601_titleTag      = Hochschule für Schauspiel, Ernst Busch, Berlin, Abteilungen
+      list_mode_601_keywords      = Hochschule für Schauspiel "Ernst Busch" Berlin: Abteilungen
+      list_mode_601_summary       = Hochschule für Schauspiel "Ernst Busch" Berlin: Abteilungen
+      single_mode_601_titleTag    = HfS-Berlin - Abteilung: ###TX_ORG_DEPARTMENT.TITLE###
+      single_mode_601_keywords    = HfS-Berlin, Abteilung, ###TX_ORG_DEPARTMENT.KEYWORDS###
+      single_mode_601_summary     = HfS-Berlin - Abteilung: ###TX_ORG_DEPARTMENT.DESCRIPTION###
+    }
+  }
+}

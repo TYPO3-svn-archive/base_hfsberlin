@@ -1,0 +1,59 @@
+
+  /*
+  * 
+  * This CSS is loaded after index.css
+  * This CSS overwrite properties of index.css
+  */
+
+
+html,
+body {
+  height:auto;
+}
+body {
+  background-attachment:scroll;
+  background-color: #FFF;
+  background-image:url();
+  background-repeat:repeat;
+  background-position:0;
+  color: #000;
+  padding:1em;
+}
+
+a,
+a:link,
+a:visited {
+  color:#B02015;
+}
+
+#box_content {
+  overflow: visible;
+}
+#box_footer {
+  color: #000;
+  text-align: center;
+}
+
+#box_content .tx-browser-pi1 .backgroundTop,
+#box_content .tx-browser-pi1 .backgroundTop h1,
+#box_content .tx-browser-pi1 .backgroundTop .header01,
+#box_content .tx-browser-pi1 .backgroundTop h3 {
+  background-image:url();
+}
+
+#box_content .tx-browser-pi1 .listview,
+#box_content .tx-browser-pi1 .singleview {
+  background-image:url();
+  padding: 1em 0 0 0;
+}
+#box_content .tx-browser-pi1 .listview .backgroundBottom,
+#box_content .tx-browser-pi1 .singleview .backgroundBottom {
+  background-image:url();
+}
+
+.tx-browser-pi1 .azSelector,
+.tx-browser-pi1 .browsebox,
+.tx-browser-pi1 .searchbox,
+.tx-browser-pi1 .sortbox {
+  display:none;
+}

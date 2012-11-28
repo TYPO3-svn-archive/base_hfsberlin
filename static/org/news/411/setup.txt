@@ -1,0 +1,44 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      411: news HfS - right column
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        news_margin {
+          name      = Org: news HfS - margin
+          file      = EXT:base_hfsBerlin/res/html/org/news/411/default.tmpl
+          csvViews  = 411
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      411 = News (HfS) - margin
+      411 {
+        name = News (HfS) - margin
+      }
+    }
+    single {
+      411 = News (HfS) - margin
+    }
+  }
+
+}
+  // plugin.tx_browser_pi1

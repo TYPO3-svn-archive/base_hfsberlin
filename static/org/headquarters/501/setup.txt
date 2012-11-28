@@ -1,0 +1,53 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      501: +HfS: Org Headquarters
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      tt_news >
+      org {
+        headquarters {
+          name      = +HfS: Org Headquarters
+          file      = EXT:base_hfsBerlin/res/html/org/headquarters/501/default.tmpl
+          csvViews  = 501
+        }
+      }
+    }
+  }
+  views {
+    list {
+      501 = +HfS: Org Headquarters
+      501 {
+        name    = +HfS: Org Headquarters
+      }
+    }
+    single {
+      501 = +HfS: Org Headquarters
+    }
+  }
+  
+  _LOCAL_LANG {
+    de {
+      list_mode_501_titleTag      = HfS-Berlin: Standorte und Verwaltungsgebäude
+      list_mode_501_keywords      = Hochschule für Schauspiel, Ernst Busch, Berlin, Standorte, Verwaltungsgebäude
+      list_mode_501_summary       = Hochschule für Schauspiel "Ernst Busch" Berlin: Standorte und Verwaltungsgebäude
+      single_mode_501_titleTag    = HfS-Berlin - Standort: ###TX_ORG_HEADQUARTERS.TITLE###
+      single_mode_501_keywords    = ###TX_ORG_HEADQUARTERS.KEYWORDS###
+      single_mode_501_summary     = ###TX_ORG_HEADQUARTERS.DESCRIPTION###
+    }
+  }
+}

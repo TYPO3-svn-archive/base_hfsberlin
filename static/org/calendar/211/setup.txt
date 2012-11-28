@@ -1,0 +1,55 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      211: calendar HfS - right column
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        calendar_margin {
+          name      = Org: calendar HfS - margin
+          file      = EXT:base_hfsBerlin/res/html/org/calendar/211/default.tmpl
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      211 = calendar (HfS) - margin
+      211 {
+        name = calendar (HfS) - margin
+        marker {
+          my_listview_title {
+            typolink {
+              parameter = {$base_hfsBerlin.url.bat}
+            }
+          }
+          my_listview_page {
+            typolink {
+              parameter = {$base_hfsBerlin.url.bat}
+            }  
+          }
+        }
+      }
+    }
+    single {
+      211 = calendar (HfS) - margin
+    }
+  }
+
+}
+  // plugin.tx_browser_pi1

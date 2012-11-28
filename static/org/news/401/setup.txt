@@ -1,0 +1,119 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      401: +HfS: Org News
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        news {
+          name      = +HfS: Org News
+          file      = EXT:base_hfsBerlin/res/html/org/news/401/default.tmpl
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      401 = +HfS: Org News
+      401 {
+        name = +HfS: Org News
+        displayList {
+          noItemMessage {
+            wrap = <p style="padding:2em .6em;font-weight:bold;">|</p>
+          }
+          image {
+            file = {$base_hfsBerlin.path.alternate_image}
+          }
+        }
+        tx_org_news {
+          teaser_short.10 >
+          datetime = COA
+          datetime {
+            10 = TEXT
+            10 {
+              value   = News from
+              lang.de = Nachricht vom 
+            }
+            20 = TEXT
+            20 {
+              value       = ###TX_ORG_NEWS.DATETIME###
+              strftime    = %d. %B
+              noTrimWrap  = | ||
+            }
+          }
+        }
+      }
+    }
+    single {
+      401 = +HfS: Org News
+      401 {
+        displaySingle {
+          image {
+            file = >
+          }
+        }
+        tx_org_news {
+          title {
+            text >
+            text {
+              required  = 1
+                // bodytext
+              10 = TEXT
+              10 {
+                required  = 1
+                value     = ###TX_ORG_NEWS.TITLE###
+                wrap      = <h1 class="news_title">|</h1>
+              }
+              20 = TEXT
+              20 {
+                required  = 1
+                value     = ###TX_ORG_NEWS.SUBTITLE###
+                wrap      = <h2 class="news_subtitle">|</h2>
+              }
+              30 = COA
+              30 {
+                stdWrap.parseFunc < lib.parseFunc_RTE
+                10 = TEXT
+                10 {
+                  value       = ###TX_ORG_NEWS.DATETIME###
+                  strftime    = %d. %b. %Y
+                  noTrimWrap  = |<span class="datetime">| &ndash;</span> |
+                }
+                20 = TEXT
+                20 {
+                  value = ###TX_ORG_NEWS.BODYTEXT###
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  _LOCAL_LANG {
+    de {
+      list_mode_401_titleTag      = HfS Berlin - Nachrichten
+      list_mode_401_keywords      = Hochschule, Schauspielkunst, Schauspiel, Berlin, Ernst Busch,  Nachrichten
+      list_mode_401_summary       = Hochschule für Schauspielkunst Ernst Busch Berlin - Nachrichten
+      single_mode_401_titleTag    = HfS Berlin: ###TX_ORG_NEWS.TITLE###
+      single_mode_401_keywords    = HfS, Berlin, ###TX_ORG_NEWS.KEYWORDS###
+      single_mode_401_summary     = HfS Berlin - Nachricht: ###TX_ORG_NEWS.DESCRIPTION###
+    }
+  }
+}

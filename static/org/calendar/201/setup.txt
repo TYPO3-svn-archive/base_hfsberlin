@@ -1,0 +1,82 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      201: +HfS: Org Calendar
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        calendar {
+          name      = +HfS: Org Calendar
+          file      = EXT:base_hfsBerlin/res/html/org/calendar/201/default.tmpl
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      201 = +HfS: Org Calendar
+      201 {
+        name    = +HfS: Org Calendar
+        filter {
+          tx_org_cal {
+            datetime {
+              area {
+                interval {
+                  month {
+                    times_stdWrap {
+                      value = 12
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    single {
+      201 = +HfS: Org Calendar
+      201 {
+        marker {
+          my_singleview_title = TEXT
+          my_singleview_title {
+            value = Veranstaltung
+            wrap  = <div class="header01">|</div>
+          }
+        }
+        tx_org_location {
+          title {
+            if.isTrue = ###TX_ORG_LOCATION.TITLE###
+          }
+        }
+      }
+    }
+  }
+  
+  _LOCAL_LANG {
+    de {
+      list_mode_201_titleTag      = HfS-Berlin: Veranstaltungen
+      list_mode_201_keywords      = Hochschule für Schauspiel, Ernst Busch, Berlin, Veranstaltungen
+      list_mode_201_summary       = Hochschule für Schauspiel "Ernst Busch" Berlin: Veranstaltungen
+      single_mode_201_titleTag    = HfS-Berlin: ###TX_ORG_CAL.TITLE###
+      single_mode_201_keywords    = ###TX_ORG_CAL.KEYWORDS######TX_ORG_EVENTS.KEYWORDS######TX_ORG_REPERTOIRE.KEYWORDS###
+      single_mode_201_summary     = ###TX_ORG_CAL.DESCRIPTION######TX_ORG_EVENTS.DESCRIPTION######TX_ORG_REPERTOIRE.DESCRIPTION###
+    }
+  }
+}
+  // plugin.tx_browser_pi1

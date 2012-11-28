@@ -1,0 +1,99 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      101: staff HfS
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      tt_news >
+      org {
+        staff {
+          name      = Org: staff HfS
+          file      = EXT:base_hfsBerlin/res/html/org/staff/101/default.tmpl
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      101 = staff HfS
+      101 {
+        name = staff HfS
+        displayList {
+          noItemMessage {
+            wrap = <p style="padding:2em .6em;font-weight:bold;">|</p>
+          }
+          image {
+            file = {$base_hfsBerlin.path.alternate_image}
+              // Bilder nicht vergroessern
+            imageLinkWrap = 0
+          }
+        }
+      }
+    }
+    single {
+      101 = staff HfS
+      101 {
+        displaySingle {
+          image {
+            file >
+          }
+        }
+        fe_users {
+          image {
+            1 {
+                // Bilder nicht vergroessern
+              imageLinkWrap = 0
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  _LOCAL_LANG {
+    default {
+      list_mode_101               = Staff
+      list_mode_101_titleTag      = HfS-Berlin: Staff
+      list_mode_101_keywords      = Hochschule für Schauspiel, Ernst Busch, Berlin, Staff
+      list_mode_101_summary       = Hochschule für Schauspiel "Ernst Busch" Berlin: Staff
+      single_mode_101_titleTag    = HfS-Berlin: ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+      single_mode_101_keywords    = Hochschule für Schauspiel, Ernst Busch, Berlin, ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+      single_mode_101_summary     = Hochschule für Schauspiel "Ernst Busch" Berlin: ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+    }
+    de {
+      list_mode_101               = Personen
+      list_mode_101_titleTag      = HfS-Berlin: Personen, Personal und Mitarbeiter
+      list_mode_101_keywords      = Hochschule für Schauspiel, Ernst Busch, Berlin, Personen, Personal, Mitarbeiter
+      list_mode_101_summary       = Hochschule für Schauspiel "Ernst Busch" Berlin: Personen, Personal und Mitarbeiter
+      single_mode_101_titleTag    = HfS-Berlin: ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+      single_mode_101_keywords    = Hochschule für Schauspiel, Ernst Busch, Berlin, ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+      single_mode_101_summary     = Hochschule für Schauspiel "Ernst Busch" Berlin: ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###
+    }
+  }
+}
+
+
+
+  ////////////////////////////////////////
+  //
+  // Header Comment
+
+page.config.headerComment (
+        TYPO3-Programmierung: die-netzmacher.de
+)
+  // Header Comment

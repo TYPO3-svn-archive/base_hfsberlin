@@ -1,0 +1,44 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      511: headquarters HfS - right column
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        headquarters_margin {
+          name      = Org: headquarters HfS - margin
+          file      = EXT:base_hfsBerlin/res/html/org/headquarters/511/default.tmpl
+          csvViews  = 511
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      511 = headquarters (HfS) - margin
+      511 {
+        name = headquarters (HfS) - margin
+      }
+    }
+    single {
+      511 = headquarters (HfS) - margin
+    }
+  }
+
+}
+  // plugin.tx_browser_pi1

@@ -1,0 +1,51 @@
+
+
+  ////////////////////////////////////////
+  //
+  // INDEX
+
+  // plugin.tx_browser_pi1
+  //    views
+  //      111: staff HfS (no caching!) - right column
+
+
+
+  ////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1
+
+plugin.tx_browser_pi1 {
+  
+  template {
+    extensions {
+      org {
+        staff_margin {
+          name      = Org: staff HfS - margin
+          file      = EXT:base_hfsBerlin/res/html/org/staff/111/default.tmpl
+          csvViews  = 111
+        }
+      }
+    }
+  }
+
+  views {
+    list {
+      111 = staff (HfS) no caching! - margin
+      111 {
+        name = staff (HfS) no caching! - margin
+        displayList {
+          image {
+            file = {$base_hfsBerlin.path.alternate_image}
+              // Bilder nicht vergroessern
+            imageLinkWrap = 0
+          }
+        }
+      }
+    }
+    single {
+      111 = staff (HfS) - margin
+    }
+  }
+
+}
+  // plugin.tx_browser_pi1
