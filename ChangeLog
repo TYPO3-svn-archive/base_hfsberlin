@@ -1,3 +1,39 @@
+0.4.8
+  Improvements
+  * #43531: Remove deprecated templates
+            Effected files:
+            * res/html
+              * default
+              * former
+            Effected files:
+            * res/html/default
+            * res/html/default/css
+            * res/html/default/css/index.css
+            * res/html/default/css/background
+            * res/html/default/css/background/index.gif
+            * res/html/default/index.html
+            * res/html/default/favicon.ico
+            * res/html/former
+            * res/html/former/favicon.ico
+            * res/html/former/css
+            * res/html/former/css/index.css
+            * res/html/former/index.html
+  * #43532: Update for Browser 4.x: Index Browser
+            HTML templates
+            * rename azSelector as indexBrowser
+            * rename AZSELECTOR as INDEXBROWSER
+            CSS
+            * rename azSelector as indexBrowser
+            Effected Files
+            * res/html/current/css/index.css
+            * res/html/current/css/print.css
+            * res/html/org/department/601/default.tmpl
+            * res/html/org/staff/101/default.tmpl
+            * res/html/org/headquarters/501/default.tmpl
+            * res/html/org/location/701/default.tmpl
+            * res/html/org/calendar/201/default.tmpl
+            * res/html/org/news/401/default.tmpl
+
 0.4.7
   12-11-28
   Dependencies
