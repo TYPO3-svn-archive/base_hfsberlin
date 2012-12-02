@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         locations {
           name      = +HfS: Org Location
-          file      = EXT:base_hfsBerlin/res/html/org/location/701/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/location/701/default.tmpl
         }
       }
     }

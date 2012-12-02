@@ -13,7 +13,7 @@
    
 2. Install and activate this extension
 
-   [+] HfS Berlin - Template             (base_hfsBerlin)
+   [+] HfS Berlin - Template             (base_hfsberlin)
 
 
 

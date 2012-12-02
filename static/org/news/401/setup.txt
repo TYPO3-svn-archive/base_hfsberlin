@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         news {
           name      = +HfS: Org News
-          file      = EXT:base_hfsBerlin/res/html/org/news/401/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/news/401/default.tmpl
         }
       }
     }
@@ -37,7 +37,7 @@ plugin.tx_browser_pi1 {
             wrap = <p style="padding:2em .6em;font-weight:bold;">|</p>
           }
           image {
-            file = {$base_hfsBerlin.path.alternate_image}
+            file = {$base_hfsberlin.path.alternate_image}
           }
         }
         tx_org_news {

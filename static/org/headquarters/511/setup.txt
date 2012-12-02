@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         headquarters_margin {
           name      = Org: headquarters HfS - margin
-          file      = EXT:base_hfsBerlin/res/html/org/headquarters/511/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/headquarters/511/default.tmpl
           csvViews  = 511
         }
       }

@@ -22,7 +22,7 @@ plugin.tx_browser_pi1 {
       org {
         staff {
           name      = Org: staff HfS
-          file      = EXT:base_hfsBerlin/res/html/org/staff/101/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/staff/101/default.tmpl
         }
       }
     }
@@ -38,7 +38,7 @@ plugin.tx_browser_pi1 {
             wrap = <p style="padding:2em .6em;font-weight:bold;">|</p>
           }
           image {
-            file = {$base_hfsBerlin.path.alternate_image}
+            file = {$base_hfsberlin.path.alternate_image}
               // Bilder nicht vergroessern
             imageLinkWrap = 0
           }

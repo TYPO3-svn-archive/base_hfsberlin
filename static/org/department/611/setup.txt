@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         department_margin {
           name      = Org: department HfS - margin
-          file      = EXT:base_hfsBerlin/res/html/org/department/611/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/department/611/default.tmpl
           csvViews  = 611
         }
       }

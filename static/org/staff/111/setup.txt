@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         staff_margin {
           name      = Org: staff HfS - margin
-          file      = EXT:base_hfsBerlin/res/html/org/staff/111/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/staff/111/default.tmpl
           csvViews  = 111
         }
       }
@@ -35,7 +35,7 @@ plugin.tx_browser_pi1 {
         name = staff (HfS) no caching! - margin
         displayList {
           image {
-            file = {$base_hfsBerlin.path.alternate_image}
+            file = {$base_hfsberlin.path.alternate_image}
               // Bilder nicht vergroessern
             imageLinkWrap = 0
           }

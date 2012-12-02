@@ -28,7 +28,7 @@
 config {
   admPanel        = 1
 
-  baseURL         = {$base_hfsBerlin.htmlhead.base_href}
+  baseURL         = {$base_hfsberlin.htmlhead.base_href}
   extTarget       = _blank
 
   headerComment (
@@ -75,7 +75,7 @@ tt_content.table.20.stdWrap {
 plugin.tx_automaketemplate_pi1 {
 
   content = FILE
-  content.file = {$base_hfsBerlin.path.html}
+  content.file = {$base_hfsberlin.path.html}
 
   elements {
     HEAD.all = 1
@@ -97,7 +97,7 @@ plugin.tx_automaketemplate_pi1 {
     }
   }
 
-  relPathPrefix = {$base_hfsBerlin.path.res}
+  relPathPrefix = {$base_hfsberlin.path.res}
 }
   // plugin.tx_automaketemplate_pi1
 
@@ -208,7 +208,7 @@ page {
 
   typeNum = 0
 
-  shortcutIcon = {$base_hfsBerlin.htmlhead.favicon}
+  shortcutIcon = {$base_hfsberlin.htmlhead.favicon}
 
   headerData {
     10 = TEMPLATE
@@ -218,19 +218,19 @@ page {
     }
   }
   includeCSS {
-     all = {$base_hfsBerlin.path.css.styles}
+     all = {$base_hfsberlin.path.css.styles}
   }
   meta {
-    author = {$base_hfsBerlin.htmlhead.author}
+    author = {$base_hfsberlin.htmlhead.author}
     keywords {
       field    = keywords
-      ifEmpty  = {$base_hfsBerlin.htmlhead.keywords}
+      ifEmpty  = {$base_hfsberlin.htmlhead.keywords}
       keywords = 1
     }
     description {
       field = description
       ifEmpty (
-        {$base_hfsBerlin.htmlhead.description}
+        {$base_hfsberlin.htmlhead.description}
       )
     }
   }
@@ -286,45 +286,45 @@ page {
 [globalVar = TSFE:page|tx_rlmptmplselector_main_tmpl < 1]
   plugin.tx_automaketemplate_pi1 {
     // former
-    content.file = {$base_hfsBerlin.path.html}
+    content.file = {$base_hfsberlin.path.html}
   }
   page {
     includeCSS {
       // former
-      styles   = {$base_hfsBerlin.path.css}
+      styles   = {$base_hfsberlin.path.css}
     }
   }
 [globalVar = TSFE:page|tx_rlmptmplselector_main_tmpl = 10]
   plugin.tx_automaketemplate_pi1 {
     // current
-    content.file = {$base_hfsBerlin.path.html}
+    content.file = {$base_hfsberlin.path.html}
   }
   page {
     includeCSS {
       // current
-      styles   = {$base_hfsBerlin.path.css}
+      styles   = {$base_hfsberlin.path.css}
     }
   }
 [globalVar = TSFE:page|tx_rlmptmplselector_main_tmpl = 20]
   plugin.tx_automaketemplate_pi1 {
     // default
-    content.file = {$base_hfsBerlin.path.html}
+    content.file = {$base_hfsberlin.path.html}
   }
   page {
     includeCSS {
       // default
-      styles   = {$base_hfsBerlin.path.css}
+      styles   = {$base_hfsberlin.path.css}
     }
   }
 [globalVar = TSFE:page|tx_rlmptmplselector_main_tmpl = 30]
   plugin.tx_automaketemplate_pi1 {
     // former
-    content.file = {$base_hfsBerlin.path.html}
+    content.file = {$base_hfsberlin.path.html}
   }
   page {
     includeCSS {
       // former
-      styles   = {$base_hfsBerlin.path.css}
+      styles   = {$base_hfsberlin.path.css}
     }
   }
 [global]
@@ -365,7 +365,7 @@ print {
     admPanel = 0
   }
   includeCSS {
-    print = {$base_hfsBerlin.path.css.print}
+    print = {$base_hfsberlin.path.css.print}
   }
   meta {
     keywords    >
@@ -408,7 +408,7 @@ print {
             // Copyright
           11 = TEXT
           11 {
-            value = &#169; {$base_hfsBerlin.htmlhead.author} |
+            value = &#169; {$base_hfsberlin.htmlhead.author} |
           }
             // Print date
           12 = TEXT

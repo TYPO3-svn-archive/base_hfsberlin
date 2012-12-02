@@ -22,7 +22,7 @@ plugin.tx_browser_pi1 {
       org {
         headquarters {
           name      = +HfS: Org Headquarters
-          file      = EXT:base_hfsBerlin/res/html/org/headquarters/501/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/headquarters/501/default.tmpl
           csvViews  = 501
         }
       }

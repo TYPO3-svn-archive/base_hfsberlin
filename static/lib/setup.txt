@@ -142,7 +142,7 @@ temp.pdflink {
   wrap = <li>|</li>
   10 = IMAGE
   10 {
-    file = EXT:base_hfsBerlin/res/icons/icon_16px/pdf.png
+    file = EXT:base_hfsberlin/res/icons/icon_16px/pdf.png
     stdWrap.typolink {
       parameter = {page:uid},123 _blank - "Seite als PDF-Datei herunterladen"
       parameter.insertData = 1
@@ -181,7 +181,7 @@ temp.printlink {
   wrap = <li>|</li>
   10 = IMAGE
   10 {
-    file = EXT:base_hfsBerlin/res/icons/icon_16px/printer.png
+    file = EXT:base_hfsberlin/res/icons/icon_16px/printer.png
     stdWrap.typolink {
       parameter = {page:uid},98 _blank - "Artikel drucken"
       parameter.insertData = 1
@@ -260,15 +260,15 @@ lib.hfs.subparts {
               data = levelmedia: -1, slide
             }
           }
-          maxW = {$base_hfsBerlin.dims.header_image.maxW}
-          maxH = {$base_hfsBerlin.dims.header_image.maxH}
+          maxW = {$base_hfsberlin.dims.header_image.maxW}
+          maxH = {$base_hfsberlin.dims.header_image.maxH}
         }
         imageLinkWrap = 1
         imageLinkWrap {
           enable = 1
           typolink {
-            parameter = {$base_hfsBerlin.pages.root}
-            title     = {$base_hfsBerlin.htmlhead.author}
+            parameter = {$base_hfsberlin.pages.root}
+            title     = {$base_hfsberlin.htmlhead.author}
           }
         }
       }
@@ -280,7 +280,7 @@ lib.hfs.subparts {
         20 {
           special = directory
           special {
-            value = {$base_hfsBerlin.pages.libraries.quicknav}
+            value = {$base_hfsberlin.pages.libraries.quicknav}
           }
           maxItems  = 1
           begin     = 1
@@ -303,7 +303,7 @@ lib.hfs.subparts {
         21 {
           special = directory
           special {
-            value = {$base_hfsBerlin.pages.libraries.quicknav}
+            value = {$base_hfsberlin.pages.libraries.quicknav}
           }
           begin     = 2
           1 < temp.tmenu
@@ -316,7 +316,7 @@ lib.hfs.subparts {
     box_margin  < styles.content.get
     box_margin {
       select {
-        pidInList = {$base_hfsBerlin.pages.libraries.right_columns.level_01}
+        pidInList = {$base_hfsberlin.pages.libraries.right_columns.level_01}
       }
       slide = -1
     }
@@ -328,7 +328,7 @@ lib.hfs.subparts {
         20 = HMENU
         20 {
           special = list
-          special.value = {$base_hfsBerlin.pages.root}
+          special.value = {$base_hfsberlin.pages.root}
           1 < temp.tmenu
           1.IFSUB     >
           1.CURIFSUB  >
@@ -348,7 +348,7 @@ lib.hfs.subparts {
       }
       30  < styles.content.get
       30 {
-        select.pidInList = {$base_hfsBerlin.pages.libraries.menu}
+        select.pidInList = {$base_hfsberlin.pages.libraries.menu}
       }
     }
     box_content = COA
@@ -360,7 +360,7 @@ lib.hfs.subparts {
       10 < temp.menuIconsBottom
       20 < styles.content.get
       20 {
-        select.pidInList = {$base_hfsBerlin.pages.libraries.footer}
+        select.pidInList = {$base_hfsberlin.pages.libraries.footer}
       }
     }
   }

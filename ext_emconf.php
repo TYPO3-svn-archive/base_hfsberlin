@@ -1,7 +1,7 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "base_hfsBerlin".
+# Extension Manager/Repository config file for ext "base_hfsberlin".
 #
 # Auto generated 24-09-2012 21:51
 #

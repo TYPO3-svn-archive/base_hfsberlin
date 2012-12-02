@@ -3,7 +3,7 @@
   //
   // CONSTANTS
 
-  // CONSTANT EDITOR base_hfsBerlin
+  // CONSTANT EDITOR base_hfsberlin
   // PAGE_TARGET
   // content
   // styles
@@ -13,9 +13,9 @@
 
   //////////////////////////////////////////////
   //
-  // CONSTANT EDITOR base_hfsBerlin
+  // CONSTANT EDITOR base_hfsberlin
 
-base_hfsBerlin {
+base_hfsberlin {
   # cat=hfs-berlin.de html head//100; type=string; label= Host:URL of the website with ending slash
   htmlhead.base_href        = http://hfs-berlin.de/
   # cat=hfs-berlin.de html head//101; type=string; label= author:Value for the author-tag 
@@ -25,7 +25,7 @@ base_hfsBerlin {
   # cat=hfs-berlin.de html head//103; type=string; label= author:Keywords for search engines
   htmlhead.keywords         = Hochschule, Schauspielkunst, Ernst Busch, Schauspiel, hfs, Berlin
   # cat=hfs-berlin.de html head//104; type=string; label= favicon:Path to the favicon
-  htmlhead.favicon          = EXT:base_hfsBerlin/res/html/current/favicon.ico
+  htmlhead.favicon          = EXT:base_hfsberlin/res/html/current/favicon.ico
   
   # cat=hfs-berlin.de Pages/page/100; type=+int; label= root page:Uid of your root page
   pages.root                              =  1
@@ -43,15 +43,15 @@ base_hfsBerlin {
   pages.libraries.right_columns.level_02  =  187
   
   # cat=hfs-berlin.de Files/file/100; type=string; label= Path to ressources:Path to directory with ending slash
-  path.res                  = EXT:base_hfsBerlin/res/
+  path.res                  = EXT:base_hfsberlin/res/
   # cat=hfs-berlin.de Files/file/101; type=string; label= HTML template:Path with the default HTML template
-  path.html                 = EXT:base_hfsBerlin/res/html/current/index.html
+  path.html                 = EXT:base_hfsberlin/res/html/current/index.html
   # cat=hfs-berlin.de Files/file/102; type=string; label= CSS file all media:Path with the default CSS file
-  path.css.styles           = EXT:base_hfsBerlin/res/html/current/css/index.css
+  path.css.styles           = EXT:base_hfsberlin/res/html/current/css/index.css
   # cat=hfs-berlin.de Files/file/103; type=string; label= CSS file print:Path with the CSS file for print
-  path.css.print            = EXT:base_hfsBerlin/res/html/current/css/print.css
+  path.css.print            = EXT:base_hfsberlin/res/html/current/css/print.css
   # cat=hfs-berlin.de Files/file/104; type=string; label= Alternate Image:Path to the image, which should displayed, if there is an image missed. 
-  path.alternate_image      = EXT:base_hfsBerlin/res/images/alternate_image_400x300_grey.gif
+  path.alternate_image      = EXT:base_hfsberlin/res/images/alternate_image_400x300_grey.gif
 
   # cat=hfs-berlin.de Dimensions/dims/100; type=+int; label= Header image max width:Maximum width of the header image in pixel
   dims.header_image.maxW    = 600
@@ -61,7 +61,7 @@ base_hfsBerlin {
   # cat=hfs-berlin.de bat paths//100; type=string; label= Calendar:URL of bat website with ending slash
   url.bat          = http://bat-berlin.de/
 }
-  // CONSTANT EDITOR base_hfsBerlin
+  // CONSTANT EDITOR base_hfsberlin
 
 
 

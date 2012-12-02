@@ -22,7 +22,7 @@ plugin.tx_browser_pi1 {
       org {
         department {
           name      = +HfS: Org Department
-          file      = EXT:base_hfsBerlin/res/html/org/department/601/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/department/601/default.tmpl
         }
       }
     }

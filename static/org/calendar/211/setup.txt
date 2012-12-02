@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
       org {
         calendar_margin {
           name      = Org: calendar HfS - margin
-          file      = EXT:base_hfsBerlin/res/html/org/calendar/211/default.tmpl
+          file      = EXT:base_hfsberlin/res/html/org/calendar/211/default.tmpl
         }
       }
     }
@@ -35,12 +35,12 @@ plugin.tx_browser_pi1 {
         marker {
           my_listview_title {
             typolink {
-              parameter = {$base_hfsBerlin.url.bat}
+              parameter = {$base_hfsberlin.url.bat}
             }
           }
           my_listview_page {
             typolink {
-              parameter = {$base_hfsBerlin.url.bat}
+              parameter = {$base_hfsberlin.url.bat}
             }  
           }
         }
