@@ -32,13 +32,13 @@ $EM_CONF[$_EXTKEY] = array(
     'version' => '0.4.8',
     'constraints' => array(
         'depends' => array(
-            'automaketemplate' => '0.1.2-0.0.0',
-            'powermail' => '1.6.0-0.0.0',
+            'automaketemplate' => '0.1.3-0.0.0',
+            'powermail' => '1.6.9-0.0.0',
             'powermail_cond' => '1.0.2-0.0.0',
-            'org' => '0.4.4-0.0.0',
-            'org_repertoire' => '0.4.4-0.0.0',
-            'realurl' => '1.10.2-0.0.0',
-            'tsconf' => '0.1.1-0.0.0',
+            'org' => '2.1.9-0.0.0',
+            'org_repertoire' => '1.0.0-0.0.0',
+            'realurl' => '1.12.3-0.0.0',
+            'tsconf' => '1.0.1-0.0.0',
         ),
         'conflicts' => array(
         ),
