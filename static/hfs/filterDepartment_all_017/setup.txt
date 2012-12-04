@@ -1,0 +1,110 @@
+
+  /////////////////////////////////////////////////////////////////////////
+  //
+  // Filter (andWhere) for org plugins
+  
+  // Constants have to allocated!
+
+
+  // pi1 (USER)
+  // 101: Staff
+  // 201: Calendar
+  // 401: News
+  // 411: News margin
+  // 511: Headquarters margin
+  // 611: Department margin
+
+  // pi4 (USER_INT)
+  // 111: Staff margin
+
+plugin {
+  tx_browser_pi1 {
+    views {
+      list {
+        101 {
+          andWhere = tx_org_department.uid IN ({$myConst.csvListDepartment}) AND fe_groups.uid IN ({$myConst.csvListFeGroups})
+          filter {
+            tx_org_department {
+              title {
+                first_item = 0
+              }
+            }
+          }
+        }
+        201 {
+          andWhere = tx_org_department.uid IN ({$myConst.csvListDepartment})
+          filter {
+            tx_org_department {
+              title {
+                first_item = 0
+              }
+            }
+          }
+        }
+        401 {
+          andWhere = tx_org_department.uid IN ({$myConst.csvListDepartment})
+          filter {
+            tx_org_department {
+              title {
+                first_item = 0
+              }
+            }
+          }
+        }
+        411 {
+          marker {
+            my_listview_title {
+              typolink >
+            }
+          }
+            // #43602, 121205, dwildt, 1+
+          select := addToList(tx_org_department.uid)
+          andWhere = tx_org_department.uid IN ({$myConst.csvListDepartment})
+        }
+        511 {
+          marker {
+            my_listview_title {
+              value   = Headquarter
+              lang.de = Adresse
+              typolink >
+            }
+            my_listview_page {
+              value   = All Headquarter &raquo;
+              lang.de = Alle Standorte &raquo;
+            }
+          }
+            // #43602, 121205, dwildt, 1+
+          select := addToList(tx_org_department.uid)
+          andWhere = tx_org_department.uid IN ({$myConst.csvListDepartment})
+        }
+        611 {
+          marker {
+            my_listview_title {
+              value   = Contact
+              lang.de = Kontakt
+              typolink >
+            }
+            my_listview_page {
+              value   = All Departments &raquo;
+              lang.de = Alle Bereiche &raquo;
+            }
+          }
+          andWhere = (tx_org_department.pages LIKE {$myConst.departmentPageOfThisPageTree} OR tx_org_department.pages LIKE '{$myConst.departmentPageOfThisPageTree},%' OR  tx_org_department.pages LIKE '%,{$myConst.departmentPageOfThisPageTree},%' OR  tx_org_department.pages LIKE '%,{$myConst.departmentPageOfThisPageTree}')
+        }
+      }
+    }
+  }
+}
+
+plugin {
+  tx_browser_pi4 {
+    views {
+      list {
+        111 {
+          andWhere = (tx_org_department.pages LIKE {$myConst.departmentPageOfThisPageTree} OR tx_org_department.pages LIKE '{$myConst.departmentPageOfThisPageTree},%' OR  tx_org_department.pages LIKE '%,{$myConst.departmentPageOfThisPageTree},%' OR  tx_org_department.pages LIKE '%,{$myConst.departmentPageOfThisPageTree}')
+        }
+      }
+    }
+  }
+}
+  // Filter (andWhere) for org plugins
