@@ -3,6 +3,7 @@
   Improvements
   * #43596: HTML5 configuration
             Effected files:
+            * res/html/default/css/index.css
             * static/setup.txt
   * #43533: Rename base_hfsBerlin to base_hfsberlin
             Effected files:
