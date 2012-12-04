@@ -1,5 +1,5 @@
-0.4.8
-  12-12-02
+0.4.9
+  12-12-04
   Improvements
   * #43596: HTML5 configuration
             Effected files:
@@ -54,6 +54,10 @@
             * res/html/org/location/701/default.tmpl
             * res/html/org/calendar/201/default.tmpl
             * res/html/org/news/401/default.tmpl
+  Bugfix
+  * #43602: andWhere: if table isn't part of select statement
+            No file effected. All tables are part of the select statement.
+
 
 0.4.7
   12-11-28
