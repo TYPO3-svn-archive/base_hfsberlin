@@ -70,7 +70,7 @@ plugin.tx_browser_pi1 {
                 }
               }
               wrap = <span class="selectbox">|</span>
-              wrap
+              wrap {
                 item {
                   cObject {
                     20 {
