@@ -87,7 +87,7 @@ plugin.tx_browser_pi1 {
                 item {
                   cObject {
                     20 {
-                      crop = 22 | ... | 0
+                      crop = 20 | ... | 0
                     }
                   }
                 }
