@@ -39,6 +39,7 @@ This template is the default template for all list views.
               <input id="c###TT_CONTENT.UID###-list-submit-csv-export-###MODE###" class="button hidesubmit"  type="submit"  value="###MY_CSV_EXPORT###" />
               <!-- ###BUTTON_CSV-EXPORT### end -->
               <input class="reset" type="button" onclick="location='###MY_URL###'" value="###MY_RESET###" />
+              <! -- ###FILTER### will set by plugin.tx_browser_pi1.views.list.401.htmlSnippets.marker.filter while runtime ... -->
               ###FILTER###
             </fieldset>
           </form>
@@ -69,37 +70,7 @@ This template is the default template for all list views.
             </div><!-- ###MODESELECTOR### end -->
 <!-- ###LISTVIEW### begin -->
             <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
-<!-- ###GROUPBY### begin -->
-<!-- ###GROUPBYHEAD### begin -->
-              <h2>###GROUPBY_GROUPNAME###</h2>
-<!-- ###GROUPBYHEAD### end -->
-<!-- ###GROUPBYBODY### begin -->
-              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
-              <div class="record01">
-                <div class="image01">
-                  ###TX_ORG_NEWS.IMAGE###
-                </div>
-                <div class="sbmFloatRight">
-                  ###SOCIALMEDIA_BOOKMARKS###
-                </div>
-                <h2>
-                  ###TX_ORG_NEWS.TITLE###
-                </h2>
-                <h3>
-                  ###TX_ORG_NEWS.SUBTITLE###
-                </h3>
-                <p class="news news_datetime">
-                  ###TX_ORG_NEWS.DATETIME###
-                </p>
-                <p class="news news_short">
-                  ###TX_ORG_NEWS.TEASER_SHORT###
-                </p>
-              </div>
-              <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end -->
-              <!-- ###LISTBODY### end -->
-<!-- ###GROUPBYBODY### end -->
-<!-- ###GROUPBY### end -->
-              <div class="backgroundBottom">&nbsp;</div>
+              Will set by plugin.tx_browser_pi1.views.list.401.htmlSnippets.subparts.listview while runtime ...
             </div><!-- /listview --><!-- ###LISTVIEW### end -->
           </div> <!-- /ui-tabs --><!-- ###LISTTABS### end -->
         </div> <!-- /listarea -->
