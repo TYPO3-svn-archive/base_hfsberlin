@@ -67,7 +67,8 @@ plugin.tx_browser_pi1 {
               <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end -->
               <!-- ###LISTBODY### end -->
               <div class="backgroundBottom">&nbsp;</div>
-            </div><!-- /listview -->)
+            </div><!-- /listview -->
+)
                 }
 }
             }
