@@ -62,7 +62,6 @@ plugin.tx_browser_pi1 {
           tx_org_department {
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
-              count_hits = 0
               first_item {
                 cObject {
                   20 {
@@ -75,7 +74,7 @@ plugin.tx_browser_pi1 {
                 item {
                   cObject {
                     20 {
-                      crop = 30 | ... | 0
+                      crop = 25 | ... | 0
                     }
                   }
                 }
@@ -84,12 +83,11 @@ plugin.tx_browser_pi1 {
           }
           tx_org_newscat {
             title {
-              count_hits = 0
               wrap {
                 item {
                   cObject {
                     20 {
-                      crop = 30 | ... | 0
+                      crop = 25 | ... | 0
                     }
                   }
                 }
