@@ -82,7 +82,7 @@ plugin.tx_browser_pi1 {
               }
             }
           }
-          tx_org_news {
+          tx_org_newscat {
             title {
               count_hits = 0
               wrap {
