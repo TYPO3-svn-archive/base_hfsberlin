@@ -1,5 +1,10 @@
 0.4.9
   12-12-04
+  New Feature
+  * #43627: TypoScript snippets for HTML templates
+            Effected files:
+            * res/html/org/news/401/default.tmpl
+            * static/org/news/401/setup.txt
   Improvements
   * #43605: Proper Filter for 401: Departments
             Effected files:
