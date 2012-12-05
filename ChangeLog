@@ -1,6 +1,9 @@
 0.4.9
   12-12-04
   Improvements
+  * #43605: Proper Filter for 401: Departments
+            Effected files:
+            * static/org/news/401/setup.txt
   * #43596: HTML5 configuration
             Effected files:
             * res/html/default/css/index.css

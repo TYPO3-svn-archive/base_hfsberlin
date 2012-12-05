@@ -57,6 +57,31 @@ plugin.tx_browser_pi1 {
             }
           }
         }
+          // #43605, dwildt, 121205
+        filter {
+          tx_org_department {
+            title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
+            title {
+              first_item {
+                cObject {
+                  20 {
+                    data = LLL:EXT:org/locallang_db.xml:filter_phrase.department
+                  }
+                }
+              }
+              wrap = <span class="selectbox">|</span>
+              wrap
+                item {
+                  cObject {
+                    20 {
+                      crop = 30 | ... | 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     single {
