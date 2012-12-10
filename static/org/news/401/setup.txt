@@ -16,17 +16,6 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        news {
-          name      = +HfS: Org News
-          file      = EXT:base_hfsberlin/res/html/org/news/401/default.tmpl
-        }
-      }
-    }
-  }
-
   views {
     list {
       401 = +HfS: Org News
@@ -187,7 +176,6 @@ plugin.tx_browser_pi1 {
             }
           }
         }
-
           // marker and subparts will replaced in the HTML template before data handling
           // #43627, 121205, dwildt
         htmlSnippets =

@@ -1,10 +1,19 @@
-0.4.9
-  12-12-04
+2.2.0
+  12-12-09
   New Feature
-  * #43627: TypoScript snippets for HTML templates
+  * #43823: TypoScript snippets for HTML templates
             Effected files:
-            * res/html/org/news/401/default.tmpl
+            * res/html/org/_default/main.tmpl         (new)
+            * res/html/org/_default/margin.tmpl       (new)
+            * res/html/org/news/401/default.tmpl      (removed)
             * static/org/news/401/setup.txt
+  Improvements
+  * #00000: Move version from 0.4.9 to 2.2.0
+            2.2.0 corresponds with the Organiser version
+
+0.4.9
+  12-12-05
+  New Feature
   Improvements
   * #43605: Proper Filter for 401: Departments
             Effected files:
@@ -63,6 +72,8 @@
             * res/html/org/calendar/201/default.tmpl
             * res/html/org/news/401/default.tmpl
   Bugfix
+  * #43808: Reintegration of groupby feature from 3.x to 4.x
+            Effected files:
   * #43602: andWhere: if table isn't part of select statement
             No file effected. All tables are part of the select statement.
 
