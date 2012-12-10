@@ -36,7 +36,10 @@ config {
 )  
 
   language        = de
-  locale_all      = de_DE@euro, de_DE, de, ge
+    // 121210, dwildt, 1-
+  //locale_all      = de_DE@euro, de_DE, de, ge
+    // 121210, dwildt, 1+
+  locale_all = de_DE
   metaCharset     = UTF-8
     // #43596, 121204, dwildt, 1-
   // doctype         = xhtml_strict
@@ -198,6 +201,24 @@ plugin.tx_rlmptmplselector_pi1 {
 
 plugin.tx_browser_pi1 {
   _CSS_DEFAULT_STYLE >
+
+    // #43823, 121210, dwildt
+  template {
+    extensions {
+      base_hfsberlin {
+        default {
+          name      = HfS: Default
+          file      = EXT:base_hfsberlin/res/html/org/_default/main.tmpl
+          csvViews  = 101,201,401,501,501,601,701
+        }
+        margin {
+          name      = HfS: Margin
+          file      = EXT:base_hfsberlin/res/html/org/_default/margin.tmpl
+          csvViews  = 111,211,411,511,511,611,711
+        }
+      }
+    }
+  }
 }
   // plugin.tx_browser_pi1
 
