@@ -5,14 +5,26 @@
             Effected files:
             * res/html/org/_default/main.tmpl         (new)
             * res/html/org/_default/margin.tmpl       (new)
+            * res/html/org/department                 (removed 2x)
+            * res/html/org/headquarters               (removed 2x)
+            * res/html/org/location                   (removed 2x)
             * res/html/org/news/201/default.tmpl      (removed)
             * res/html/org/news/211/default.tmpl      (removed)
             * res/html/org/news/401/default.tmpl      (removed)
             * res/html/org/news/411/default.tmpl      (removed)
+            * res/html/org/staff
+            * static/org/department/601/setup.txt
+            * static/org/department/611/setup.txt
+            * static/org/headquarters/501/setup.txt
+            * static/org/headquarters/511/setup.txt
+            * static/org/location/701/setup.txt
+            * static/org/location/710                 (removed)
             * static/org/calendar/201/setup.txt
             * static/org/calendar/211/setup.txt
             * static/org/news/401/setup.txt
             * static/org/news/411/setup.txt
+            * static/org/staff/101/setup.txt
+            * static/org/staff/111/setup.txt
   Improvements
   * #00000: Move version from 0.4.9 to 2.2.0
             2.2.0 corresponds with the Organiser version
