@@ -1,13 +1,11 @@
 
 
-  ////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////////
   //
   // INDEX
 
-  // SEO - Search Engine Optimisation
-  //    page
-  //    plugin.tx_browser_pi1
-  // jq_fancybox for plugin.tx_browser_pi1
+  // Globals: page - SEO
+  // plugin.tx_browser_pi1 - SEO
   // plugin.tx_browser_pi1
   // plugin.tx_linkhandler
   // Header Comment
@@ -17,7 +15,7 @@
 
   ////////////////////////////////////////////////////////////////////////////////
   //
-  // SEO - Search Engine Optimisation
+  // Globals: page - SEO
 
   //    showUid
   //    calendarUid
@@ -28,7 +26,6 @@
   //    repertoireUid
   //    staffUid
 
-  // page
 [globalVar = GP:tx_browser_pi1|showUid > 0] || [globalVar = GP:tx_browser_pi1|calendarUid > 0] || [globalVar = GP:tx_browser_pi1|departmentUid > 0] || [globalVar = GP:tx_browser_pi1|headquarterUid > 0] || [globalVar = GP:tx_browser_pi1|locationUid > 0] || [globalVar = GP:tx_browser_pi1|newsUid > 0] || [globalVar = GP:tx_browser_pi1|repertoireUid > 0] || [globalVar = GP:tx_browser_pi1|staffUid > 0]
   page {
     config {
@@ -57,9 +54,14 @@
     }
   }
 [global]
-  // page
+  // Globals: page - SEO
 
-  // plugin.tx_browser_pi1
+
+
+  ////////////////////////////////////////////////////////////////////////////////
+  //
+  // plugin.tx_browser_pi1 - SEO
+
 plugin.tx_browser_pi1 {
 
   displayList {
@@ -85,14 +87,13 @@ plugin.tx_browser_pi1 {
     }
   }
 }
-  // plugin.tx_browser_pi1
-  // SEO - Search Engine Optimisation
+  // plugin.tx_browser_pi1 - SEO
 
 
 
   ////////////////////////////////////////////////////////////////////////////////
   //
-  // jq_fancybox for plugin.tx_browser_pi1
+  // plugin.tx_browser_pi1
 
 plugin.tx_browser_pi1 {
 
@@ -117,81 +118,6 @@ plugin.tx_browser_pi1 {
     // dwildt, 110123
   general_stdWrap.parseFunc >
   general_stdWrap.parseFunc < lib.parseFunc_RTE
-
-  displayList {
-    image {
-      wrap = |
-      imageLinkWrap >
-      imageLinkWrap = 1
-      imageLinkWrap {
-        enable = 1
-        typolink {
-          parameter.cObject = IMG_RESOURCE
-          parameter.cObject.file.import.data = TSFE:lastImageInfo|origFile
-          parameter.override.field = image_link
-          parameter.override.listNum.stdWrap.data = register : IMAGE_NUM_CURRENT
-          parameter.override.if.isTrue.field = image_link
-          title.field = imagecaption // header
-          title.split.token.char = 10
-          title.split.returnKey.data = register : IMAGE_NUM_CURRENT
-          ATagParams = rel="fancybox"  class="jqfancybox"
-          ATagParams.override = rel="fancybox{field:uid}" class="jqfancybox"
-          ATagParams.insertData = 1
-        }
-      }
-    }
-    imageWrapIfAny = <div class="thumb">|</div>
-  }
-  displaySingle {
-    image {
-      wrap = |
-      imageLinkWrap >
-      imageLinkWrap = 1
-      imageLinkWrap {
-        enable = 1
-        typolink {
-          parameter.cObject = IMG_RESOURCE
-          parameter.cObject.file.import.data = TSFE:lastImageInfo|origFile
-          parameter.override.field = image_link
-          parameter.override.listNum.stdWrap.data = register : IMAGE_NUM_CURRENT
-          parameter.override.if.isTrue.field = image_link
-          title.field = imagecaption // header
-          title.split.token.char = 10
-          title.split.returnKey.data = register : IMAGE_NUM_CURRENT
-          ATagParams = rel="fancybox"  class="jqfancybox"
-          ATagParams.override = rel="fancybox{field:uid}" class="jqfancybox"
-          ATagParams.insertData = 1
-        }
-      }
-    }
-    imageWrapIfAny = <div class="thumb">|</div>
-  }
-}
-  // jq_fancybox
-
-
-
-  ////////////////////////////////////////////////////////////////////////////////
-  //
-  // plugin.tx_browser_pi1
-
-plugin.tx_browser_pi1 {
-
-  a-z_Browser {
-    tabs {
-      2 {
-        valuesCSV = A,Ä,a,ä
-      }
-      16 {
-        valuesCSV = O,Ö,o,ö
-      }
-      21 {
-        valuesCSV = U,Ü,u,ü
-      }
-    }
-  }
-
-  pageBrowser.showResultCount = 0
 
   general_stdWrap {
     parseFunc {
@@ -282,6 +208,7 @@ plugin.tx_linkhandler {
     additionalParams = &tx_browser_pi1[repertoireUid]={field:uid}
   }
 }
+  // plugin.tx_linkhandler
 
 
 
