@@ -74,6 +74,10 @@ body {
   background-position:-70px -70px;
 }
 
+button {
+  cursor:pointer;
+}
+
 .cleaner {
   clear: both;
   height: 1px;
