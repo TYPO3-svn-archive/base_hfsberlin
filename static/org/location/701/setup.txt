@@ -16,17 +16,6 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        locations {
-          name      = Org: locations HfS
-          file      = EXT:base_hfsberlin/res/html/org/location/701/default.tmpl
-        }
-      }
-    }
-  }
-
   views {
     list {
       701 = +HfS: Org Locations
