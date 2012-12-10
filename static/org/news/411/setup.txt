@@ -16,27 +16,41 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        news_margin {
-          name      = Org: news HfS - margin
-          file      = EXT:base_hfsberlin/res/html/org/news/411/default.tmpl
-          csvViews  = 411
+  views {
+    list {
+      411 = +HfS: Org News - margin
+      411 {
+        name = +HfS: Org News - margin
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43627, 121205, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTHEAD### begin --><!-- ###LISTHEADITEM### begin -->
+            ###ITEM###<!-- ###LISTHEADITEM### end --><!-- ###LISTHEAD### end -->
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+          <p>
+            ###TX_ORG_NEWS.TITLE###
+          </p>
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+          ###MY_LISTVIEW_PAGE###
+          <div class="backgroundBottom">&nbsp;</div>
+        </div>
+)
+            }
+          }
         }
       }
     }
-  }
-
-  views {
-    list {
-      411 = News (HfS) - margin
-      411 {
-        name = News (HfS) - margin
-      }
-    }
     single {
-      411 = News (HfS) - margin
+      411 = +HfS: Org News - margin
+      411 {
+        name = +HfS: Org News - margin
+      }
     }
   }
 
