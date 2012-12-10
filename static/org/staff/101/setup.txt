@@ -30,6 +30,7 @@ plugin.tx_browser_pi1 {
               // Bilder nicht vergroessern
             imageLinkWrap = 0
           }
+        }
           // marker and subparts will replaced in the HTML template before data handling
           // #43823, 121210, dwildt
         htmlSnippets =
