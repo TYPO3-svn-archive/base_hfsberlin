@@ -100,7 +100,7 @@ plugin.tx_browser_pi1 {
     // #43823, 121210, dwildt
   template {
     extensions {
-      base_hfsberlin {
+      xxx {
         default {
           name      = HfS: Default
           file      = EXT:base_hfsberlin/res/html/org/_default/main.tmpl
