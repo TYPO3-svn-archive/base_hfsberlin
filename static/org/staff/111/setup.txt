@@ -16,23 +16,11 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        staff_margin {
-          name      = Org: staff HfS - margin
-          file      = EXT:base_hfsberlin/res/html/org/staff/111/default.tmpl
-          csvViews  = 111
-        }
-      }
-    }
-  }
-
   views {
     list {
-      111 = staff (HfS) no caching! - margin
+      111 = +HfS: Org Staff (no caching!) - margin
       111 {
-        name = staff (HfS) no caching! - margin
+        name = +HfS: Org Staff (no caching!) - margin
         displayList {
           image {
             file = {$base_hfsberlin.path.alternate_image}
@@ -40,10 +28,40 @@ plugin.tx_browser_pi1 {
             imageLinkWrap = 0
           }
         }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+          <div class="image" style="float:left;padding:0 1em 0 .6em;width:40px;">
+            ###FE_USERS.IMAGE###
+          </div>
+          <p style="margin-left:5.1em;">
+            ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###<br />
+            ###TX_ORG_DEPARTMENT.TITLE###<br />
+            ###FE_GROUPS.TITLE###
+          </p>
+          <div class="cleaner">&nbsp;</div>
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+          ###MY_LISTVIEW_PAGE###
+          <div class="backgroundBottom">&nbsp;</div>
+        </div>
+)
+            }
+          }
+        }
       }
     }
     single {
-      111 = staff (HfS) - margin
+      111 = +HfS: Org Staff (no caching!) - margin
+      111 {
+        name = +HfS: Org Staff (no caching!) - margin
+      }
     }
   }
 

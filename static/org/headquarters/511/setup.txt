@@ -16,27 +16,40 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        headquarters_margin {
-          name      = Org: headquarters HfS - margin
-          file      = EXT:base_hfsberlin/res/html/org/headquarters/511/default.tmpl
-          csvViews  = 511
+  views {
+    list {
+      511 = +HfS: Org Headquarters - margin
+      511 {
+        name = +HfS: Org Headquarters - margin
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+          <p>
+            ###TX_ORG_HEADQUARTERS.TITLE###
+          </p>
+          <div class="cleaner">&nbsp;</div>
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+          ###MY_LISTVIEW_PAGE###
+          <div class="backgroundBottom">&nbsp;</div>
+        </div>
+)
+            }
+          }
         }
       }
     }
-  }
-
-  views {
-    list {
-      511 = headquarters (HfS) - margin
-      511 {
-        name = headquarters (HfS) - margin
-      }
-    }
     single {
-      511 = headquarters (HfS) - margin
+      511 = +HfS: Org Headquarters - margin
+      511 {
+        name = +HfS: Org Headquarters - margin
+      }
     }
   }
 

@@ -16,27 +16,40 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        department_margin {
-          name      = Org: department HfS - margin
-          file      = EXT:base_hfsberlin/res/html/org/department/611/default.tmpl
-          csvViews  = 611
+  views {
+    list {
+      611 = +HfS: Org Department - margin
+      611 {
+        name = +HfS: Org Department - margin
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+          <p>
+            ###TX_ORG_DEPARTMENT.TITLE###
+          </p>
+          <div class="cleaner">&nbsp;</div>
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+          ###MY_LISTVIEW_PAGE###
+          <div class="backgroundBottom">&nbsp;</div>
+        </div>
+)
+            }
+          }
         }
       }
     }
-  }
-
-  views {
-    list {
-      611 = department (HfS) - margin
-      611 {
-        name = department (HfS) - margin
-      }
-    }
     single {
-      611 = department (HfS) - margin
+      611 = +HfS: Org Department - margin
+      611 {
+        name = +HfS: Org Department - margin
+      }
     }
   }
 

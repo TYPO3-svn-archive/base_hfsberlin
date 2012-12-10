@@ -29,15 +29,42 @@ plugin.tx_browser_pi1 {
 
   views {
     list {
-      701 = locations HfS
+      701 = +HfS: Org Locations
       701 {
-        name    = locations HfS
+        name = +HfS: Org Locations
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+            <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
+              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+              <div class="record01">
+                <div class="image01">
+                  ###TX_ORG_LOCATION.IMAGE###
+                </div>
+                <p>
+                  ###SOCIALMEDIA_BOOKMARKS### ###TX_ORG_LOCATION.TITLE###, ###TX_ORG_LOCATION.MAIL_POSTCODE### ###TX_ORG_LOCATION.MAIL_CITY###, ###TX_ORG_LOCATION.MAIL_ADDRESS###
+                  ###TX_ORG_LOCATION.MAIL_URL###
+                </p>
+              </div>
+              <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end -->
+              <!-- ###LISTBODY### end -->
+              <div class="backgroundBottom">&nbsp;</div>
+            </div><!-- /listview -->
+)
+            }
+          }
+        }
       }
     }
     single {
-      701 = locations
+      701 = +HfS: Org Locations
       701 {
-        name    = locations HfS
+        name = +HfS: Org Locations
           // select without cal
         select >
         select (
@@ -79,10 +106,48 @@ plugin.tx_browser_pi1 {
           tx_org_location.keywords,
           tx_org_location.description
         )
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            singleview = TEXT
+            singleview {
+              value (
+<!-- ###AREA_FOR_AJAX_LIST_01### begin -->
+        <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
+          ###RECORD_BROWSER###
+          <div class="ui-widget ui-corner-all">
+            <!-- ###SINGLEBODY### begin -->
+            <!-- ###SINGLEBODYROW### begin -->
+            <div style="float:right;">
+              ###SOCIALMEDIA_BOOKMARKS###
+            </div>
+            ###TX_ORG_LOCATION.TITLE###
+            ###TX_ORG_LOCATION.TELEPHONE###
+            ###TX_ORG_LOCATION.PUBTRANS_STOP###
+            ###TX_ORG_LOCATION.MAIL_EMBEDDEDCODE###
+            ###TX_ORG_LOCATION.DOCUMENTS###
+            <!-- ###SINGLEBODYROW### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+            <!-- ###BACKBUTTON### begin -->
+            <p class="backbutton">
+              ###BUTTON###
+            </p>
+            <!-- ###BACKBUTTON### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+            <!-- ###SINGLEBODY### end -->
+          </div>
+        </div>
+<!-- ###AREA_FOR_AJAX_LIST_02### end -->
+)
+            }
+          }
+        }
       }
     }
   }
-  
+   
   _LOCAL_LANG {
     de {
       list_mode_701_titleTag      = HfS-Berlin: Veranstaltungsorte

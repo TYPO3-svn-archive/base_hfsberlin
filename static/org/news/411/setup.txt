@@ -34,6 +34,7 @@ plugin.tx_browser_pi1 {
           <p>
             ###TX_ORG_NEWS.TITLE###
           </p>
+          <div class="cleaner">&nbsp;</div>
           <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
           ###MY_LISTVIEW_PAGE###
           <div class="backgroundBottom">&nbsp;</div>

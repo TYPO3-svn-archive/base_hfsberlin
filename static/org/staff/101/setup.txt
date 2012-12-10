@@ -16,23 +16,11 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      tt_news >
-      org {
-        staff {
-          name      = Org: staff HfS
-          file      = EXT:base_hfsberlin/res/html/org/staff/101/default.tmpl
-        }
-      }
-    }
-  }
-
   views {
     list {
-      101 = staff HfS
+      101 = +HfS: Org Staff
       101 {
-        name = staff HfS
+        name = +HfS: Org Staff
         displayList {
           noItemMessage {
             wrap = <p style="padding:2em .6em;font-weight:bold;">|</p>
@@ -42,12 +30,50 @@ plugin.tx_browser_pi1 {
               // Bilder nicht vergroessern
             imageLinkWrap = 0
           }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          marker {
+            filter = TEXT
+            filter {
+              value (
+              <div class="filter">
+                ###TX_ORG_DEPARTMENT.TITLE###
+                ###FE_GROUPS.TITLE###
+              </div>
+)
+            }
+          }
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+            <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
+              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+              <div class="record01">
+                <div class="image01">
+                  ###FE_USERS.IMAGE###
+                </div>
+                <p>
+                  ###SOCIALMEDIA_BOOKMARKS### ###FE_USERS.FIRST_NAME### ###FE_USERS.LAST_NAME###<br />
+                  <small>###TX_ORG_DEPARTMENT.TITLE### &ndash; ###FE_GROUPS.TITLE###</small><br />
+                </p>
+              </div>
+              <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end -->
+              <!-- ###LISTBODY### end -->
+              <div class="backgroundBottom">&nbsp;</div>
+            </div><!-- /listview -->
+)
+            }
+          }
         }
       }
     }
     single {
-      101 = staff HfS
+      101 = +HfS: Org Staff
       101 {
+        name = +HfS: Org Staff
         displaySingle {
           image {
             file >
@@ -58,6 +84,49 @@ plugin.tx_browser_pi1 {
             1 {
                 // Bilder nicht vergroessern
               imageLinkWrap = 0
+            }
+          }
+        }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            singleview = TEXT
+            singleview {
+              value (
+<!-- ###AREA_FOR_AJAX_LIST_01### begin -->
+        <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
+          ###RECORD_BROWSER###
+          <div class="ui-widget ui-corner-all">
+            <!-- ###SINGLEBODY### begin -->
+            <!-- ###SINGLEBODYROW### begin -->
+            <div class="socialbookmarks">
+              ###SOCIALMEDIA_BOOKMARKS###
+            </div>
+            <h1>
+              ###FE_USERS.LAST_NAME###
+            </h1>
+            ###FE_USERS.IMAGE###
+            ###FE_USERS.TELEPHONE###
+            ###FE_USERS.TX_ORG_VITA###
+            ###MY_DEPARTMENT_DIV_BEGIN###
+            ###TX_ORG_DEPARTMENT.TITLE###
+            ###MY_DEPARTMENT_DIV_END###
+            ###FE_USERS.WWW###
+            <!-- ###SINGLEBODYROW### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+            <!-- ###BACKBUTTON### begin -->
+            <p class="backbutton">
+              ###BUTTON###
+            </p>
+            <!-- ###BACKBUTTON### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+            <!-- ###SINGLEBODY### end -->
+          </div>
+        </div>
+<!-- ###AREA_FOR_AJAX_LIST_02### end -->
+)
             }
           }
         }

@@ -16,30 +16,92 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      tt_news >
-      org {
-        headquarters {
-          name      = +HfS: Org Headquarters
-          file      = EXT:base_hfsberlin/res/html/org/headquarters/501/default.tmpl
-          csvViews  = 501
-        }
-      }
-    }
-  }
   views {
     list {
       501 = +HfS: Org Headquarters
       501 {
         name    = +HfS: Org Headquarters
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+            <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
+              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+            <div class="record01">
+              <div class="image01">
+                ###TX_ORG_HEADQUARTERS.IMAGE###
+              </div>
+              <p>
+                ###SOCIALMEDIA_BOOKMARKS### ###TX_ORG_HEADQUARTERS.TITLE###, ###TX_ORG_HEADQUARTERS.MAIL_POSTCODE### ###TX_ORG_HEADQUARTERS.MAIL_CITY###, ###TX_ORG_HEADQUARTERS.MAIL_ADDRESS###<br />
+                <small>###TX_ORG_DEPARTMENT.TITLE###</small>
+              </p>
+            </div>
+            <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+              <!-- ###LISTBODY### end -->
+              <div class="backgroundBottom">&nbsp;</div>
+            </div><!-- /listview -->
+)
+            }
+          }
+        }
       }
     }
     single {
       501 = +HfS: Org Headquarters
+      501 {
+        name    = +HfS: Org Headquarters
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            singleview = TEXT
+            singleview {
+              value (
+<!-- ###AREA_FOR_AJAX_LIST_01### begin -->
+        <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
+          ###RECORD_BROWSER###
+          <div class="ui-widget ui-corner-all">
+            <!-- ###SINGLEBODY### begin -->
+            <!-- ###SINGLEBODYROW### begin -->
+            <div class="socialbookmarks">
+              ###SOCIALMEDIA_BOOKMARKS###
+            </div>
+            ###TX_ORG_HEADQUARTERS.TITLE###
+
+            ###TX_ORG_HEADQUARTERS.POSTBOX_POSTBOX###
+            ###TX_ORG_HEADQUARTERS.TELEPHONE###
+            ###TX_ORG_HEADQUARTERS.PUBTRANS_STOP###
+            ###MY_PHRASE_DEPARTMENTS###
+            <ul>
+              ###TX_ORG_DEPARTMENT.TITLE###
+            </ul>
+            ###TX_ORG_HEADQUARTERS.MAIL_EMBEDDEDCODE###
+            ###TX_ORG_HEADQUARTERS.DOCUMENTS###
+            <!-- ###SINGLEBODYROW### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+            <!-- ###BACKBUTTON### begin -->
+            <p class="backbutton">
+              ###BUTTON###
+            </p>
+            <!-- ###BACKBUTTON### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+            <!-- ###SINGLEBODY### end -->
+          </div>
+        </div>
+<!-- ###AREA_FOR_AJAX_LIST_02### end -->
+)
+            }
+          }
+        }
+      }
     }
   }
-  
+   
   _LOCAL_LANG {
     de {
       list_mode_501_titleTag      = HfS-Berlin: Standorte und Verwaltungsgebäude
