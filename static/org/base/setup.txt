@@ -96,6 +96,24 @@ plugin.tx_browser_pi1 {
 
 plugin.tx_browser_pi1 {
 
+    // #43823, 121210, dwildt
+  template {
+    extensions {
+      base_hfsberlin {
+        default {
+          name      = HfS: Default
+          file      = EXT:base_hfsberlin/res/html/org/_default/main.tmpl
+          csvViews  = 101,201,401,501,501,601,701
+        }
+        margin {
+          name      = HfS: Margin
+          file      = EXT:base_hfsberlin/res/html/org/_default/margin.tmpl
+          csvViews  = 111,211,411,511,511,611,711
+        }
+      }
+    }
+  }
+
     // dwildt, 110123
   general_stdWrap.parseFunc >
   general_stdWrap.parseFunc < lib.parseFunc_RTE
