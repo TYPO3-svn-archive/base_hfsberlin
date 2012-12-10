@@ -60,6 +60,7 @@ plugin.tx_browser_pi1 {
                       de = Hochschul-Bereich
                       en = Department
                     }
+                    append >
                   }
                 }
               }
@@ -88,6 +89,7 @@ plugin.tx_browser_pi1 {
                       de = Kategorie
                       en = Categories
                     }
+                    append >
                   }
                 }
               }
