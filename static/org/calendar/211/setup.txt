@@ -16,22 +16,11 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        calendar_margin {
-          name      = Org: calendar HfS - margin
-          file      = EXT:base_hfsberlin/res/html/org/calendar/211/default.tmpl
-        }
-      }
-    }
-  }
-
   views {
     list {
-      211 = calendar (HfS) - margin
+      211 = +HfS: Org Calendar - margin
       211 {
-        name = calendar (HfS) - margin
+        name    = +HfS: Org Calendar - margin
         marker {
           my_listview_title {
             typolink {
@@ -44,10 +33,33 @@ plugin.tx_browser_pi1 {
             }  
           }
         }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+        <div class="###VIEW###view ###VIEW###view-###MODE###">
+          <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+          ###TX_ORG_CAL.DATETIME###
+          ###TX_ORG_CAL.TITLE###
+          <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+          ###MY_LISTVIEW_PAGE###
+          <div class="backgroundBottom">&nbsp;</div>
+        </div>
+)
+            }
+          }
+        }
       }
     }
     single {
-      211 = calendar (HfS) - margin
+      211 = +HfS: Org Calendar - margin
+      211 {
+        name    = +HfS: Org Calendar - margin
+      }
     }
   }
 

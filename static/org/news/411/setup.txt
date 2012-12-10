@@ -22,7 +22,7 @@ plugin.tx_browser_pi1 {
       411 {
         name = +HfS: Org News - margin
           // marker and subparts will replaced in the HTML template before data handling
-          // #43627, 121205, dwildt
+          // #43823, 121210, dwildt
         htmlSnippets =
         htmlSnippets {
           subparts {
@@ -30,8 +30,6 @@ plugin.tx_browser_pi1 {
             listview {
               value (
         <div class="###VIEW###view ###VIEW###view-###MODE###">
-          <!-- ###LISTHEAD### begin --><!-- ###LISTHEADITEM### begin -->
-            ###ITEM###<!-- ###LISTHEADITEM### end --><!-- ###LISTHEAD### end -->
           <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
           <p>
             ###TX_ORG_NEWS.TITLE###

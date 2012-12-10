@@ -16,17 +16,6 @@
 
 plugin.tx_browser_pi1 {
   
-  template {
-    extensions {
-      org {
-        calendar {
-          name      = +HfS: Org Calendar
-          file      = EXT:base_hfsberlin/res/html/org/calendar/201/default.tmpl
-        }
-      }
-    }
-  }
-
   views {
     list {
       201 = +HfS: Org Calendar
@@ -47,6 +36,53 @@ plugin.tx_browser_pi1 {
             }
           }
         }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43823, 121210, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          marker {
+            filter = TEXT
+            filter {
+              value (
+              <div class="filter">
+                <div class="period_menu">
+                  ###TX_ORG_CAL.DATETIME###
+                </div>
+                ###TX_ORG_CALTYPE.TITLE### ###TX_ORG_DEPARTMENT.TITLE### 
+              </div>
+)
+            }
+          }
+          subparts {
+            listview = TEXT
+            listview {
+              value (
+            <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
+              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+              <div class="record01">
+                <div class="socialbookmarks">
+                  ###SOCIALMEDIA_BOOKMARKS###
+                </div>
+                <div class="my_datesheet">
+                  ###MY_DATESHEET###
+                </div>
+                <div class="cal_datetime">
+                  ###TX_ORG_CAL.DATETIME###
+                </div>
+                ###TX_ORG_CAL.SUBTITLE###
+                <div class="cal_title">
+                  ###TX_ORG_CAL.TITLE###
+                </div>
+                ###TX_ORG_CAL.TEASER_SHORT###
+              </div>
+              <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end -->
+              <!-- ###LISTBODY### end -->
+              <div class="backgroundBottom">&nbsp;</div>
+            </div><!-- /listview -->
+)
+            }
+          }
+        }
       }
     }
     single {
@@ -62,6 +98,54 @@ plugin.tx_browser_pi1 {
         tx_org_location {
           title {
             if.isTrue = ###TX_ORG_LOCATION.TITLE###
+          }
+        }
+          // marker and subparts will replaced in the HTML template before data handling
+          // #43627, 121205, dwildt
+        htmlSnippets =
+        htmlSnippets {
+          subparts {
+            singleview = TEXT
+            singleview {
+              value (
+<!-- ###AREA_FOR_AJAX_LIST_01### begin -->
+        <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
+          ###RECORD_BROWSER###
+          <div class="ui-widget ui-corner-all">
+            <!-- ###SINGLEBODY### begin -->
+            <!-- ###SINGLEBODYROW### begin -->
+            <div class="my_datesheet_socialbookmarks">
+              <div class="my_datesheet">
+                ###MY_DATESHEET###
+              </div>
+              <div class="socialbookmarks">
+                ###SOCIALMEDIA_BOOKMARKS###
+              </div>
+            </div>
+            <div class="cal_datetime">
+              ###TX_ORG_CAL.DATETIME###
+            </div>
+            ###TX_ORG_CAL.SUBTITLE###
+            ###TX_ORG_CAL.TITLE###
+            ###TX_ORG_CAL.TEASER_SHORT###
+            ###TX_ORG_CAL.BODYTEXT###
+            ###TX_ORG_LOCATION.TITLE###
+            ###TX_ORG_EVENT.DOCUMENTS###
+            <div class="cleaner">&nbsp;</div>
+            <!-- ###SINGLEBODYROW### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+            <!-- ###BACKBUTTON### begin -->
+            <p class="backbutton">
+              ###BUTTON###
+            </p>
+            <!-- ###BACKBUTTON### end -->
+  <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+            <!-- ###SINGLEBODY### end -->
+          </div>
+        </div>
+<!-- ###AREA_FOR_AJAX_LIST_02### end -->
+)
+            }
           }
         }
       }
