@@ -5,8 +5,14 @@
             Effected files:
             * res/html/org/_default/main.tmpl         (new)
             * res/html/org/_default/margin.tmpl       (new)
+            * res/html/org/news/201/default.tmpl      (removed)
+            * res/html/org/news/211/default.tmpl      (removed)
             * res/html/org/news/401/default.tmpl      (removed)
+            * res/html/org/news/411/default.tmpl      (removed)
+            * static/org/calendar/201/setup.txt
+            * static/org/calendar/211/setup.txt
             * static/org/news/401/setup.txt
+            * static/org/news/411/setup.txt
   Improvements
   * #00000: Move version from 0.4.9 to 2.2.0
             2.2.0 corresponds with the Organiser version
