@@ -54,7 +54,12 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = LLL:EXT:org/locallang_db.xml:filter_phrase.department
+                    data >
+                    value = Department
+                    lang {
+                      de = Hochschul-Bereich
+                      en = Department
+                    }
                   }
                 }
               }
@@ -74,6 +79,19 @@ plugin.tx_browser_pi1 {
             title >
             title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
             title {
+              first_item {
+                cObject {
+                  20 {
+                    data >
+                    value = Categories
+                    lang {
+                      de = Kategorie
+                      en = Categories
+                    }
+                  }
+                }
+              }
+              wrap = <span class="selectbox">|</span>
               wrap {
                 item {
                   cObject {
