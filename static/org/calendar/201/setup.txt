@@ -108,6 +108,9 @@ plugin.tx_browser_pi1 {
             singleview = TEXT
             singleview {
               value (
+        <div class="backgroundTop backgroundTop-###VIEW###-###MODE###">
+          ###MY_SINGLEVIEW_TITLE###
+        </div>
 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
         <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
           ###RECORD_BROWSER###
@@ -133,13 +136,13 @@ plugin.tx_browser_pi1 {
             ###TX_ORG_EVENT.DOCUMENTS###
             <div class="cleaner">&nbsp;</div>
             <!-- ###SINGLEBODYROW### end -->
-  <!-- ###AREA_FOR_AJAX_LIST_01### end -->
-            <!-- ###BACKBUTTON### begin -->
+<!-- ###AREA_FOR_AJAX_LIST_01### end -->
             <p class="backbutton">
-              ###BUTTON###
+              ###MY_BACK_BUTTON### | ###MY_LISTVIEW_PAGE###
             </p>
-            <!-- ###BACKBUTTON### end -->
-  <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+<!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+            <div class="backgroundBottom">&nbsp;</div>
+            <!-- ###SINGLEBODYROW### end -->
             <!-- ###SINGLEBODY### end -->
           </div>
         </div>
