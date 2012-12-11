@@ -184,12 +184,6 @@ plugin.tx_browser_pi1 {
               30 = COA
               30 {
                 stdWrap.parseFunc < lib.parseFunc_RTE
-                10 = TEXT
-                10 {
-                  value       = ###TX_ORG_NEWS.DATETIME###
-                  strftime    = %d. %b. %Y
-                  noTrimWrap  = |<span class="datetime">| &ndash;</span> |
-                }
                 20 = TEXT
                 20 {
                   value = ###TX_ORG_NEWS.BODYTEXT###
