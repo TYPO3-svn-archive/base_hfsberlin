@@ -80,6 +80,7 @@ plugin.tx_browser_pi1 {
             file >
           }
         }
+        marker >
         fe_users {
           image {
             1 {
