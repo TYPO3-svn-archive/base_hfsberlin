@@ -80,7 +80,6 @@ plugin.tx_browser_pi1 {
             file >
           }
         }
-        marker >
         fe_users {
           image {
             1 {
@@ -97,6 +96,9 @@ plugin.tx_browser_pi1 {
             singleview = TEXT
             singleview {
               value (
+        <div class="backgroundTop backgroundTop-###VIEW###-###MODE###">
+          ###MY_SINGLEVIEW_TITLE###
+        </div>
 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
         <div id="c###TT_CONTENT.UID###-singleview-###MODE###" class="singleview singleview-###MODE###">
           ###RECORD_BROWSER###
