@@ -1,4 +1,4 @@
-2.2.0
+3.0.0
   12-12-09
   New Feature
   * #43823: TypoScript snippets for HTML templates
@@ -26,8 +26,8 @@
             * static/org/staff/101/setup.txt
             * static/org/staff/111/setup.txt
   Improvements
-  * #00000: Move version from 0.4.9 to 2.2.0
-            2.2.0 corresponds with the Organiser version
+  * #00000: Move version from 0.4.9 to 3.0.0
+            3.0.0 corresponds with the Organiser version
 
 0.4.9
   12-12-05
