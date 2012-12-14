@@ -184,6 +184,7 @@ plugin.tx_browser_pi1 {
               30 = COA
               30 {
                 stdWrap.parseFunc < lib.parseFunc_RTE
+                10 >
                 20 = TEXT
                 20 {
                   value = ###TX_ORG_NEWS.BODYTEXT###
