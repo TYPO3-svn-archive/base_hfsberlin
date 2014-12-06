@@ -45,6 +45,6 @@ page {
 
       }
     }
-    base_hfsberlin__hfs_root < base_hfsberlin__hfs_default
+    base_hfsberlin__hfs_root < .base_hfsberlin__hfs_default
   }
 }
