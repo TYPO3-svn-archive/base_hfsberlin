@@ -4,7 +4,6 @@
       */
 
       /*
-        RESET
         body
         a
         p, ul, hx ...
@@ -30,35 +29,6 @@
 
         browser
       * INDEX */
-
-
-
-  /***************************************************************************************
-  * RESET
-  */
-
-html,
-body {
-  height: 100%;
-}
-body {
-  color:#FFF;
-  margin: 0;
-  padding: 0;
-  font-size: 62.5%;
-  line-height: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-p, ul, h1, h2, h3, h4, h5 {
-  margin: 0;
-}
-table, dt, dd {
-  font-size: 1.1em;
-}
-img {
-  border: 0px;
-}
-  /* RESET */
 
 
 
