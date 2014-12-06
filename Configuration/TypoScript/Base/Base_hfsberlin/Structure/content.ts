@@ -9,6 +9,7 @@ base_hfsberlin {
       // CONTENT, stdWrap
       main = COA
       main {
+        10 < styles.content.get
         10 {
           select {
             where = colPos=0
