@@ -12,7 +12,7 @@ base_hfsberlin {
       // CONTENT, stdWrap
       hfs = TEXT
       hfs {
-        value = HEADER BHFS
+        value = HEADER HFS
       }
     }
   }
