@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2014-12-06T15:11:39Z" product-name="base_hfsberlin">
+    <header/>
+    <body>
+
+      <trans-unit id="theme_name">
+        <source>HfS-Berlin</source>
+        <target>HfS-Berlin</target>
+      </trans-unit>
+
+      <trans-unit id="backend_layout.bat_default">
+        <source>BAT-Berlin default template</source>
+        <target>BAT-Berlin Standard-Template</target>
+      </trans-unit>
+      <trans-unit id="backend_layout.hfs_default">
+        <source>HfS-Berlin default template</source>
+        <target>HfS-Berlin Standard-Template</target>
+      </trans-unit>
+
+      <trans-unit id="backend_layout.column.content.main">
+        <source>Content</source>
+        <target>Inhalt</target>
+      </trans-unit>
+      <trans-unit id="backend_layout.column.content.margin">
+        <source>Margin</source>
+        <target>Randspalte</target>
+      </trans-unit>
+      <trans-unit id="backend_layout.column.content.navigation">
+        <source>Navigation</source>
+        <target>Navigationsspalte</target>
+      </trans-unit>
+
+    </body>
+  </file>
+
+</xliff>

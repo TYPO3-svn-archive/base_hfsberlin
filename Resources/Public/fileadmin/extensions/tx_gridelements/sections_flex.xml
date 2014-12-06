@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+  </meta>
+  <ROOT type="array">
+    <type>array</type>
+    <el type="array">
+      <section type="array">
+        <TCEforms type="array">
+          <label>Sections active</label>
+          <config type="array">
+            <type>check</type>
+            <default>1</default>
+          </config>
+        </TCEforms>
+      </section>
+      <sectiontype type="array">
+        <TCEforms type="array">
+          <label>Section Type:</label>
+          <config type="array">
+            <type>select</type>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">auto</numIndex>
+                <numIndex index="1">div class="section-container auto" data-section="auto"</numIndex>
+              </numIndex>
+              <numIndex index="1" type="array">
+                <numIndex index="0">Tabs</numIndex>
+                <numIndex index="1">div class="section-container tabs" data-section="tabs"</numIndex>
+              </numIndex>
+              <numIndex index="2" type="array">
+                <numIndex index="0">Vertical Tabs</numIndex>
+                <numIndex index="1">div class="section-container vertical-tabs" data-section="vertical-tabs"</numIndex>
+              </numIndex>
+              <numIndex index="3" type="array">
+                <numIndex index="0">Accordion</numIndex>
+                <numIndex index="1">div class="section-container accordion" data-section="accordion"</numIndex>
+              </numIndex>
+              <numIndex index="4" type="array">
+                <numIndex index="0">Vertical Navigation</numIndex>
+                <numIndex index="1">div class="section-container vertical-nav" data-section</numIndex>
+              </numIndex>
+              <numIndex index="5" type="array">
+                <numIndex index="0">Horizontal Navigation</numIndex>
+                <numIndex index="1">div class="section-container horizontal-nav" data-section</numIndex>
+              </numIndex>
+            </items>
+          </config>
+        </TCEforms>
+      </sectiontype>
+      <dataoptions type="array">
+        <TCEforms type="array">
+          <label>Options:</label>
+          <config type="array">
+            <type>select</type>
+            <items type="array">
+              <numIndex index="0" type="array">
+                <numIndex index="0">default</numIndex>
+                <numIndex index="1"></numIndex>
+              </numIndex>
+              <numIndex index="1" type="array">
+                <numIndex index="0">First open</numIndex>
+                <numIndex index="1">data-options="one_up: true;"</numIndex>
+              </numIndex>
+              <numIndex index="2" type="array">
+                <numIndex index="0">First closed</numIndex>
+                <numIndex index="1">data-options="one_up: false;"</numIndex>
+              </numIndex>
+              <numIndex index="3" type="array">
+                <numIndex index="0">Only accordion - all open</numIndex>
+                <numIndex index="1">data-options="multi_expand: true;"</numIndex>
+              </numIndex>
+            </items>
+          </config>
+        </TCEforms>
+      </dataoptions>
+    </el>
+  </ROOT>
+</T3DataStructure>

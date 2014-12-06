@@ -1,0 +1,194 @@
+6.0.0
+  14-12-06
+  Major Feature
+  * #63630: Fluid Template
+
+3.0.1
+  13-01-19
+  Bugfix
+  * #44660: include static template paths without ending slash
+            Effected files:
+            * ext_tables.php
+
+3.0.0
+  12-12-09
+  New Feature
+  * #43823: TypoScript snippets for HTML templates
+            Effected files:
+            * res/html/org/_default/main.tmpl         (new)
+            * res/html/org/_default/margin.tmpl       (new)
+            * res/html/org/department                 (removed 2x)
+            * res/html/org/headquarters               (removed 2x)
+            * res/html/org/location                   (removed 2x)
+            * res/html/org/news/201/default.tmpl      (removed)
+            * res/html/org/news/211/default.tmpl      (removed)
+            * res/html/org/news/401/default.tmpl      (removed)
+            * res/html/org/news/411/default.tmpl      (removed)
+            * res/html/org/staff
+            * static/org/department/601/setup.txt
+            * static/org/department/611/setup.txt
+            * static/org/headquarters/501/setup.txt
+            * static/org/headquarters/511/setup.txt
+            * static/org/location/701/setup.txt
+            * static/org/location/710                 (removed)
+            * static/org/calendar/201/setup.txt
+            * static/org/calendar/211/setup.txt
+            * static/org/news/401/setup.txt
+            * static/org/news/411/setup.txt
+            * static/org/staff/101/setup.txt
+            * static/org/staff/111/setup.txt
+  Improvements
+  * #00000: Move version from 0.4.9 to 3.0.0
+            3.0.0 corresponds with the Organiser version
+
+0.4.9
+  12-12-05
+  New Feature
+  Improvements
+  * #43605: Proper Filter for 401: Departments
+            Effected files:
+            * static/org/news/401/setup.txt
+  * #43596: HTML5 configuration
+            Effected files:
+            * res/html/default/css/index.css
+            * static/setup.txt
+  * #43533: Rename base_hfsBerlin to base_hfsberlin
+            Effected files:
+            * INSTALL.txt
+            * ChangeLog
+            * static/setup.txt
+            * static/lib/setup.txt
+            * static/org/department/601/setup.txt
+            * static/org/department/611/setup.txt
+            * static/org/staff/101/setup.txt
+            * static/org/staff/111/setup.txt
+            * static/org/headquarters/501/setup.txt
+            * static/org/headquarters/511/setup.txt
+            * static/org/location/701/setup.txt
+            * static/org/location/710/setup.txt
+            * static/org/calendar/201/setup.txt
+            * static/org/calendar/211/setup.txt
+            * static/org/news/401/setup.txt
+            * static/org/news/411/setup.txt
+            * static/constants.txt
+            * ext_emconf.php
+  * #43531: Remove deprecated templates
+            Effected files:
+            * res/html/default
+            * res/html/default/css
+            * res/html/default/css/index.css
+            * res/html/default/css/background
+            * res/html/default/css/background/index.gif
+            * res/html/default/index.html
+            * res/html/default/favicon.ico
+            * res/html/former
+            * res/html/former/favicon.ico
+            * res/html/former/css
+            * res/html/former/css/index.css
+            * res/html/former/index.html
+  * #43532: Update for Browser 4.x: Index Browser
+            HTML templates
+            * rename azSelector as indexBrowser
+            * rename AZSELECTOR as INDEXBROWSER
+            CSS
+            * rename azSelector as indexBrowser
+            Effected Files
+            * res/html/current/css/index.css
+            * res/html/current/css/print.css
+            * res/html/org/department/601/default.tmpl
+            * res/html/org/staff/101/default.tmpl
+            * res/html/org/headquarters/501/default.tmpl
+            * res/html/org/location/701/default.tmpl
+            * res/html/org/calendar/201/default.tmpl
+            * res/html/org/news/401/default.tmpl
+  Bugfix
+  * #43808: Reintegration of groupby feature from 3.x to 4.x
+            Effected files:
+  * #43602: andWhere: if table isn't part of select statement
+            No file effected. All tables are part of the select statement.
+
+
+0.4.7
+  12-11-28
+  Dependencies
+  * #00000: ./. pdf_generator2
+            ./. pdf_generator2_statictemplates
+            ./. rlmp_tmplselector
+
+0.4.6
+  12-09-24
+  New Feature
+  * #00000: departments are allowed to have more than manager
+            Effected files:
+            * res/html/org/department/601/default.tmpl
+
+0.4.5
+  2011-04-26
+  * Workaround
+    * PDF link is disabled (static/lib/setup.txt)
+  * Changing
+    * Print link got the _blank target (static/lib/setup.txt)
+  2011-04-23
+  * Bugfix
+    * CSS: calendar
+  * Improvement
+    * TypoScript: static/org/calendar/201/setup.txt. Location is visible only, if there is a selected location
+
+0.4.4
+  2011-04-07
+  * Bugfix
+    * HTML template new: single view has social bookmars twice
+  2011-03-21
+  Improvement
+  * Calender
+    * tca.php
+    * ext_tables.php
+    * ext_tables.sql
+    * localllang_db.xml
+    * TypoScript
+    * HTML
+
+0.4.0
+  2011-03-05
+  New Feature
+  * Page types for
+    * PDF download
+    * Print: optimized HTML for printing
+
+0.3.3
+  2011-02-20
+  Improvement
+  * Proper client specific configuration
+    * Integration off all org HTML templates
+    * Integration off all org static template
+
+0.3.2
+  2011-02-20
+  Improvement
+  * Own HTML template news 401
+  * Own static template news 401
+
+0.3.1
+  2011-02-17
+  Improvement
+  * the browser _CSS_DEFAULT_STYLE is removed
+
+0.3.0
+  2011-01-20
+  Improvement
+  * Integration of the TypoScript constants into the Constants Editor
+
+0.1.0
+  10-08-31
+  New Features
+  * Extension: rlmp_tmplselector
+
+0.0.2
+  10-08-30
+  New Features
+  * Integration HfS-Layout
+
+0.0.1
+  10-06-15
+  Dirk Wildt  <http://wildt.at.die-netzmacher.de>
+  * Initial Release

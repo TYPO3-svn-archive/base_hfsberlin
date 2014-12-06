@@ -1,0 +1,4 @@
+  # cat=language/100;            type=options[English,German]; label= Backend Langauge: Language for special backend labels like TypoScript static templates. Property has an effect in the backend only.
+beLanguage = English
+  # cat=language/198;            type=user[EXT:base_hfsberlin/lib/userfunc/class.tx_basehfsberlin_userfunc.php:tx_basehfsberlin_userfunc->promptExternalLinks]; label=External Links
+beLanguageExternalLinks = 1

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<type>array</type>
+		<el type="array">
+			<easytabs type="array">
+				<TCEforms type="array">
+					<label>Easytabs active</label>
+					<config type="array">
+						<type>check</type>
+						<default>1</default>
+					</config>
+				</TCEforms>
+			</easytabs>
+			<easytabstype type="array">
+				<TCEforms type="array">
+					<label>Section Type:</label>
+					<config type="array">
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">Horizontal Tabs</numIndex>
+								<numIndex index="1">horizontalTab</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">Vertical Tabs</numIndex>
+								<numIndex index="1">verticalTab</numIndex>
+							</numIndex>
+							<numIndex index="2" type="array">
+								<numIndex index="0">Accordion</numIndex>
+								<numIndex index="1">accordion</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</easytabstype>
+		</el>
+	</ROOT>
+</T3DataStructure>
