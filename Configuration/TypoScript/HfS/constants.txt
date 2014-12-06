@@ -19,7 +19,7 @@ base_hfsberlin {
   # cat=hfs-berlin.de html head//103; type=string; label= author:Keywords for search engines
   htmlhead.keywords         = Hochschule, Schauspielkunst, Ernst Busch, Schauspiel, hfs, Berlin
   # cat=hfs-berlin.de html head//104; type=string; label= favicon:Path to the favicon
-  htmlhead.favicon          = EXT:base_hfsberlin/res/html/current/favicon.ico
+  htmlhead.favicon          = EXT:base_hfsberlin/Public/Images/favicon.ico
 
   # cat=hfs-berlin.de Pages/page/100; type=+int; label= root page:Uid of your root page
   pages.root                              =  1
