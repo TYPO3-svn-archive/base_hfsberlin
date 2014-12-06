@@ -10,16 +10,20 @@
       </trans-unit>
 
       <trans-unit id="backend_layout.bat_default">
-        <source>BAT-Berlin default template</source>
-        <target>BAT-Berlin Standard-Template</target>
+        <source>BAT-Berlin default</source>
+        <target>BAT-Berlin Standard</target>
+      </trans-unit>
+      <trans-unit id="backend_layout.bat_root">
+        <source>BAT-Berlin home</source>
+        <target>BAT-Berlin Startseite</target>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_default">
-        <source>HfS-Berlin default template</source>
-        <target>HfS-Berlin Standard-Template</target>
+        <source>HfS-Berlin default</source>
+        <target>HfS-Berlin Standard</target>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_root">
-        <source>HfS-Berlin root template</source>
-        <target>HfS-Berlin Startseiten-Template</target>
+        <source>HfS-Berlin home</source>
+        <target>HfS-Berlin Startseite</target>
       </trans-unit>
 
       <trans-unit id="backend_layout.column.content.main">

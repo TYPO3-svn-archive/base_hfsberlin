@@ -9,13 +9,16 @@
       </trans-unit>
 
       <trans-unit id="backend_layout.bat_default">
-        <source>BAT-Berlin default template</source>
+        <source>BAT-Berlin default</source>
+      </trans-unit>
+      <trans-unit id="backend_layout.bat_root">
+        <source>BAT-Berlin home</source>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_default">
-        <source>HfS-Berlin default template</source>
+        <source>HfS-Berlin default</source>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_root">
-        <source>HfS-Berlin root template</source>
+        <source>HfS-Berlin home</source>
       </trans-unit>
 
       <trans-unit id="backend_layout.column.content.main">
