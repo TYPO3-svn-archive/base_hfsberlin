@@ -1,3 +1,8 @@
+6.0.0
+  14-12-06
+  Feature
+  * #i0009: Upgrade TYPO3 6.2
+
 3.0.1
   13-01-19
   Bugfix
@@ -116,7 +121,7 @@
   * #00000: departments are allowed to have more than manager
             Effected files:
             * res/html/org/department/601/default.tmpl
-            
+
 0.4.5
   2011-04-26
   * Workaround
@@ -156,33 +161,33 @@
   * Proper client specific configuration
     * Integration off all org HTML templates
     * Integration off all org static template
-  
+
 0.3.2
   2011-02-20
   Improvement
   * Own HTML template news 401
   * Own static template news 401
-  
+
 0.3.1
   2011-02-17
   Improvement
   * the browser _CSS_DEFAULT_STYLE is removed
-  
+
 0.3.0
   2011-01-20
   Improvement
   * Integration of the TypoScript constants into the Constants Editor
-  
+
 0.1.0
   10-08-31
   New Features
-  * Extension: rlmp_tmplselector 
-  
+  * Extension: rlmp_tmplselector
+
 0.0.2
   10-08-30
   New Features
   * Integration HfS-Layout
-  
+
 0.0.1
   10-06-15
   Dirk Wildt  <http://wildt.at.die-netzmacher.de>

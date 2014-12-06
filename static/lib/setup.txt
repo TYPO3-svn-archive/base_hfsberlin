@@ -2,15 +2,15 @@
   ////////////////////////////////////////////////////////////////////////////////////////////
   //
   // INDEX
-  
+
   // temp.tmenu
   // temp.menuMain
-  // 
+  //
   // temp.htmllink, temp.pdflink, temp.printlink
   // temp.menuIcons, temp.menuIconsTop, temp.menuIconsBottom
-  // 
+  //
   // lib.hfs.subparts
-  
+
 
 
 
@@ -38,7 +38,7 @@ temp.tmenu {
   )
   IFSUB.ATagTitle.field = title
   IFSUB.stdWrap.htmlSpecialChars = 1
-  
+
   CUR = 1
   CUR.wrapItemAndSub (
             <li class="cur">
@@ -56,7 +56,7 @@ temp.tmenu {
   )
   CURIFSUB.ATagTitle.field = title
   CURIFSUB.stdWrap.htmlSpecialChars = 1
-  
+
   ACT = 1
   ACT.wrapItemAndSub (
             <li class="act">
@@ -109,7 +109,7 @@ temp.menuMain {
 
 
   ////////////////////////////////////////////////////////////////////////////////////////////
-  // 
+  //
   // temp.htmllink, temp.pdflink, temp.printlink
 
 temp.htmllink = COA
@@ -216,7 +216,7 @@ temp.printlink {
 
 
   ////////////////////////////////////////////////////////////////////////////////////////////
-  // 
+  //
   // temp.menuIcons, temp.menuIconsTop, temp.menuIconsBottom
 
 temp.menuIcons = COA
@@ -241,7 +241,7 @@ temp.menuIconsBottom {
 
 
   ////////////////////////////////////////////////////////////////////////////////////////////
-  // 
+  //
   // lib.hfs.subparts
 
 lib.hfs.subparts {
@@ -249,8 +249,9 @@ lib.hfs.subparts {
     comment = Startseite
     box_header = COA
     box_header {
-      10 = IMAGE
-      10 {
+        // 141206, dwildt, -
+      XXX10 = IMAGE
+      XXX10 {
         file {
           import = uploads/media/
           import {
@@ -271,6 +272,31 @@ lib.hfs.subparts {
             title     = {$base_hfsberlin.htmlhead.author}
           }
         }
+      }
+        // 141206, dwildt, +
+      10 = FILES
+      10 {
+        references {
+          data = levelmedia:-1, slide
+        }
+        renderObj = COA
+        renderObj {
+          10 = IMAGE
+          10 {
+            file.import.data = file:current:publicUrl
+            file.width = {$base_hfsberlin.dims.header_image.maxW}
+            file.height = {$base_hfsberlin.dims.header_image.maxH}
+            XXXstdWrap.typolink.parameter.data = file:current:link
+            stdWrap {
+              typolink {
+                parameter = {$base_hfsberlin.pages.root}
+                title     = {$base_hfsberlin.htmlhead.author}
+              }
+            }
+          }
+        }
+        begin = 0
+        maxItems = 1
       }
       20 = COA
       20 {
