@@ -1,7 +1,7 @@
 base_hfsberlin =
 base_hfsberlin {
   structure {
-    header =
+    header = COA
     header {
       10 = FILES
       10 {
