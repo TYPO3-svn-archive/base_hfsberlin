@@ -11,8 +11,8 @@ page {
 	shortcutIcon = {$base_hfsberlin.favicon}
 	typeNum = 0
 
-  63148 = CASE
-  63148 {
+  63630 = CASE
+  63630 {
     key {
       data = levelfield:-2,backend_layout_next_level,slide
       override {
