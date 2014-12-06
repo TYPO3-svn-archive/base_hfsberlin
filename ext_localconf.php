@@ -36,5 +36,5 @@ switch ( TRUE )
 /* * ****************************************************************************
  * BackendLayoutDataProvider
  * **************************************************************************** */
-$GLOBALS[ 'TYPO3_CONF_VARS' ][ 'SC_OPTIONS' ][ 'BackendLayoutDataProvider' ][ 'base_hfsberlin' ] = 'Netzmacher\\Base_Hfsberlin\\Provider\\BackendLayoutDataProvider';
+$GLOBALS[ 'TYPO3_CONF_VARS' ][ 'SC_OPTIONS' ][ 'BackendLayoutDataProvider' ][ 'base_hfsberlin' ] = 'Netzmacher\\Base_hfsberlin\\Provider\\BackendLayoutDataProvider';
 ?>

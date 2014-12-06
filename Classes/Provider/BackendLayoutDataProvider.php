@@ -1,6 +1,6 @@
 <?php
 
-namespace Netzmacher\Base_Hfsberlin\Provider;
+namespace Netzmacher\Base_hfsberlin\Provider;
 
 /* * *************************************************************
  *
