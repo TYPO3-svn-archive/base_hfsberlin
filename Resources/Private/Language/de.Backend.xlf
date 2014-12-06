@@ -17,6 +17,10 @@
         <source>HfS-Berlin default template</source>
         <target>HfS-Berlin Standard-Template</target>
       </trans-unit>
+      <trans-unit id="backend_layout.hfs_root">
+        <source>HfS-Berlin root template</source>
+        <target>HfS-Berlin Startseiten-Template</target>
+      </trans-unit>
 
       <trans-unit id="backend_layout.column.content.main">
         <source>Content</source>

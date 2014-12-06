@@ -14,6 +14,9 @@
       <trans-unit id="backend_layout.hfs_default">
         <source>HfS-Berlin default template</source>
       </trans-unit>
+      <trans-unit id="backend_layout.hfs_root">
+        <source>HfS-Berlin root template</source>
+      </trans-unit>
 
       <trans-unit id="backend_layout.column.content.main">
         <source>Content</source>

@@ -47,8 +47,8 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
    * @var array
    */
   protected $backendLayouts = array(
-    'hfs_default' => array(
-      'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_default',
+    'hfs_root' => array(
+      'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_root',
       'config' => '
         backend_layout {
           colCount = 12
@@ -65,6 +65,27 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
                   colPos  = 1
                   colspan = 3
+                }
+              }
+            }
+          }
+        }
+      ',
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BackendLayouts/hfs_root.gif'
+    ),
+    'hfs_default' => array(
+      'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_default',
+      'config' => '
+        backend_layout {
+          colCount = 12
+          rowCount = 1
+          rows {
+            1 {
+              columns {
+                1 {
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
+                  colPos  = 0
+                  colspan = 12
                 }
               }
             }
