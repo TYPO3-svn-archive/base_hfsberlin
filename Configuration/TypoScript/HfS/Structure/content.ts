@@ -12,7 +12,7 @@ base_hfsberlin {
         10 {
           select.pidInList = {$base_hfsberlin.pages.libraries.footer}
           stdWrap {
-            <div class="small-12 medium-8 columns">|</div>
+            wrap = <div class="small-12 medium-8 columns">|</div>
           }
         }
         20 < base_hfsberlin.menu.menuIconsBottom
