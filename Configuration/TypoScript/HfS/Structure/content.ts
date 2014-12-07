@@ -8,10 +8,16 @@ base_hfsberlin {
     content {
       footer = COA
       footer {
-        10 < base_hfsberlin.menu.menuIconsBottom
-        20 < styles.content.get
-        20 {
+        10 < styles.content.get
+        10 {
           select.pidInList = {$base_hfsberlin.pages.libraries.footer}
+          stdWrap {
+            <div class="small-12 medium-8 columns">|</div>
+          }
+        }
+        20 < base_hfsberlin.menu.menuIconsBottom
+        20 {
+          wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-4 columns"><ul> | </ul></div>
         }
       }
       main = COA
