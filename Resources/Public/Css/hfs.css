@@ -76,10 +76,11 @@ body {
 #nav_icons_bottom ul,
 #nav_icons_bottom ol {
   color:white;
+  font-size:0.85em;
+  line-height:1.1em;
   list-style:none;
   margin:0;
   padding:0;
-  font-size:0.85em;
 }
 #box_menu ul ul,
 #box_menu ol ol,
