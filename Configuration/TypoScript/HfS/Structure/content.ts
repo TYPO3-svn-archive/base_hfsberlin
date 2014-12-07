@@ -33,9 +33,37 @@ base_hfsberlin {
       }
       navigation = COA
       navigation {
-        // table, select, stdWrap
-        10 < styles.content.get
+        10 = COA
         10 {
+          //wrap = <ul>|</ul>
+          20 = HMENU
+          20 {
+            special = list
+            special.value = {$base_hfsberlin.pages.root}
+            1 < temp.tmenu
+            1.IFSUB     >
+            1.CURIFSUB  >
+            1.ACTIFSUB  >
+          }
+          21 = TEXT
+          21 {
+            value (
+               <ul>
+                 <li class="spc">
+                    &nbsp;
+                  </li>
+               </ul>
+            )
+          }
+          22 < temp.menuMain
+        }
+        20  < styles.content.get
+        20 {
+          select.pidInList = {$base_hfsberlin.pages.libraries.menu}
+        }
+        // table, select, stdWrap
+        90 < styles.content.get
+        90 {
           select {
             where = colPos=1
           }
