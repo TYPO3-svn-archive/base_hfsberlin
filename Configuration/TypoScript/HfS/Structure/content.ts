@@ -40,7 +40,7 @@ base_hfsberlin {
           20 {
             special = list
             special.value = {$base_hfsberlin.pages.root}
-            1 < temp.tmenu
+            1 < base_hfsberlin.menu.tmenu
             1.IFSUB     >
             1.CURIFSUB  >
             1.ACTIFSUB  >
@@ -55,11 +55,7 @@ base_hfsberlin {
                </ul>
             )
           }
-          22 < temp.menuMain
-        }
-        20  < styles.content.get
-        20 {
-          select.pidInList = {$base_hfsberlin.pages.libraries.menu}
+          22 < base_hfsberlin.menu.menuMain
         }
         // table, select, stdWrap
         90 < styles.content.get
