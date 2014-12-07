@@ -35,7 +35,6 @@ base_hfsberlin {
       navigation {
         10 = COA
         10 {
-          //wrap = <ul>|</ul>
           20 = HMENU
           20 {
             special = list
@@ -56,6 +55,10 @@ base_hfsberlin {
             )
           }
           22 < base_hfsberlin.menu.menuMain
+          23 = TEXT
+          23 {
+            value = <p>&nbsp;</p>
+          }
         }
         // table, select, stdWrap
         90 < styles.content.get
