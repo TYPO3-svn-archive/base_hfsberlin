@@ -45,6 +45,13 @@ p {
     #nav_icons_top {
       float:right;
     }
+#footer p {
+  font-size:62.5%;
+}
+#nav_icons_bottom {
+  float:right;
+}
+
   /* BOX-MODEL */
 
 
