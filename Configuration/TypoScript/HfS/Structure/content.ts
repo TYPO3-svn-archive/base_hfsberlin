@@ -3,9 +3,17 @@ base_hfsberlin {
   // content, header
   structure =
   structure {
-    // main (0), margin (2), navigation (1)
+    // footer, main (0), margin (2), navigation (1)
     content =
     content {
+      footer = COA
+      footer {
+        10 < base_hfsberlin.menu.menuIconsBottom
+        20 < styles.content.get
+        20 {
+          select.pidInList = {$base_hfsberlin.pages.libraries.footer}
+        }
+      }
       main = COA
       main {
         // table, select, stdWrap
