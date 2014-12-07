@@ -21,6 +21,9 @@ a:hover {
 body, h1, h2, h3, h4 {
   color:#FFF;
 }
+p {
+  line-height:1.2em;
+}
 
 
 
