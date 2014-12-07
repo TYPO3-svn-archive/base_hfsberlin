@@ -5,6 +5,9 @@ body {
   background-attachment:fixed;
   background-position:-70px -70px;
 }
+footer p {
+  font-size:62.5%;
+}
 
 a,
 a:link,
@@ -45,9 +48,6 @@ p {
     #nav_icons_top {
       float:right;
     }
-#footer p {
-  font-size:62.5%;
-}
 #nav_icons_bottom {
   float:right;
 }
