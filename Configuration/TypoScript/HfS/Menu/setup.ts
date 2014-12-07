@@ -100,10 +100,10 @@ base_hfsberlin {
   menu.menuMain {
     # Menue ab Ebene 1
     entry.level = 1
-    1 < menu.tmenu
-    2 < menu.tmenu
-    3 < menu.tmenu
-    4 < menu.tmenu
+    1 < base_hfsberlin.menu.tmenu
+    2 < base_hfsberlin.menu.tmenu
+    3 < base_hfsberlin.menu.tmenu
+    4 < base_hfsberlin.menu.tmenu
   }
     // menu.menuMain
 
@@ -223,17 +223,17 @@ base_hfsberlin {
   menu.menuIcons = COA
   menu.menuIcons {
     // 110426, dwildt: PDF-Generator funktioniert nicht. Vermutlich DNS-Server-Problem
-    // 20 < menu.pdflink
-    30 < menu.printlink
+    // 20 < base_hfsberlin.menu.pdflink
+    30 < base_hfsberlin.menu.printlink
   }
 
-  menu.menuIconsTop < menu.menuIcons
+  menu.menuIconsTop < base_hfsberlin.menu.menuIcons
   menu.menuIconsTop {
     wrap = <ul id="nav_icons_top"> | </ul>
 
   }
 
-  menu.menuIconsBottom < menu.menuIcons
+  menu.menuIconsBottom < base_hfsberlin.menu.menuIcons
   menu.menuIconsBottom {
     wrap = <div id="nav_icons_bottom"><ul> | </ul></div>
   }
