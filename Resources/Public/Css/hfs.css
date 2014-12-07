@@ -48,11 +48,8 @@ p {
     #nav_icons_top {
       float:right;
     }
-#nav_icons_bottom {
-  float:right;
-}
 
-  /* BOX-MODEL 22 */
+  /* BOX-MODEL */
 
 
 
@@ -89,6 +86,9 @@ p {
   list-style:none;
   margin:0;
   padding:0;
+}
+#nav_icons_bottom ul {
+  float:right;
 }
 #box_menu ul ul,
 #box_menu ol ol,
