@@ -4,7 +4,6 @@ body {
   background-repeat:no-repeat;
   background-attachment:fixed;
   background-position:-70px -70px;
-  color:#FFF;
 }
 
 a,
@@ -19,16 +18,15 @@ a:focus,
 a:hover {
   text-decoration:underline;
 }
+body, h1, h2, h3, h4 {
+  color:#FFF;
+}
 
 
 
   /***************************************************************************************
   * BOX-MODEL
   */
-
-body {
- margin: 0;
-}
 
 #box_header {
   height:144px;
