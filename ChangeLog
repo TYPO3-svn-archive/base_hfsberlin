@@ -1,3 +1,8 @@
+6.0.1
+  14-12-11
+  Bugfix
+  * #i0001: remove "return;" in ext_localconf.php
+
 6.0.0
   14-12-06
   Major Feature
