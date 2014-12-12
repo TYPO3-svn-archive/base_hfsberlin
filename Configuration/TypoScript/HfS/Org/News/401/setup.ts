@@ -1,4 +1,4 @@
-plugin.tx_browser_pi1.views.list.401.tx_org_news.title.10.30
+plugin.tx_browser_pi1 {
   views {
     list {
       401 {
