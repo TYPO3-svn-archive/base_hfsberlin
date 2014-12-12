@@ -171,6 +171,10 @@ p {
   background-color: #333;
 }
 
+.tx_browser_pi1-title-main h1 {
+  padding-top: 0.4em;
+}
+
 .tx-browser-pi1 .listview .record01 {
 /*  height:60px;*/
   border-bottom:solid white .2em;
