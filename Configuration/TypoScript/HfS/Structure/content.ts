@@ -36,9 +36,16 @@ base_hfsberlin {
       }
       margin = COA
       margin {
-        // table, select, stdWrap
         10 < styles.content.get
         10 {
+          select.pidInList = {$base_hfsberlin.pages.margin}
+          XXXstdWrap {
+            wrap = <div class="columns">|</div>
+          }
+        }
+        // table, select, stdWrap
+        20 < styles.content.get
+        20 {
           select {
             where = colPos=2
           }
