@@ -167,6 +167,10 @@ p {
   * RECORDS, IMAGES
   */
 
+.tx_browser_pi1-title-main {
+  background-color: #333;
+}
+
 .tx-browser-pi1 .listview .record01 {
 /*  height:60px;*/
   border-bottom:solid white .2em;
