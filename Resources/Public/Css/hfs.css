@@ -75,13 +75,13 @@ p {
       margin:0;
     }
   /* BOX-MODEL */
-  #box_content.margin-8 {
+  #box_content.medium-8 {
     width:60%;
   }
-  #box_menu.margin-2 {
+  #box_menu.medium-2 {
     width:18%;
   }
-  #box_margin.margin-2 {
+  #box_margin.medium-2 {
     width:22%;
   }
 .contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
