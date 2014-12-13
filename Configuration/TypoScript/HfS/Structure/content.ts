@@ -22,9 +22,49 @@ base_hfsberlin {
       }
       main = COA
       main {
-        // table, select, stdWrap
-        10 < styles.content.get
+        10 = COA
         10 {
+          wrap = <div id="quicknav">|</div>
+          10 < base_hfsberlin.menu.menuIconsTop
+          20 = HMENU
+          20 {
+            special = directory
+            special {
+              value = {$base_hfsberlin.pages.libraries.quicknav}
+            }
+            maxItems  = 1
+            begin     = 1
+            1 < base_hfsberlin.menu.tmenu
+            1.IFSUB     >
+            1.CURIFSUB  >
+            1.ACTIFSUB  >
+            1.NO.wrapItemAndSub (
+                        <li class="no firstitem">
+                          |
+                        </li>
+            )
+            1.CUR.wrapItemAndSub (
+                        <li class="cur firstitem">
+                          |
+                        </li>
+            )
+          }
+          21 = HMENU
+          21 {
+            special = directory
+            special {
+              value = {$base_hfsberlin.pages.libraries.quicknav}
+            }
+            begin     = 2
+            1 < base_hfsberlin.menu.tmenu
+            1.IFSUB     >
+            1.CURIFSUB  >
+            1.ACTIFSUB  >
+          }
+        }
+        // table, select, stdWrap
+        20 < styles.content.get
+        20 {
           select {
             where = colPos=0
           }
