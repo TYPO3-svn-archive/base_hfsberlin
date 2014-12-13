@@ -97,8 +97,8 @@ base_hfsberlin {
         10 < styles.content.get
         10 {
           select.pidInList = {$base_hfsberlin.pages.margin}
-          XXXstdWrap {
-            wrap = <div class="columns">|</div>
+          stdWrap {
+            wrap = <div class="row"><div class="columns">|</div></div>
           }
         }
         // table, select, stdWrap
@@ -108,6 +108,9 @@ base_hfsberlin {
             where = colPos=2
           }
           slide = -1
+          stdWrap {
+            wrap = <div class="row"><div class="columns">|</div></div>
+          }
         }
       }
       navigation = COA
