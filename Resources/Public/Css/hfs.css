@@ -78,10 +78,10 @@ p {
   #box_content.margin-8 {
     width:60%;
   }
-  #box_content.margin-2 {
+  #box_menu.margin-2 {
     width:18%;
   }
-  #box_content.margin-2 {
+  #box_margin.margin-2 {
     width:22%;
   }
 .contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
