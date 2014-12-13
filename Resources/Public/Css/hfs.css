@@ -1,3 +1,6 @@
+#box_margin .tx_org_staff-row {
+  margin-bottom:1em;
+}
 #box_margin .tx_org_staff_image {
   padding-right:0;
 }
@@ -298,11 +301,13 @@ footer a:visited,
   font-size:1em;
   padding-top: 0.4em;
 }
+#box_margin h3,
 .tx_browser_pi1-title-margin {
   background-color: #333;
   font-size:0.85em;
   margin:0;
-  padding:2px 6px;
+  padding-bottom:2px;
+  padding-top:2px;
 }
 
 
@@ -341,68 +346,15 @@ footer a:visited,
 * BACKGROUND
 */
 
-#box_content .tx-browser-pi1 .backgroundTop,
-#box_margin .tx-browser-pi1 .backgroundTop {
-  background-image:url("Images/header.gif");
-  background-repeat:no-repeat;
-}
-#box_content .tx-browser-pi1 .listview .backgroundTop {
-  width:594px;
-}
-#box_content .tx-browser-pi1 .backgroundTop h1,
-#box_content .tx-browser-pi1 .backgroundTop .header01,
-#box_margin .tx-browser-pi1 .backgroundTop h3 {
-  background-image:url("Images/header_right.gif");
-  background-position:right top;
-  background-repeat:no-repeat;
-  border-bottom: 2px solid #888;
-  color:#b02015;
-  font-size:1.2em;
-  font-weight:bold;
-  margin:0;
-  padding:.2em 0 .3em 0;
-  text-align:center;
-}
-#box_content .tx-browser-pi1 .backgroundTop h1,
-#box_content .tx-browser-pi1 .backgroundTop .header01 {
-  padding:.4em 0 .2em 0;
-  text-align:center;
-}
-#box_content .tx-browser-pi1 .backgroundTop .header01 {
-  font-size:.85em;
-  padding:.2em 0;
-}
-#box_content .tx-browser-pi1 .listview,
-#box_margin .tx-browser-pi1 .listview,
-#box_content .tx-browser-pi1 .singleview,
-#box_margin .tx-browser-pi1 .singleview {
-  background-image:url("Images/footer.gif");
-  background-position:left bottom;
-  background-repeat:no-repeat;
-}
-#box_content .tx-browser-pi1 .listview,
-#box_content .tx-browser-pi1 .singleview {
+#XXXbox_content .tx-browser-pi1 .listview,
+#XXXbox_content .tx-browser-pi1 .singleview {
   padding:0 6px;
 }
-#box_margin .tx-browser-pi1 .listview,
-#box_margin .tx-browser-pi1 .singleview {
+#XXXbox_margin .tx-browser-pi1 .listview,
+#XXXbox_margin .tx-browser-pi1 .singleview {
   padding:0 6px;
 }
 
-#box_content .tx-browser-pi1 .listview .backgroundBottom,
-#box_content .tx-browser-pi1 .singleview .backgroundBottom,
-#box_margin .tx-browser-pi1 .listview .backgroundBottom {
-  background-image:url("Images/footer_right.gif");
-  background-position:right bottom;
-  background-repeat:no-repeat;
-}
-#box_content .tx-browser-pi1 .listview .backgroundBottom,
-#box_content .tx-browser-pi1 .singleview .backgroundBottom {
-  width:594px;
-}
-#box_margin .tx-browser-pi1 .listview .backgroundBottom {
-  width:194px;
-}
 /* BACKGROUND */
 
 
