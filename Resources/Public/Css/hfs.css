@@ -54,6 +54,10 @@ p {
   overflow:hidden;
   text-align: right;
 }
+#box_header img {
+  position:relative;
+  right:-13px;
+}
   #quicknav {
     background-color:#333;
     height:1.4em;
