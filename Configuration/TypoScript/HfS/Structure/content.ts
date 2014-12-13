@@ -70,7 +70,7 @@ base_hfsberlin {
           }
           stdWrap {
             required  = 1
-            wrap      = <div id="headerimage" class="row">|</div>
+            wrap      = <div class="row"><div id="headerimage">|</div></div>
           }
         }
         // table, select, stdWrap
