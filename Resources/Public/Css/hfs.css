@@ -244,6 +244,7 @@ footer a:visited,
 }
 .tx_browser_pi1-title-margin {
   background-color: #333;
+  font-size:0.85em;
   margin:0;
   padding:2px 6px;
 }
