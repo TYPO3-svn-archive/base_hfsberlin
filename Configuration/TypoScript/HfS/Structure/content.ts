@@ -77,6 +77,7 @@ base_hfsberlin {
               required  = 1
               wrap      = <div class="row show-for-medium-up"><div id="headerimage">|</div></div>
             }
+            slide = -1
           }
         }
         // content (0)
