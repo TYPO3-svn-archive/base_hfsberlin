@@ -51,7 +51,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_root',
       'config' => '
         backend_layout {
-          colCount = 12
+          colCount = 10
           rowCount = 2
           rows {
             1 {
@@ -59,13 +59,13 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
                   colPos  = 3
-                  colspan = 9
+                  colspan = 7
                 }
                 2 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
                   colPos  = 1
                   colspan = 3
-                  rowspan = 2
+                  rowspan = 3
                 }
               }
             }
@@ -74,7 +74,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
-                  colspan = 9
+                  colspan = 7
                 }
               }
             }
@@ -87,7 +87,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_default',
       'config' => '
         backend_layout {
-          colCount = 12
+          colCount = 10
           rowCount = 1
           rows {
             1 {
@@ -95,12 +95,12 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
                   colPos  = 3
-                  colspan = 12
+                  colspan = 10
                 }
                 2 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
-                  colspan = 12
+                  colspan = 10
                 }
               }
             }

@@ -12,7 +12,7 @@ base_hfsberlin {
         10 {
           select.pidInList = {$base_hfsberlin.pages.libraries.footer}
           stdWrap {
-            wrap = <div class="small-12 medium-8 columns">|</div>
+            wrap = <div class="small-10 medium-6 columns">|</div>
           }
         }
         20 < base_hfsberlin.menu.menuIconsBottom
@@ -81,7 +81,7 @@ base_hfsberlin {
           }
           stdWrap {
             required  = 1
-            wrap      = <!--contentmain--><!--TYPO3SEARCH_begin--><section class="content contentmain"><div class="row"><div class="small-12 columns"> |</div></div></section><!--TYPO3SEARCH_end--><!--/contentmain-->
+            wrap      = <!--contentmain--><!--TYPO3SEARCH_begin--><section class="content contentmain"><div class="row"><div class="small-10 columns"> |</div></div></section><!--TYPO3SEARCH_end--><!--/contentmain-->
           }
         }
       }
