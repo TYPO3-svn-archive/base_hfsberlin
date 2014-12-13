@@ -59,7 +59,7 @@ p {
     position:relative;
     top:-1.4em;
     text-align:left;
-    width: 667px;
+    width: 570px;
   }
     #nav_icons_top {
       float:right;
@@ -85,7 +85,7 @@ p {
     width:22%;
   }
 .contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
-  width: 667px;
+  width: 570px;
   left: -15px;
   position: relative;
 }
