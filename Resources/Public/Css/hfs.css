@@ -71,7 +71,7 @@ p {
       padding-top:0.2em;
     }
     footer p {
-      line-height:ingerit;
+      line-height:inherit;
       margin:0;
     }
   /* BOX-MODEL */
@@ -81,8 +81,16 @@ p {
   #box_menu.medium-2 {
     width:18%;
   }
+  #box_margin {
+    font-size:0.85em;
+  }
   #box_margin.medium-2 {
     width:22%;
+  }
+  #box_margin h4 {
+    font-size:1.4em;
+    margin:0px;
+    padding-top:0.4em;
   }
 .contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
   width: 600px;
@@ -238,7 +246,6 @@ footer a:visited,
   background-color: #333;
   margin:0;
   padding:2px 6px;
-  font-size: 0.85em;
 }
 
 
