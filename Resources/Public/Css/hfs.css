@@ -1,3 +1,9 @@
+#box_margin .tx_org_staff_image {
+  padding-right:0;
+}
+#box_margin .tx_org_staff_name {
+  padding-left:0;
+}
 #headerimage {
   left:-0.9375rem;
   position:relative;
