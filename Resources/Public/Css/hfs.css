@@ -149,6 +149,23 @@ footer p {
   /*  color:#cc7c7a;*/
   text-decoration:underline;
 }
+
+#box_margin .linkToList  {
+  text-align:right;
+}
+#box_margin .linkToList a,
+#box_margin .linkToList a:link,
+#box_margin .linkToList a:visited {
+  color:#888;
+  text-decoration:none;
+}
+#box_margin .linkToList a:active,
+#box_margin .linkToList a:focus,
+#box_margin .linkToList a:hover {
+  /*  color:#cc7c7a;*/
+  text-decoration:underline;
+}
+
 footer a,
 footer a:link,
 footer a:visited,
