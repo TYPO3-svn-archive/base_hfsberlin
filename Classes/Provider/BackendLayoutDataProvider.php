@@ -88,7 +88,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'config' => '
         backend_layout {
           colCount = 10
-          rowCount = 1
+          rowCount = 2
           rows {
             1 {
               columns {
@@ -97,7 +97,11 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                   colPos  = 3
                   colspan = 10
                 }
-                2 {
+              }
+            }
+            2 {
+              columns {
+                1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
                   colspan = 10
