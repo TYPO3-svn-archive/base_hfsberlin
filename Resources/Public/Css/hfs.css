@@ -225,17 +225,22 @@ footer a:visited,
   * RECORDS, IMAGES
   */
 
-.tx_browser_pi1-title-main,
-.tx_browser_pi1-title-margin {
+.tx_browser_pi1-title-main {
   background-color: #333;
   border-bottom: 1em solid #FFF;
 }
 
-.tx_browser_pi1-title-main h1,
-.tx_browser_pi1-title-margin {
+.tx_browser_pi1-title-main h1 {
   font-size:1em;
   padding-top: 0.4em;
 }
+.tx_browser_pi1-title-margin {
+  background-color: #333;
+  margin:0;
+  padding:2px 6px;
+  font-size: 0.85em;
+}
+
 
 .tx-browser-pi1 .listview .record01 {
 /*  height:60px;*/
