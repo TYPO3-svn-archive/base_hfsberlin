@@ -330,7 +330,7 @@ footer a:visited,
 }
 #box_margin .tx-browser-pi1 .listview,
 #box_margin .tx-browser-pi1 .singleview {
-  padding:.8em 6px 0 6px;
+  padding:0 6px;
 }
 
 #box_content .tx-browser-pi1 .listview .backgroundBottom,
