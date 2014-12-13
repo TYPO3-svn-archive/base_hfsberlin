@@ -62,18 +62,19 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                   colspan = 9
                 }
                 2 {
-                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
-                  colPos  = 0
-                  colspan = 9
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
+                  colPos  = 1
+                  colspan = 3
+                  rowspan = 2
                 }
               }
             }
             2 {
               columns {
                 1 {
-                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
-                  colPos  = 1
-                  colspan = 3
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
+                  colPos  = 0
+                  colspan = 9
                 }
               }
             }
