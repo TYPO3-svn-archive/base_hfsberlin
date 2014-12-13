@@ -74,18 +74,18 @@ p {
       margin:0;
     }
   /* BOX-MODEL */
-  #box_content.medium-8 {
+/*  #box_content.medium-8 {
     width:60%;
   }
   #box_menu.medium-2 {
     width:18%;
-  }
+  }*/
   #box_margin {
     font-size:0.85em;
   }
-  #box_margin.medium-2 {
+/*  #box_margin.medium-2 {
     width:22%;
-  }
+  }*/
   #box_margin h4 {
     font-size:1em;
     margin:0px;
