@@ -24,7 +24,6 @@ base_hfsberlin {
       main {
         10 = COA
         10 {
-          wrap = <div id="quicknav">|</div>
           10 < base_hfsberlin.menu.menuIconsTop
           20 = HMENU
           20 {
@@ -61,10 +60,22 @@ base_hfsberlin {
             1.CURIFSUB  >
             1.ACTIFSUB  >
           }
+          wrap = <div class="row"><div id="quicknav">|</div></div>
         }
         // table, select, stdWrap
         20 < styles.content.get
         20 {
+          select {
+            where = colPos=3
+          }
+          stdWrap {
+            required  = 1
+            wrap      = <div class="row">|</div>
+          }
+        }
+        // table, select, stdWrap
+        30 < styles.content.get
+        30 {
           select {
             where = colPos=0
           }
