@@ -217,12 +217,14 @@ footer a:visited,
   * RECORDS, IMAGES
   */
 
-.tx_browser_pi1-title-main {
+.tx_browser_pi1-title-main,
+.tx_browser_pi1-title-margin {
   background-color: #333;
   border-bottom: 1em solid #FFF;
 }
 
-.tx_browser_pi1-title-main h1 {
+.tx_browser_pi1-title-main h1,
+.tx_browser_pi1-title-margin {
   font-size:1em;
   padding-top: 0.4em;
 }
