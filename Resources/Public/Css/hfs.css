@@ -52,12 +52,11 @@ p {
 }
   #quicknav {
     background-color:#333;
-    height:2em;
+    height:1.4em;
     font-size:0.85em;
     left: -15px;
     padding:0.2em 0.9375rem;
     position:relative;
-    top:-1.4em;
     text-align:left;
     width: 600px;
   }

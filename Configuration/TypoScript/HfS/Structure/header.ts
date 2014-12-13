@@ -27,46 +27,6 @@ base_hfsberlin {
         begin = 0
         maxItems = 1
       }
-      20 = COA
-      20 {
-        wrap = <div id="quicknav">|</div>
-        10 < base_hfsberlin.menu.menuIconsTop
-        20 = HMENU
-        20 {
-          special = directory
-          special {
-            value = {$base_hfsberlin.pages.libraries.quicknav}
-          }
-          maxItems  = 1
-          begin     = 1
-          1 < base_hfsberlin.menu.tmenu
-          1.IFSUB     >
-          1.CURIFSUB  >
-          1.ACTIFSUB  >
-          1.NO.wrapItemAndSub (
-                      <li class="no firstitem">
-                        |
-                      </li>
-          )
-          1.CUR.wrapItemAndSub (
-                      <li class="cur firstitem">
-                        |
-                      </li>
-          )
-        }
-        21 = HMENU
-        21 {
-          special = directory
-          special {
-            value = {$base_hfsberlin.pages.libraries.quicknav}
-          }
-          begin     = 2
-          1 < base_hfsberlin.menu.tmenu
-          1.IFSUB     >
-          1.CURIFSUB  >
-          1.ACTIFSUB  >
-        }
-      }
     }
   }
 }
