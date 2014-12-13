@@ -42,13 +42,14 @@ a:hover {
 .tx_browser_pi1-title-margin a,
 .tx_browser_pi1-title-margin a:link,
 .tx_browser_pi1-title-margin a:visited {
-  color:white;
+  color:white !important;
+  font-weight:normal !important;
 }
 .tx_browser_pi1-title-margin a:active,
 .tx_browser_pi1-title-margin a:focus,
 .tx_browser_pi1-title-margin a:hover {
-  color: #B02015;
-  text-decoration:none;
+  color: #FFD480 !important;
+  text-decoration:none !important;
 }
 
 
