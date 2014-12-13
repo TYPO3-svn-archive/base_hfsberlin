@@ -158,14 +158,14 @@ footer p {
 #box_margin .linkToList a:visited {
   color:#222;
   text-decoration:none;
-  transition: background-color 300ms ease-out;
+  transition: background-color 300ms , text-decoration 300ms ease-out;
 }
 #box_margin .linkToList a:active,
 #box_margin .linkToList a:focus,
 #box_margin .linkToList a:hover {
   /*  color:#cc7c7a;*/
   background: #e6e6e6;
-  text-decoration:none;
+  /*text-decoration:none;*/
 }
 
 footer a,
