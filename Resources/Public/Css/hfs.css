@@ -120,6 +120,9 @@ footer p {
   margin:0px;
   padding-top:1em;
 }
+#box_margin .tx-browser-pi1-list {
+  margin-bottom:1em;
+}
 .contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
   /*width: 600px;*/
   left: -15px;
