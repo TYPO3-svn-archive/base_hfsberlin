@@ -19,6 +19,7 @@ base_hfsberlin {
         20 {
           wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-4 columns"><ul> | </ul></div>
         }
+        wrap = <div class="row"><footer>|</footer></div>
       }
       main = COA
       main {
