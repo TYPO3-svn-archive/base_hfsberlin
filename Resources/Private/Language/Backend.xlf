@@ -21,6 +21,9 @@
         <source>HfS-Berlin home</source>
       </trans-unit>
 
+      <trans-unit id="backend_layout.column.content.header">
+        <source>Header</source>
+      </trans-unit>
       <trans-unit id="backend_layout.column.content.main">
         <source>Content</source>
       </trans-unit>

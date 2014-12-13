@@ -52,16 +52,25 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'config' => '
         backend_layout {
           colCount = 12
-          rowCount = 1
+          rowCount = 2
           rows {
             1 {
               columns {
                 1 {
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
+                  colPos  = 3
+                  colspan = 9
+                }
+                2 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
                   colspan = 9
                 }
-                2 {
+              }
+            }
+            2 {
+              columns {
+                1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
                   colPos  = 1
                   colspan = 3
@@ -83,6 +92,11 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
             1 {
               columns {
                 1 {
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
+                  colPos  = 3
+                  colspan = 12
+                }
+                2 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
                   colspan = 12

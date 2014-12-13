@@ -26,6 +26,10 @@
         <target>HfS-Berlin Startseite</target>
       </trans-unit>
 
+      <trans-unit id="backend_layout.column.content.header">
+        <source>Header</source>
+        <target>Kopfgrafik</target>
+      </trans-unit>
       <trans-unit id="backend_layout.column.content.main">
         <source>Content</source>
         <target>Inhalt</target>
