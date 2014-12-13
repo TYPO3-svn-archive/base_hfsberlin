@@ -60,7 +60,7 @@ base_hfsberlin {
             1.CURIFSUB  >
             1.ACTIFSUB  >
           }
-          wrap = <div class="row"><div id="quicknav">|</div></div>
+          wrap = <div id="quicknav" class="row">|</div>
         }
         // table, select, stdWrap
         20 < styles.content.get
@@ -70,7 +70,7 @@ base_hfsberlin {
           }
           stdWrap {
             required  = 1
-            wrap      = <div class="row">|</div>
+            wrap      = <div id="headerimage" class="row">|</div>
           }
         }
         // table, select, stdWrap
