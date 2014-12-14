@@ -36,50 +36,6 @@ plugin.tx_browser_pi1 {
                     value = ###SOCIALMEDIA_BOOKMARKS###
                     wrap = <div class="show-for-medium-up socialbookmarks">|</div>
                   }
-                    // staff
-                  30 = COA
-                  30 {
-                    10 = TEXT
-                    10 {
-                      value = By
-                      lang {
-                        de = Von
-                        en = By
-                      }
-                      noTrimWrap = || |
-                    }
-                      // title, if title (name)
-                    20 = TEXT
-                    20 {
-                      if {
-                        isTrue {
-                          field = tx_org_staff.title
-                        }
-                      }
-                      field = tx_org_staff.title
-                    }
-                      // name_first name_last, if no title (name)
-                    30 = COA
-                    30 {
-                      if {
-                        isFalse {
-                          field = tx_org_staff.title
-                        }
-                      }
-                      10 = TEXT
-                      10 {
-                        field = tx_org_staff.name_first
-                        noTrimWrap = || |
-                        required = 1
-                      }
-                      20 = TEXT
-                      20 {
-                        field = tx_org_staff.name_last
-                      }
-                    }
-                    wrap = <p class="hide-for-large-up author">|</p>
-                  }
-                  30 >
                     // bodytext
                   31 = COA
                   31 {
