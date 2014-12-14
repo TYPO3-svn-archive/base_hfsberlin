@@ -1,5 +1,6 @@
 #box_margin .tx_org_staff-row {
-  margin-bottom:1em;
+  margin-top:.5em;
+  margin-bottom:.5em;
 }
 #box_margin .tx_org_staff_image {
   padding-right:0;
@@ -200,6 +201,10 @@ footer a:visited,
   list-style:none;
   margin:0;
   padding:0;
+}
+#box_menu ul,
+#box_menu ol {
+  font-size:0.80em;
 }
 #quicknav ul,
 #quicknav ol {
