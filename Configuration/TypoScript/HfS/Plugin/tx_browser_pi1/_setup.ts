@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/HfS/Plugin/tx_browser_pi1/displaySingle/master_templates/imageText.0.ts">
