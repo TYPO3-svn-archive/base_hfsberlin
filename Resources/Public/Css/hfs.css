@@ -657,18 +657,24 @@ footer a:visited,
 
 /* SINGLE VIEW */
 .tx-browser-pi1 .singleview .socialbookmarks {
-  float:right;
-  font-size: 1em;
+  /*float:right;
+  font-size: 1em;*/
+}
+.singleview h1, h2, h3, h4 {
+  color:#B02015;
+  color:#333;
 }
 .singleview h1 {
-  color:#B02015;
-  font-size: 1.4em;
-  line-height:1em;
-  margin: .4em 0;
+  font-size: 2em;
 }
 .singleview h2 {
+  font-size: 1.6em;
+}
+.singleview h3 {
+  font-size: 1.3em;
+}
+.singleview h4 {
   font-size: 1em;
-  margin: 0 0 .4em 0;
 }
 /* SINGLE VIEW */
 /* TEMPLATING */
