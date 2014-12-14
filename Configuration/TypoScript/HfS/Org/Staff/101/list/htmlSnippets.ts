@@ -1,0 +1,40 @@
+        <div class="row">
+          <div class="columns searchbox searchbox-list-###MODE###">
+            <form action="###ACTION###" method="post" >
+              <fieldset>
+                <legend>
+                  ###MY_SEARCH_LEGEND###
+                </legend>
+                ###HIDDEN###
+                <input type="hidden" name="no_cache" value="1" />
+                <input type="hidden" name="tx_browser_pi1[plugin]" value="###PLUGIN###" />
+                <div class="row">
+                  <div class="columns small-12 medium-8">
+                    <input type="text" name="tx_browser_pi1[sword]" placeholder="###SWORD_DEFAULT###" value="###SWORD###" />
+                  </div><!-- /columns -->
+                </div><!-- /row -->
+                <!-- FILTER marker will replaced by plugin.tx_browser_pi1.views.list.###MODE###.htmlSnippets.marker.filter while runtime ... -->
+                ###FILTER###
+                <div class="row">
+                  <div class="columns small-12 medium-4">
+                    <button class="tiny expand secondary reset" role="button" type="reset" onclick="location = '###MY_URL###'">
+                      ###MY_RESET###
+                    </button>
+                  </div><!-- /columns -->
+                  <div class="columns small-12 medium-4">
+                    <!-- ###BUTTON_CSV-EXPORT### begin -->
+                    <button class="tiny expand hidesubmit" role="button">
+                      ###MY_CSV_EXPORT###
+                    </button>
+                    <!-- ###BUTTON_CSV-EXPORT### end -->
+                  </div><!-- /columns -->
+                  <div class="columns small-12 medium-4">
+                    <button class="tiny expand hidesubmit" role="button">
+                      ###MY_SEARCH###
+                    </button>
+                  </div><!-- /columns -->
+                </div><!-- /row -->
+              </fieldset>
+            </form>
+          </div><!-- /columns -->
+        </div><!-- /row -->
