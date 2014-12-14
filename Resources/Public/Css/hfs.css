@@ -547,7 +547,7 @@ footer a:visited,
   position:relative;
 }
 .tx-browser-pi1 .indexBrowser {
-  height:1.2em;
+  /*height:1.2em;*/
 }
 .tx-browser-pi1 .browsebox {
   font-size:.85em;
