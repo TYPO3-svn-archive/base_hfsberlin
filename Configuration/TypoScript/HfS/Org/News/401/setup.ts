@@ -26,8 +26,8 @@ plugin.tx_browser_pi1 {
       }
     }
     single {
-      401 >
       401 {
+        tx_org_news >
           // 140706: empty statement: for proper comments only
         tx_org_news {
         }
