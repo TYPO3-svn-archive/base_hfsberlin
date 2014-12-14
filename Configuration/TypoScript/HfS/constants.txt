@@ -1,3 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/HfS/Org/Base/constants.ts">
+
 base_hfsberlin {
 
   # cat=hfs-berlin.de - bat paths//100; type=string; label= Calendar:URL of bat website with ending slash
