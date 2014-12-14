@@ -38,13 +38,15 @@ switch ( $beLanguage )
 switch( true )
 {
   case( $beLanguage == 'de' ):
-    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Base/',       'HfS Berlin [1] Frontend');
-    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Foundation/', 'HfS Berlin [2] + Responsive');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/',        'HfS Berlin [1] Basis');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org',     'HfS Berlin [2] +Org');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/',        'HfS Berlin [1] BAT');
     t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Debug/',      'HfS Berlin [9] Debug');
     break;
   default:
-    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Base/',       'HfS Berlin [1] Frontend');
-    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Foundation/', 'HfS Berlin [2] + Responsive');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/',        'HfS Berlin [1] Base');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org',     'HfS Berlin [2] +Org');
+    t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/',        'HfS Berlin [1] BAT');
     t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Debug/',      'HfS Berlin [9] Debug');
     break;
 }
