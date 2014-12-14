@@ -1,12 +1,8 @@
 plugin.tx_browser_pi1 {
+  views {
     single {
       401 {
         tx_org_news >
-          // 140706: empty statement: for proper comments only
-        tx_org_news {
-        }
-          // title, mail_city
-        tx_org_news =
         tx_org_news {
             // title
           title < plugin.tx_browser_pi1.displaySingle.master_templates.tableFields.imageText.0
