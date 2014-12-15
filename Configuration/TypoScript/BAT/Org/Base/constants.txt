@@ -1,0 +1,14 @@
+plugin.org {
+  pages {
+    headquarters  = 20
+    news          =  1
+    staff         = 22
+  }
+  sysfolder {
+    calendar      = 116
+    headquarters  = 119
+    location      = 120
+    news          = 117
+    staff         = 114
+  }
+}

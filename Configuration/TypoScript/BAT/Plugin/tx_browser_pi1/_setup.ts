@@ -1,0 +1,3 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Plugin/tx_browser_pi1/navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Plugin/tx_browser_pi1/displaySingle/master_templates/image.0.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Plugin/tx_browser_pi1/displaySingle/master_templates/imageText.0.ts">
