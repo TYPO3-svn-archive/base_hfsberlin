@@ -126,7 +126,9 @@ footer p {
     width:22%;
   }*/
 #box_margin h4 {
+  color:#333;
   font-size:1em;
+  font-weight:bold;
   margin:0px;
   padding-top:1em;
 }
@@ -543,8 +545,8 @@ footer a:visited,
 .tx-browser-pi1 .browsebox,
 .tx-browser-pi1 .searchbox,
 .tx-browser-pi1 .sortbox {
-  padding: .6em 6px 0 6px;
-  position:relative;
+  /*padding: .6em 6px 0 6px;
+  position:relative;*/
 }
 .tx-browser-pi1 .indexBrowser {
   /*height:1.2em;*/
@@ -568,7 +570,7 @@ footer a:visited,
 }
 
 .tx-browser-pi1 .filter {
-  margin:.2em 0 0 0;
+  /*margin:.2em 0 0 0;*/
 }
 /* BROWSER */
 
