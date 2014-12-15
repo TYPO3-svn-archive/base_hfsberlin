@@ -14,7 +14,7 @@ plugin.tx_browser_pi1 {
                   }
                 }
               }
-              wrap = <div class="columns"><div class="category_menu">|</div></div>
+              wrap = <div class="columns"><dl class="sub-nav"><dt>###TITLE###</dt>|</dl></div>
               order.field = uid
               area < plugin.tx_browser_pi1.displayList.master_templates.areas.sample_period
               area {
