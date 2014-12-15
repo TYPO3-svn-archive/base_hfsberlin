@@ -1,5 +1,7 @@
 base_hfsberlin =
 base_hfsberlin {
+    // structure
+  hfs =
   hfs {
     // content, header
     structure =

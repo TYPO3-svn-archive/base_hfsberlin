@@ -41,10 +41,10 @@ base_hfsberlin {
 
     # cat=HfS Berlin - BAT - Pages/page/100; type=+int; label= root page:Uid of your root page
     pages.root                              =  1
-    # cat=HfS Berlin - BAT - Pages/page/101; type=+int; label= header:Page with content for the header
-    pages.libraries.header                  =  3
-    # cat=HfS Berlin - BAT - Pages/page/103; type=+int; label= quick navigation:Page with content for the quick navigation on top
-    pages.libraries.quicknav                = 90
+    # cat=HfS Berlin - BAT - Pages/page/101; type=+int; label= header news:Page with the news for the header
+    pages.libraries.news                    =  200
+    # cat=HfS Berlin - BAT - Pages/page/103; type=+int; label= header logos:Page with the logos for the header
+    pages.libraries.logos                   = 7
     # cat=HfS Berlin - BAT - Pages/page/104; type=+int; label= footer:Page with content for the footer
     pages.libraries.footer                  =  4
     # cat=HfS Berlin - BAT - Pages/page/105; type=+int; label= right column 1. level:Sysfolder with elements for the right columns of the first level

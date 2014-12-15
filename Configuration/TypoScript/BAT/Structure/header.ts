@@ -4,29 +4,29 @@ base_hfsberlin {
     structure {
       header = COA
       header {
-        10 = FILES
+          // News
+        10 = COA
         10 {
-          references {
-            data = levelmedia:-1, slide
-          }
-          renderObj = COA
-          renderObj {
-            10 = IMAGE
-            10 {
-              file.import.data = file:current:publicUrl
-              file.width = {$base_hfsberlin.bat.dims.header_image.maxW}
-              file.height = {$base_hfsberlin.bat.dims.header_image.maxH}
-              stdWrap {
-                typolink {
-                  parameter = {$base_hfsberlin.bat.pages.root}
-                  parameter.XXXdata = file:current:link
-                  title     = {$base_hfsberlin.bat.htmlhead.author}
-                }
-              }
+          10 < styles.content.get
+          10 {
+            select {
+              pidInList = {$base_hfsberlin.bat.pages.libraries.header.news}
+              max       = 1
             }
           }
-          begin = 0
-          maxItems = 1
+          wrap = <div id="box_header_news">|</div>
+        }
+          // Logos
+        20 = COA
+        20 {
+          10 < styles.content.get
+          10 {
+            select {
+              pidInList = {$base_hfsberlin.bat.pages.libraries.header.logos}
+              max       = 1
+            }
+          }
+          wrap = <div id="box_header_logos">|</div>
         }
       }
     }

@@ -1,5 +1,7 @@
 base_hfsberlin =
 base_hfsberlin {
+    // structure
+  bat =
   bat {
     // content, header
     structure =
@@ -27,48 +29,6 @@ base_hfsberlin {
             // header (3)
           10 = COA
           10 {
-              // quicknav
-            10 = COA
-            10 {
-              10 < base_hfsberlin.bat.menu.menuIconsTop
-              20 = HMENU
-              20 {
-                special = directory
-                special {
-                  value = {$base_hfsberlin.bat.pages.libraries.quicknav}
-                }
-                maxItems  = 1
-                begin     = 1
-                1 < base_hfsberlin.bat.menu.tmenu
-                1.IFSUB     >
-                1.CURIFSUB  >
-                1.ACTIFSUB  >
-                1.NO.wrapItemAndSub (
-                            <li class="no firstitem">
-                              |
-                            </li>
-                )
-                1.CUR.wrapItemAndSub (
-                            <li class="cur firstitem">
-                              |
-                            </li>
-                )
-              }
-              21 = HMENU
-              21 {
-                special = directory
-                special {
-                  value = {$base_hfsberlin.bat.pages.libraries.quicknav}
-                }
-                begin     = 2
-                1 < base_hfsberlin.bat.menu.tmenu
-                1.IFSUB     >
-                1.CURIFSUB  >
-                1.ACTIFSUB  >
-              }
-              wrap = <div id="quicknav" class="row show-for-medium-up">|</div>
-            }
-              // header (3): image
             20 < styles.content.get
             20 {
               select {
@@ -81,7 +41,7 @@ base_hfsberlin {
               slide = -1
             }
           }
-          // content (0)
+            // content (0)
           20 < styles.content.get
           20 {
             select {
