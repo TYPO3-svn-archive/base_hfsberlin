@@ -2,6 +2,7 @@ plugin.tx_browser_pi1 {
   views {
     single {
       401 {
+        tx_org_staff >
         tx_org_news >
         tx_org_news {
             // title
