@@ -1,0 +1,11 @@
+plugin.tx_browser_pi1 {
+  templates {
+    listview {
+      header {
+        0 {
+          crop = 200|...|1
+        }
+      }
+    }
+  }
+}
