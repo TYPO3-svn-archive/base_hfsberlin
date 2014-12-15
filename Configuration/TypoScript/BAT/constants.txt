@@ -20,7 +20,7 @@ base_hfsberlin {
     # cat=HfS Berlin - BAT - Files/file/101; type=string; label= HTML template:Path with the default HTML template
     path.html                 = EXT:base_hfsberlin/res/html/current/index.html
     # cat=HfS Berlin - BAT - Files/file/102; type=string; label= CSS file all media:Path with the default CSS file
-    path.css.styles           = EXT:base_hfsberlin/Resources/Public/Css/bat.css
+    path.css.styles           = EXT:base_hfsberlin/Resources/Public/BAT/Css/bat.css
     # cat=HfS Berlin - BAT - Files/file/103; type=string; label= CSS file foundation:Path with the foundation CSS file
     path.css.foundation       = EXT:base_hfsberlin/Resources/Public/JavaScript/Libs/Foundation-5.5.0/css/foundation.min.css
     # cat=HfS Berlin - BAT - Files/file/104; type=string; label= CSS file print:Path with the CSS file for print
