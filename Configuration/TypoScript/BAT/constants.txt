@@ -15,9 +15,6 @@ base_hfsberlin {
     # cat=HfS Berlin - BAT - Dimensions/dims/101; type=+int; label= Header image max height:Maximum height of the header image in pixel
     dims.header_image.maxH    = 144
 
-    # cat=HfS Berlin - BAT - favicon//100; type=string; label= Path:Path to the favicon
-    favicon = typo3conf/ext/base_hfsberlin/Resources/Public/Images/favicon.ico
-
     # cat=HfS Berlin - BAT - Files/file/100; type=string; label= Path to ressources:Path to directory with ending slash
     path.res                  = EXT:base_hfsberlin/res/
     # cat=HfS Berlin - BAT - Files/file/101; type=string; label= HTML template:Path with the default HTML template
@@ -40,7 +37,7 @@ base_hfsberlin {
     # cat=HfS Berlin - BAT - html head//103; type=string; label= author:Keywords for search engines
     htmlhead.keywords         = Hochschule, Schauspielkunst, Ernst Busch, Schauspiel, hfs, Berlin
     # cat=HfS Berlin - BAT - html head//104; type=string; label= favicon:Path to the favicon
-    htmlhead.favicon          = EXT:base_hfsberlin/Public/Images/favicon.ico
+    htmlhead.favicon          = EXT:base_hfsberlin/Resources/Public/Images/BAT/favicon.ico
 
     # cat=HfS Berlin - BAT - Pages/page/100; type=+int; label= root page:Uid of your root page
     pages.root                              =  1

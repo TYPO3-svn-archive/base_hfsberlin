@@ -81,7 +81,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
           }
         }
       ',
-      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BackendLayouts/hfs_root.gif'
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/HfS/BackendLayouts/hfs_root.gif'
     ),
     'hfs_default' => array(
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_default',
@@ -111,7 +111,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
           }
         }
       ',
-      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BackendLayouts/hfs_default.gif'
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/HfS/BackendLayouts/hfs_default.gif'
     ),
     'bat_default' => array(
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.bat_default',
@@ -142,7 +142,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
           }
         }
       ',
-      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BackendLayouts/bat_default.gif'
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BAT/BackendLayouts/bat_default.gif'
     ),
   );
 
