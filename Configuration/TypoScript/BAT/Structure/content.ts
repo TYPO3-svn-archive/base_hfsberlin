@@ -78,9 +78,9 @@ base_hfsberlin {
         navigation {
           10  < styles.content.get
           10 {
-            select.pidInList = {$base_batberlin.pages.libraries.menu}
+            select.pidInList = {$base_hfsberlin.bat.pages.libraries.menu}
           }
-          20 < temp.menuMain
+          20 < base_hfsberlin.bat.menu.menuMain
         }
       }
     }
