@@ -5,17 +5,13 @@ plugin.tx_browser_pi1 {
         marker {
           my_listview_page {
             value = Contact
-            value {
-              lang.de = Alle Bereiche &raquo;
-            }
+            lang.de = Alle Bereiche &raquo;
             typolink.title.value = All units &raquo;
             typolink.title.lang.de = Alle Bereiche &raquo;
           }
           my_listview_title {
             value = Contact
-            value {
-              lang.de = Kontakt
-            }
+            lang.de = Kontakt
             typolink.title.value = All contacts
             typolink.title.lang.de = Alle Kontakte
           }
