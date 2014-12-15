@@ -13,6 +13,6 @@ page {
         wrap = |
       }
     }
-    wrap = {$base_hfsberlin.fluid.path.templates}|.html
+    wrap = {$base_hfsberlin.bat.fluid.path.templates}|.html
   }
 }

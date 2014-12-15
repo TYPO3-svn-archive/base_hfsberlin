@@ -11,7 +11,7 @@ base_hfsberlin {
         footer {
           10 < styles.content.get
           10 {
-            select.pidInList = {$base_hfsberlin.pages.libraries.footer}
+            select.pidInList = {$base_hfsberlin.hfs.pages.libraries.footer}
             stdWrap {
               wrap = <div class="small-10 medium-6 columns">|</div>
             }
@@ -35,7 +35,7 @@ base_hfsberlin {
               20 {
                 special = directory
                 special {
-                  value = {$base_hfsberlin.pages.libraries.quicknav}
+                  value = {$base_hfsberlin.hfs.pages.libraries.quicknav}
                 }
                 maxItems  = 1
                 begin     = 1
@@ -58,7 +58,7 @@ base_hfsberlin {
               21 {
                 special = directory
                 special {
-                  value = {$base_hfsberlin.pages.libraries.quicknav}
+                  value = {$base_hfsberlin.hfs.pages.libraries.quicknav}
                 }
                 begin     = 2
                 1 < base_hfsberlin.hfs.menu.tmenu
@@ -97,7 +97,7 @@ base_hfsberlin {
         margin {
           10 < styles.content.get
           10 {
-            select.pidInList = {$base_hfsberlin.pages.margin}
+            select.pidInList = {$base_hfsberlin.hfs.pages.margin}
             XXXstdWrap {
               wrap = <div class="row"><div class="columns">|</div></div>
             }
@@ -121,7 +121,7 @@ base_hfsberlin {
             20 = HMENU
             20 {
               special = list
-              special.value = {$base_hfsberlin.pages.root}
+              special.value = {$base_hfsberlin.hfs.pages.root}
               1 < base_hfsberlin.hfs.menu.tmenu
               1.IFSUB     >
               1.CURIFSUB  >

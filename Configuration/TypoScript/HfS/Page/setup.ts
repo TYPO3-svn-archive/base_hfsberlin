@@ -8,7 +8,7 @@ page {
 	meta {
     viewport = width=device-width, initial-scale=1.0
   }
-	shortcutIcon = {$base_hfsberlin.favicon}
+	shortcutIcon = {$base_hfsberlin.hfs.favicon}
 	typeNum = 0
 
   63630 = CASE
@@ -29,9 +29,9 @@ page {
     }
     base_hfsberlin__hfs_default = FLUIDTEMPLATE
     base_hfsberlin__hfs_default {
-      file = {$base_hfsberlin.fluid.path.templates}hfs_default.html
-      layoutRootPath  = {$base_hfsberlin.fluid.path.layouts}
-      partialRootPath = {$base_hfsberlin.fluid.path.partials}
+      file = {$base_hfsberlin.hfs.fluid.path.templates}hfs_default.html
+      layoutRootPath  = {$base_hfsberlin.hfs.fluid.path.layouts}
+      partialRootPath = {$base_hfsberlin.hfs.fluid.path.partials}
       variables {
 
       }

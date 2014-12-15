@@ -1,7 +1,7 @@
 config {
   admPanel        = 1
 
-  baseURL         = {$base_hfsberlin.htmlhead.base_href}
+  baseURL         = {$base_hfsberlin.bat.htmlhead.base_href}
   extTarget       = _blank
 
   headerComment (
