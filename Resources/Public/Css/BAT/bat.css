@@ -1,3 +1,7 @@
+.header .main,
+.maincontent > div:nth-child(1) {
+  background-color:white;
+} 
 
       /***************************************************************************************
       * INDEX
@@ -513,11 +517,11 @@ h5 {
 .tx-browser-pi1 .browsebox,
 .tx-browser-pi1 .searchbox,
 .tx-browser-pi1 .sortbox {
-  padding: .6em 6px 0 6px;
-  position:relative;
+/*  padding: .6em 6px 0 6px;
+  position:relative;*/
 }
 .tx-browser-pi1 .indexBrowser {
-  height:1.2em;
+/*  height:1.2em;*/
 }
 .tx-browser-pi1 .browsebox {
   font-size:.85em;
