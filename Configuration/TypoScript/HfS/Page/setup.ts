@@ -8,7 +8,7 @@ page {
 	meta {
     viewport = width=device-width, initial-scale=1.0
   }
-	shortcutIcon = {$base_hfsberlin.hfs.favicon}
+	shortcutIcon = {$base_hfsberlin.hfs.htmlhead.favicon}
 	typeNum = 0
 
   63630 = CASE
