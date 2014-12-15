@@ -2,6 +2,7 @@ plugin.tx_browser_pi1 {
   views {
     single {
       101 {
+        tx_org_staff >
           // 140706: empty statement: for proper comments only
         tx_org_staff {
         }
