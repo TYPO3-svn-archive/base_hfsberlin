@@ -1,31 +1,33 @@
-base_batberlin =
-base_batberlin {
-  structure {
-    header = COA
-    header {
-      10 = FILES
-      10 {
-        references {
-          data = levelmedia:-1, slide
-        }
-        renderObj = COA
-        renderObj {
-          10 = IMAGE
-          10 {
-            file.import.data = file:current:publicUrl
-            file.width = {$base_batberlin.dims.header_image.maxW}
-            file.height = {$base_batberlin.dims.header_image.maxH}
-            stdWrap {
-              typolink {
-                parameter = {$base_batberlin.pages.root}
-                parameter.XXXdata = file:current:link
-                title     = {$base_batberlin.htmlhead.author}
+base_hfsberlin =
+base_hfsberlin {
+  bat {
+    structure {
+      header = COA
+      header {
+        10 = FILES
+        10 {
+          references {
+            data = levelmedia:-1, slide
+          }
+          renderObj = COA
+          renderObj {
+            10 = IMAGE
+            10 {
+              file.import.data = file:current:publicUrl
+              file.width = {$base_hfsberlin.dims.header_image.maxW}
+              file.height = {$base_hfsberlin.dims.header_image.maxH}
+              stdWrap {
+                typolink {
+                  parameter = {$base_hfsberlin.pages.root}
+                  parameter.XXXdata = file:current:link
+                  title     = {$base_hfsberlin.htmlhead.author}
+                }
               }
             }
           }
+          begin = 0
+          maxItems = 1
         }
-        begin = 0
-        maxItems = 1
       }
     }
   }

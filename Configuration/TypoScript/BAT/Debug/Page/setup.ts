@@ -7,12 +7,12 @@ page {
       field = backend_layout
     }
     split {
-      token = base_batberlin__
+      token = base_hfsberlin__
       1 {
         current = 1
         wrap = |
       }
     }
-    wrap = {$base_batberlin.fluid.path.templates}|.html
+    wrap = {$base_hfsberlin.fluid.path.templates}|.html
   }
 }
