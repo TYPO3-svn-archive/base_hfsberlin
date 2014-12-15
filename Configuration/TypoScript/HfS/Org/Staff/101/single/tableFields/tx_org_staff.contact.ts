@@ -9,13 +9,37 @@ plugin.tx_browser_pi1 {
             20 {
               if {
                 isTrue {
-                  field = tx_org_staff.uid
+                  stdWrap {
+                    cObject = COA
+                    cObject {
+                      10 = TEXT
+                      10 {
+                        field = tx_org_staff.contact_email
+                      }
+                      20 = TEXT
+                      20 {
+                        field = tx_org_staff.contact_fax
+                      }
+                      30 = TEXT
+                      30 {
+                        field = tx_org_staff.contact_phone
+                      }
+                      40 = TEXT
+                      40 {
+                        field = tx_org_staff.contact_skype
+                      }
+                      50 = TEXT
+                      50 {
+                        field = tx_org_staff.contact_url
+                      }
+                    }
+                  }
                 }
               }
                 // vcard: header, name, contact_email, contact_phone, contact_fax, contact_skype, contact_url,
               10 = COA
               10 {
-                  // column: image, header, title, steet, zip city, url
+                  // column: image, header, title, street, zip city, url
                 10 = COA
                 10 {
                   wrap = <ul class="vcard tx_org_staff">|</ul><!-- vcard -->
@@ -33,33 +57,6 @@ plugin.tx_browser_pi1 {
                       }
                     }
                   }
-                    // name (linked)
-                  20 = CASE
-                  20 {
-                    key {
-                      field = {$plugin.tx_browser_pi1.templates.listview.url.2.key}
-                    }
-                    default = TEXT
-                    default {
-                      field = tx_org_staff.title
-                      noTrimWrap = |<li class="fn"> | &raquo;</li>|
-                      required = 1
-                      typolink < plugin.tx_browser_pi1.displayList.master_templates.tableFields.typolinks.2.default
-                    }
-                    notype = TEXT
-                    notype {
-                      noTrimWrap = |<li class="fn"> | </li>|
-                    }
-                    page < .default
-                    page {
-                      typolink < plugin.tx_browser_pi1.displayList.master_templates.tableFields.typolinks.2.page
-                    }
-                    url < .page
-                    url {
-                      typolink < plugin.tx_browser_pi1.displayList.master_templates.tableFields.typolinks.2.url
-                    }
-                  }
-                  20 >
                     // contact_email
                   30 = TEXT
                   30 {
