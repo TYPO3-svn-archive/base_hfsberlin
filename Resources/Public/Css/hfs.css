@@ -660,7 +660,10 @@ footer a:visited,
   /*float:right;
   font-size: 1em;*/
 }
-.singleview h1, h2, h3, h4 {
+.singleview h1,
+.singleview h2,
+.singleview h3,
+.singleview h4 {
   color:#B02015;
   color:#333;
 }
