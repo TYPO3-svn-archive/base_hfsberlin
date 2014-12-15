@@ -64,6 +64,14 @@ h5 {
   margin: 1em 0 .2em 0;
 }
 
+fieldset {
+  border:0;
+  padding:0;
+}
+legend {
+  display:none;
+}
+
 .align-center {
   text-align:center;
 }
