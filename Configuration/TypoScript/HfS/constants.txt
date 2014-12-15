@@ -28,9 +28,11 @@ base_hfsberlin {
     path.html                 = EXT:base_hfsberlin/res/html/current/index.html
     # cat=HfS Berlin - HfS - Files/file/102; type=string; label= CSS file all media:Path with the default CSS file
     path.css.styles           = EXT:base_hfsberlin/Resources/Public/Css/hfs.css
-    # cat=HfS Berlin - HfS - Files/file/103; type=string; label= CSS file print:Path with the CSS file for print
+    # cat=HfS Berlin - HfS - Files/file/103; type=string; label= CSS file foundation:Path with the foundation CSS file
+    path.css.foundation       = EXT:base_hfsberlin/Resources/Public/Css/hfs-foundation.css
+    # cat=HfS Berlin - HfS - Files/file/104; type=string; label= CSS file print:Path with the CSS file for print
     path.css.print            = EXT:base_hfsberlin/res/html/current/css/print.css
-    # cat=HfS Berlin - HfS - Files/file/104; type=string; label= Alternate Image:Path to the image, which should displayed, if there is an image missed.
+    # cat=HfS Berlin - HfS - Files/file/105; type=string; label= Alternate Image:Path to the image, which should displayed, if there is an image missed.
     path.alternate_image      = EXT:base_hfsberlin/res/images/alternate_image_400x300_grey.gif
 
     # cat=HfS Berlin - HfS - html head//100; type=string; label= Host:URL of the website with ending slash
