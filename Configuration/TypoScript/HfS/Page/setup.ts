@@ -39,6 +39,6 @@ page {
     base_hfsberlin__hfs_root < .base_hfsberlin__hfs_default
   }
   includeCSS {
-    base_hfsberlin = EXT:base_hfsberlin/Resources/Public/Css/hfs.css
+    base_hfsberlin_hfs = {$base_hfsberlin.hfs.path.css.styles}
   }
 }
