@@ -5,6 +5,10 @@ styles.content {
   }
 }
 
+plugin.tx_browser_pi1 {
+  map.controlling.enabled = disabled
+}
+
 base_hfsberlin {
   hfs {
     # cat=hfs-berlin.de - bat paths//100; type=string; label= Calendar:URL of bat website with ending slash

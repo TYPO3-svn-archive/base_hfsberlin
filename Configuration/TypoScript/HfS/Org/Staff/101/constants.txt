@@ -6,4 +6,14 @@ plugin.tx_browser_pi1 {
       }
     }
   }
+  templates {
+    listview {
+      image {
+        3 {
+          height = 60c
+          width = 60c
+        }
+      }
+    }
+  }
 }
