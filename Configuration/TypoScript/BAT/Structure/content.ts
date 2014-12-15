@@ -76,41 +76,11 @@ base_hfsberlin {
         }
         navigation = COA
         navigation {
-          10 = COA
+          10  < styles.content.get
           10 {
-            20 = HMENU
-            20 {
-              special = list
-              special.value = {$base_hfsberlin.bat.pages.root}
-              1 < base_hfsberlin.bat.menu.tmenu
-              1.IFSUB     >
-              1.CURIFSUB  >
-              1.ACTIFSUB  >
-            }
-            21 = TEXT
-            21 {
-              value (
-                 <ul>
-                   <li class="spc">
-                      &nbsp;
-                    </li>
-                 </ul>
-              )
-            }
-            22 < base_hfsberlin.bat.menu.menuMain
-            23 = TEXT
-            23 {
-              value = <p>&nbsp;</p>
-            }
+            select.pidInList = {$base_batberlin.pages.libraries.menu}
           }
-          // table, select, stdWrap
-          90 < styles.content.get
-          90 {
-            select {
-              where = colPos=1
-            }
-            slide = -1
-          }
+          20 < temp.menuMain
         }
       }
     }
