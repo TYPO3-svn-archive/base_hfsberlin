@@ -2,7 +2,7 @@
       /***************************************************************************************
       * INDEX
       */
-      
+
       /*
         RESET
         body
@@ -10,24 +10,24 @@
         p, ul, hx ...
         table ...
         img
-        
+
         INITIAL
         body
         .cleaner
         a
         p, ul, hx ...
-      
+
         BOX-MODEL
         body
           box1
             box2
               ...
-        
+
         BOX_CONTENT
 
         MENU
-      
-      
+
+
         browser
       * INDEX */
 
@@ -37,7 +37,7 @@
   * RESET
   */
 
-html,
+/*html,
 body {
   height: 100%;
 }
@@ -57,7 +57,7 @@ table, dt, dd {
 }
 img {
   border: 0px;
-}
+}*/
   /* RESET */
 
 
@@ -70,9 +70,9 @@ body {
   background-color: #B02015;
 }
 
-button {
+/*button {
   cursor:pointer;
-}
+}*/
 
 .cleaner {
   clear: both;
@@ -96,13 +96,13 @@ a.invert:link,
 a.invert:visited.invert {
   color:white;
 }
-p, ul {
+/*p, ul {
   margin: 0 0 1em 0;
-}
+}*/
 
-#box_footer p {
+/*#box_footer p {
   margin:0;
-}
+}*/
 h1 {
   font-size:2em;
   line-height:1em;
@@ -160,16 +160,16 @@ h5 {
 }
 
   /* INITIAL */
-  
-  
-  
+
+
+
   /***************************************************************************************
   * BOX-MODEL
   */
 
-body {
+/*body {
  margin: 0;
-}
+}*/
 
 #box1 {
   overflow: visible;
@@ -183,7 +183,7 @@ body {
     left: 50%;
     margin-left: -500px;
     position: absolute;
-    width: 1000px; 
+    width: 1000px;
   }
     #box_header {
       background-color: #FFF;
@@ -215,13 +215,13 @@ body {
       margin: 0 1em 0 1em;
       position: relative;
     }
-      #box_menu {
+      #maincontentleft {
         background: #E3E3E3;
         border: 4px solid #E3E3E3;
-        float: left;
+/*        float: left;
         overflow: hidden;
         position: relative;
-        width: 182px;
+        width: 182px;*/
       }
       #box4 {
         float: right;
@@ -259,7 +259,7 @@ body {
         font-size:1.1em;
         margin:1em 0 0 0;
         text-align:center;
-        
+
       }
       .cleaner {
          clear: both;
@@ -276,64 +276,64 @@ body {
   /***************************************************************************************
   * MENU
   */
-  
-#box_menu a,
-#box_menu a:link,
-#box_menu a:visited {
+
+#maincontentleft a,
+#maincontentleft a:link,
+#maincontentleft a:visited {
   color:#000;
   text-decoration:none;
 }
-#box_menu a:active,
-#box_menu a:focus,
-#box_menu a:hover {
+#maincontentleft a:active,
+#maincontentleft a:focus,
+#maincontentleft a:hover {
   color:#B02015;
   font-weight:bold;
 /*  text-decoration:underline;*/
 }
-#box_menu ul,
-#box_menu ol {
+#maincontentleft ul,
+#maincontentleft ol {
   color:#000;
   list-style:none;
   margin:0;
   padding:0;
   font-size:1.2em;
 }
-#box_menu ul ul,
-#box_menu ol ol {
+#maincontentleft ul ul,
+#maincontentleft ol ol {
   font-size:1em;
 }
-  
-#box_menu li {
+
+#maincontentleft li {
   background-repeat: no-repeat;
   background-position: 0 .1em;
   border-top: 1px solid #B02015;
   margin-bottom:.2em;
   padding-top:.2em;
 }
-#box_menu li li {
+#maincontentleft li li {
   border-top:0;
   margin-bottom: 0em;
   padding-left:1em;
 }
-#box_menu li.actifsub,
-#box_menu li.ifsub {
+#maincontentleft li.actifsub,
+#maincontentleft li.ifsub {
   background-image: url(img/submenu_default.gif);
 }
-#box_menu li.curifsub {
+#maincontentleft li.curifsub {
   background-image: url(img/submenu_activ.gif);
 }
-#box_menu li.cur a,
-#box_menu li.curifsub a,
-#box_menu li li.cur a,
-#box_menu li li.curifsub a {
+#maincontentleft li.cur a,
+#maincontentleft li.curifsub a,
+#maincontentleft li li.cur a,
+#maincontentleft li li.curifsub a {
   color: #B02015;
   font-weight:bold;
 }
-#box_menu li.no a,
-#box_menu li li a,
-#box_menu li li.no a,
-#box_menu li li.ifsub a,
-#box_menu li li.curifsub li a {
+#maincontentleft li.no a,
+#maincontentleft li li a,
+#maincontentleft li li.no a,
+#maincontentleft li li.ifsub a,
+#maincontentleft li li.curifsub li a {
   color: #000;
 }
 
@@ -348,7 +348,7 @@ body {
   /***************************************************************************************
   * AJAX
   */
-  
+
 .txbrowserpi1loader {
   background: #fff url(/typo3conf/ext/browser/res/images/browser_loader.gif) no-repeat  center ;
   background-color: #fff;
@@ -361,8 +361,8 @@ body {
   margin:0 0 -42px 0;
   z-index:2;
 }
- 
-.loading {  
+
+.loading {
   opacity:.8;
 }
 .txbrowserpi1ajaxerror {
@@ -375,7 +375,7 @@ body {
   /***************************************************************************************
   * BROWSER
   */
-  
+
 .tx-browser-pi1 a,
 .tx-browser-pi1 a:link,
 .tx-browser-pi1 a:visited {
@@ -411,7 +411,7 @@ body {
 * html .tx-browser-pi1 ul.indexBrowser,
 * html .tx-browser-pi1 ul.ui-tabs-nav,
 * html .tx-browser-pi1 ul.modeSelector {
-  width: 100%;     
+  width: 100%;
 }
 
 .tx-browser-pi1 ul.indexBrowser li.last,
@@ -447,7 +447,7 @@ body {
 .indexBrowser li.selected a,
 .ui-tabs-nav  li.selected a:hover,
 .indexBrowser li.selected a:hover {
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 .ui-tabs-nav  li a.without-href {
   color:#888888;
@@ -527,12 +527,12 @@ body {
   padding: .6em  0;
   position:relative;
 }
-.searchbox fieldset, 
+.searchbox fieldset,
 .selectboxorderby fieldset {
   border:0;
   padding:0;
 }
-.searchbox fieldset legend, 
+.searchbox fieldset legend,
 .selectboxorderby fieldset legend {
   display:none;
 }
@@ -553,7 +553,7 @@ body {
   * BROWSER TEMPLATING
   * ALL VIEWS
   */
-  
+
 .tx-browser-pi1 {
   background:#FFF;
   font-size:1.1em;
@@ -672,11 +672,11 @@ body {
   padding:.4em 0;
   width:63px;
 }
-/* 
-  201: Calendar bat 
-  302: 
-  502: Headquarters bat 
-*/ 
+/*
+  201: Calendar bat
+  302:
+  502: Headquarters bat
+*/
 .tx-browser-pi1 .singleview-201 .image {
   padding-bottom:1em;
 }
@@ -701,11 +701,11 @@ body {
 
 .tx-browser-pi1 .singleview li.csc-textpic-image {
   padding-right:.4em;
-} 
+}
 .tx-browser-pi1 .singleview .csc-textpic-above {
   padding-top:1em;
   overflow:hidden;
-} 
+}
   /* RECORDS, IMAGES */
 
 
@@ -759,9 +759,9 @@ body {
   padding-left:0;
 }
 
-/* 
+/*
   331: Repertoire
-*/ 
+*/
 .tx-browser-pi1 .repertoire_staff {
   font-weight:bold;
 }
@@ -779,7 +779,7 @@ body {
   /***************************************************************************************
   * CSC
   */
-  
+
 
 /*div.csc-textpic-intext-left div.csc-textpic-imagewrap {
   background:white;
@@ -823,8 +823,8 @@ dl.csc-uploads-even {
 }
 
   /* CSC */
-  
-  
+
+
 /* FORMS */
 .tx-browser-pi1 form.tx_org_cal-ticket {
   padding: 0;
