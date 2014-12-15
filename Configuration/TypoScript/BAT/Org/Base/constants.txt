@@ -1,8 +1,8 @@
 plugin.org {
   pages {
-    headquarters  = 20
-    news          =  1
-    staff         = 22
+    headquarters  = 80
+    news          =
+    staff         =
   }
   sysfolder {
     calendar      = 116

@@ -40,7 +40,7 @@ base_hfsberlin {
     htmlhead.favicon          = EXT:base_hfsberlin/Resources/Public/Images/BAT/favicon.ico
 
     # cat=HfS Berlin - BAT - Pages/page/100; type=+int; label= root page:Uid of your root page
-    pages.root                              =  1
+    pages.root                              =  5
     # cat=HfS Berlin - BAT - Pages/page/101; type=+int; label= header news:Page with the news for the header
     pages.libraries.header.news             =  200
     # cat=HfS Berlin - BAT - Pages/page/103; type=+int; label= header logos:Page with the logos for the header
@@ -48,13 +48,13 @@ base_hfsberlin {
     # cat=HfS Berlin - BAT - Pages/page/104; type=+int; label= menu:Page with the menu icon
     pages.libraries.menu                    = 83
     # cat=HfS Berlin - BAT - Pages/page/104; type=+int; label= footer:Page with content for the footer
-    pages.libraries.footer                  =  4
+    pages.libraries.footer                  =  8
     # cat=HfS Berlin - BAT - Pages/page/105; type=+int; label= right column 1. level:Sysfolder with elements for the right columns of the first level
-    pages.libraries.right_columns.level_01  =  188
+    pages.libraries.right_columns.level_01  =  201
     # cat=HfS Berlin - BAT - Pages/page/106; type=+int; label= right column 2. level:Sysfolder with elements for the right columns of the second level
-    pages.libraries.right_columns.level_02  =  187
+    pages.libraries.right_columns.level_02  =  202
     # cat=HfS Berlin - BAT - Pages/page/107; type=+int; label= right column level:Sysfolder with elements for the right columns
-    pages.margin = 188
+    pages.margin = 201
 
     # cat=HfS Berlin - BAT - records//100; type=+int; label= Display records, which have this page uid attributed.
     records.wiThisPageUid =
