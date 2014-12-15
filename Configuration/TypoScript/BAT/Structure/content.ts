@@ -16,7 +16,7 @@ base_hfsberlin {
               wrap = <div class="small-10 medium-6 columns">|</div>
             }
           }
-          20 < base_hfsberlin.menu.menuIconsBottom
+          20 < base_hfsberlin.bat.menu.menuIconsBottom
           20 {
             wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-4 columns"><ul> | </ul></div>
           }
@@ -30,7 +30,7 @@ base_hfsberlin {
               // quicknav
             10 = COA
             10 {
-              10 < base_hfsberlin.menu.menuIconsTop
+              10 < base_hfsberlin.bat.menu.menuIconsTop
               20 = HMENU
               20 {
                 special = directory
@@ -39,7 +39,7 @@ base_hfsberlin {
                 }
                 maxItems  = 1
                 begin     = 1
-                1 < base_hfsberlin.menu.tmenu
+                1 < base_hfsberlin.bat.menu.tmenu
                 1.IFSUB     >
                 1.CURIFSUB  >
                 1.ACTIFSUB  >
@@ -61,7 +61,7 @@ base_hfsberlin {
                   value = {$base_hfsberlin.pages.libraries.quicknav}
                 }
                 begin     = 2
-                1 < base_hfsberlin.menu.tmenu
+                1 < base_hfsberlin.bat.menu.tmenu
                 1.IFSUB     >
                 1.CURIFSUB  >
                 1.ACTIFSUB  >
@@ -122,7 +122,7 @@ base_hfsberlin {
             20 {
               special = list
               special.value = {$base_hfsberlin.pages.root}
-              1 < base_hfsberlin.menu.tmenu
+              1 < base_hfsberlin.bat.menu.tmenu
               1.IFSUB     >
               1.CURIFSUB  >
               1.ACTIFSUB  >
@@ -137,7 +137,7 @@ base_hfsberlin {
                  </ul>
               )
             }
-            22 < base_hfsberlin.menu.menuMain
+            22 < base_hfsberlin.bat.menu.menuMain
             23 = TEXT
             23 {
               value = <p>&nbsp;</p>
