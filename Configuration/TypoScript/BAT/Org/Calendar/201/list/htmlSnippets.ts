@@ -66,13 +66,11 @@ plugin.tx_browser_pi1 {
             listview = TEXT
             listview {
               value (
-            <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="columns listview listview-content listview-###MODE### listview-content-###MODE###">
-              <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
-              <div class="record">
-                ###TX_ORG_CAL.TITLE###
-              </div>
-              <div class="cleaner">&nbsp;</div><!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
-              </div> <!-- /listview -->
+                <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
+                  <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
+                    ###TX_ORG_CAL.TITLE###
+                  <!-- ###LISTBODYITEM### end --><!-- ###LISTBODY### end -->
+                </div> <!-- /listview -->
 )
             }
           }
