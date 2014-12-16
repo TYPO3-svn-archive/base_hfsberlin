@@ -52,7 +52,7 @@ plugin.tx_browser_pi1 {
                 item {
                   cObject {
                     20 {
-                      crop = 30 | ... | 1
+                      crop = 120 | ... | 1
                     }
                   }
                 }
@@ -80,7 +80,7 @@ plugin.tx_browser_pi1 {
                 item {
                   cObject {
                     20 {
-                      crop = 30 | ... | 1
+                      crop = 120 | ... | 1
                     }
                   }
                 }
