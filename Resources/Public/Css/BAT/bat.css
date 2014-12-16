@@ -2,9 +2,24 @@
     background-color: #B02015 !important;
     border-color: #B02015 !important;
 }
+.tx-browser-pi1 .datesheet_expired {
+  opacity:0.5;
+}
+.tx-browser-pi1 .datesheet_expired a,
+.tx-browser-pi1 .datesheet_expired a:link, 
+.tx-browser-pi1 .datesheet_expired a:visited {
+  color: #FFF;
+}
+.footer .row:nth-child(1),
 .header .main:nth-child(1),
 .maincontent > div:nth-child(1) {
   background-color:white;
+}
+.footer p {
+  border-top:1em solid #B02015;
+  font-size:0.80em;
+  margin-bottom:0;
+  text-align:center;
 }
 .header .main:nth-child(1) {
   background-color: #FFF;
@@ -17,6 +32,9 @@
 
 .maincontentleft {
   font-size:0.75em !important;
+}
+.maincontentleft ul {
+  line-height:1em !important;
 }
 
 .listview-201 h2,
@@ -32,6 +50,10 @@
 .listview-201 h3 {
   color: #FF594D;
   font-weight:bold;
+}
+.tx-browser-pi1-list-511 {
+  background-color:rgb(238,238,238);
+  font-size:0.85em;
 }
 
 /***************************************************************************************
@@ -103,6 +125,10 @@ legend {
   display:none;
 }
 
+p {
+  line-height:1.1em;
+  font-size:0.85em;
+}
 .align-center {
   text-align:center;
 }
@@ -287,6 +313,11 @@ legend {
   color:white;
 }
 
+.tx-browser-pi1 .datesheet a:active,
+.tx-browser-pi1 .datesheet a:focus,
+.tx-browser-pi1 .datesheet a:hover {
+  text-decoration:none;
+}
 /* BROWSER */
 
 
