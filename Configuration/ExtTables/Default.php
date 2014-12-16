@@ -48,7 +48,7 @@ switch( true )
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/',                          'HfS Berlin: BAT [1] +Browser');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Base/',                 'HfS Berlin: BAT [2] +Org Base');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Calendar/201/',         'HfS Berlin: BAT [3] +Org Calendar');
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Calendar/201/expired/', 'HfS Berlin: BAT [3.1] +Org Calendar +expired');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Calendar/201/list/expired/', 'HfS Berlin: BAT [3.1] +Org Calendar +expired');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Headquarters/511/',     'HfS Berlin: BAT [4] +Org Headquarters - marginal');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Debug/',                    'HfS Berlin: BAT [9] Debug');
     break;
