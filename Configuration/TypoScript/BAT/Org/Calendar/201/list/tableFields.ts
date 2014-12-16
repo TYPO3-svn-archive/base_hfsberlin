@@ -27,6 +27,7 @@ plugin.tx_browser_pi1 {
               }
                 // image
               39 >
+              40.tx_org_repertoire.10.field := prependString(tx_org_repertoire.teaser_short // tx_org_repertoire.bodytext // )
               wrap = <div class="columns small-12 medium-12 large-10">|</div>
             }
             20 {
@@ -38,3 +39,4 @@ plugin.tx_browser_pi1 {
     }
   }
 }
+
