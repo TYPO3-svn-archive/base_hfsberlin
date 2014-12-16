@@ -1,6 +1,17 @@
-.header .main,
+.tx-browser-pi1 .datesheet {
+    background-color: #B02015 !important;
+    border-color: #B02015 !important;
+}
+.header .main:nth-child(1),
 .maincontent > div:nth-child(1) {
   background-color:white;
+}
+.header .main:nth-child(1) {
+  background-color: #FFF;
+  background-image: url("background/line_red_780.gif");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  padding-bottom:2em;
 }
 
 /***************************************************************************************
