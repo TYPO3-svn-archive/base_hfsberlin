@@ -12,6 +12,26 @@
   background-position: bottom;
   background-repeat: repeat-x;
   padding-bottom:2em;
+  padding-top:1em;
+}
+
+.maincontentleft {
+  font-size:0.75em !important;
+}
+
+.listview-201 h2,
+.listview-201 h3 {
+  font-size:1em !important;
+  margin:0;
+}
+.listview-201 h2,
+.listview-201 h3,
+.listview-201 p {
+  line-height:1em !important;
+}
+.listview-201 h3 {
+  color: #FF594D;
+  font-weight:bold;
 }
 
 /***************************************************************************************
