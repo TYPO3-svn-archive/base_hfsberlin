@@ -10,6 +10,7 @@ plugin.tx_browser_pi1 {
               value (
               <div class="row filter">
                 ###TX_ORG_CAL.DATETIME###
+                ###TX_ORG_CALTYPE.TITLE###
                 ###TX_ORG_CAL.TITLE###
               </div>
 )

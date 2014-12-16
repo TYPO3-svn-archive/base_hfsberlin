@@ -21,11 +21,36 @@ plugin.tx_browser_pi1 {
                 value = ###SOCIALMEDIA_BOOKMARKS###
                 wrap = <div style="float:right;">|</div>
               }
+                // datetime, caltype
+              19 = COA
+              19 {
+                  // datetime
+                10 = TEXT
+                10 {
+                  field     = tx_org_cal.datetime
+                  strftime  = %A, %d. %B, %H:%M Uhr
+                }
+                  // caltype
+                20 = TEXT
+                20 {
+                  required    = 1
+                  noTrimWrap  = | - ||
+                  field       = tx_org_caltype.title
+                }
+                wrap = <div class="cal_datetime">|</div>
+              }
                 // title: default, notype, page, url, tx_org_event
               20 < plugin.tx_browser_pi1.displayList.master_templates.tableFields.header.0
               20 {
                   // link to tx_org_event
                 tx_org_event < .default
+              }
+                // tx_org_cal.subtitle
+              21 = TEXT
+              21 {
+                field = tx_org_repertoire.teaser_subtitle // tx_org_repertoire.subtitle // tx_org_cal.teaser_subtitle // tx_org_cal.subtitle
+                wrap = <h3>|</h3>
+                required = 1
               }
                 // tx_org_caltype.title
               30 = COA
@@ -90,12 +115,12 @@ plugin.tx_browser_pi1 {
                   field = tx_org_location.mail_city
                 }
               }
-              wrap = <div class="columns small-12 medium-12 large-10">|</div>
+              wrap = <div class="columns medium-12 large-9">|</div>
             }
               // margin: datesheet
             20 = COA
             20 {
-              wrap = <div class="columns small-12 medium-12 large-2">|</div>
+              wrap = <div class="columns medium-12 large-3">|</div>
               10 = COA
               10 {
                 if {

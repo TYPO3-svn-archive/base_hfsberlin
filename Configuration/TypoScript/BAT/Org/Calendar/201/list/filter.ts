@@ -59,6 +59,33 @@ plugin.tx_browser_pi1 {
               }
             }
           }
+          tx_org_caltype {
+            title < plugin.tx_browser_pi1.displayList.master_templates.selectbox
+            title {
+              first_item {
+                cObject {
+                  20 {
+                    data >
+                    value = All Categeories
+                    lang {
+                      de = Alle Kategorien
+                      en = All Categeories
+                    }
+                    append >
+                  }
+                }
+              }
+              wrap = <div class="columns"><div class="selectbox">|</div></div>
+              wrap {
+                item {
+                  cObject {
+                    20 {
+                      crop = 30 | ... | 1
+                    }
+                  }
+                }
+              }
+            }
         }
       }
     }
