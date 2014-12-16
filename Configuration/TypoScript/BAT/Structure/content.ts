@@ -15,12 +15,12 @@ base_hfsberlin {
           10 {
             select.pidInList = {$base_hfsberlin.bat.pages.libraries.footer}
             stdWrap {
-              wrap = <div class="small-12 medium-8 columns">|</div>
+              wrap = <div class="small-10 medium-8 columns">|</div>
             }
           }
           20 < base_hfsberlin.bat.menu.menuIconsBottom
           20 {
-            wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-4 columns"><ul> | </ul></div>
+            wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-2 columns"><ul> | </ul></div>
           }
           wrap = <div class="row"><footer>|</footer></div>
         }

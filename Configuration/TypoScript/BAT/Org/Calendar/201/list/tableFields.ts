@@ -28,10 +28,10 @@ plugin.tx_browser_pi1 {
                 // image
               39 >
               40.tx_org_repertoire.10.field := prependString(tx_org_repertoire.teaser_short // tx_org_repertoire.bodytext // )
-              wrap = <div class="columns small-12 medium-12 large-10">|</div>
+              wrap = <div class="columns small-10 medium-10 large-8">|</div>
             }
             20 {
-              wrap = <div class="columns small-12 medium-12 large-2">|</div>
+              wrap = <div class="columns small-10 medium-10 large-2">|</div>
             }
           }
         }
