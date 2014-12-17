@@ -55,7 +55,7 @@ plugin.tx_browser_pi1 {
                     // select: tx_org_calentrance
                   20 = COA
                   20 {
-                    wrap = <div class="small-10 large-4 columns">|</div>
+                    wrap = <div class="small-10 large-6 columns">|</div>
                       // select
                     10 = TEXT
                     10 {
