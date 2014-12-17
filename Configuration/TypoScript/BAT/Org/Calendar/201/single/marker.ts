@@ -2,10 +2,10 @@ plugin.tx_browser_pi1 {
   marker {
     my_singleviewbackbutton {
       30 {
-        value = Calendar
+        value = Spielplan
         lang {
-          de = Kalender
-          en = Calendar
+          de = Spielplan
+          en = Spielplan
         }
         typolink {
           parameter = {$plugin.org.pages.calendar}
