@@ -9,7 +9,7 @@ config {
 )
 
   language        = de
-  locale_all = de_DE
+  locale_all      = de_DE
   metaCharset     = UTF-8
   doctype         = html5
   xmlprologue     = none
