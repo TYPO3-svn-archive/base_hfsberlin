@@ -10,21 +10,23 @@ plugin.tx_browser_pi1 {
               value (
                 <!-- ###SINGLEVIEW### begin --><!-- ###SINGLEBODY### begin --><!-- ###SINGLEBODYROW### begin -->
                 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
-                <div class="margin columns small-12 medium-12 large-4">
+                <div class="margin columns small-10 medium-10 large-2">
                   ###MAP###
                   <div class="row">
-                    <div class="columns small-12 medium-12 large-4">
+                    <div class="columns small-10 medium-10 large-2">
                       ###TX_ORG_CAL.DATETIME###<!-- datesheet -->
                     </div>
-                    <div class="columns small-12 medium-12 large-8">
+                    <div class="columns small-10 medium-10 large-8">
                       ###TX_ORG_CAL.DELETED###<!-- tx_org_location -->
                     </div>
-                    <div class="columns small-12 medium-12 large-12">
+                  </div>
+                  <div class="row">
+                    <div class="columns">
                       ###TX_ORG_CAL.CRDATE###<!-- form for tickets -->
                     </div>
                   </div>
                 </div>
-                <div class="main columns small-12 medium-12 large-8">
+                <div class="main columns small-10 medium-10 large-8">
                   ###RECORD_BROWSER###
                   ###TX_ORG_CAL.TITLE###
                   <!-- ###AREA_FOR_AJAX_LIST_01### end -->
