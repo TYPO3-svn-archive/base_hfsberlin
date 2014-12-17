@@ -55,7 +55,7 @@ plugin.tx_browser_pi1 {
                     // select: tx_org_calentrance
                   20 = COA
                   20 {
-                    wrap = <div class="small-10 large-8 columns">|</div>
+                    wrap = <div class="small-10 large-4 columns">|</div>
                       // select
                     10 = TEXT
                     10 {
@@ -107,10 +107,11 @@ plugin.tx_browser_pi1 {
                       data >
                       value = &raquo;
                       lang {
-                        de = &raquo;
+                        en = Booking &raquo;
+                        de = Reservieren &raquo;
                       }
                     }
-                    wrap = <div class="small-10 large-1 columns">|</div>
+                    wrap = <div class="small-10 large-3 columns">|</div>
                   }
                 }
               }

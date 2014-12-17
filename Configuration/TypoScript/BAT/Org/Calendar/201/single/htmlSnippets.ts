@@ -12,10 +12,10 @@ plugin.tx_browser_pi1 {
                 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
                 <div class="columns">
                   <div class="row">
-                    <div class="columns small-10 medium-10 large-3">
+                    <div class="columns small-10 medium-10 large-2">
                       ###TX_ORG_CAL.DATETIME###<!-- datesheet -->
                     </div>
-                    <div class="columns small-10 medium-10 large-7">
+                    <div class="columns small-10 medium-10 large-4 end">
                       ###TX_ORG_CAL.DELETED###<!-- tx_org_location -->
                     </div>
                   </div>
