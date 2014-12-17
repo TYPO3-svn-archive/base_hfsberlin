@@ -12,10 +12,10 @@ plugin.tx_browser_pi1 {
                 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
                 <div class="columns">
                   <div class="row">
-                    <div class="columns small-10 medium-10 large-2">
+                    <div class="columns large-2">
                       ###TX_ORG_CAL.DATETIME###<!-- datesheet -->
                     </div>
-                    <div class="columns small-10 medium-10 large-4 end">
+                    <div class="columns large-4 end">
                       ###TX_ORG_CAL.DELETED###<!-- tx_org_location -->
                     </div>
                   </div>
@@ -25,16 +25,17 @@ plugin.tx_browser_pi1 {
                     </div>
                   </div>
                   <div class="row">
-                  <div class="main columns small-10 medium-10 large-6">
-                    ###RECORD_BROWSER###
-                    ###TX_ORG_CAL.TITLE###
-                    <!-- ###AREA_FOR_AJAX_LIST_01### end -->
-                    <!-- ###BACKBUTTON### begin -->
-                    <p class="backbutton">
-                      ###MY_SINGLEVIEWBACKBUTTON###
-                    </p>
-                    <!-- ###BACKBUTTON### end -->
-                    <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+                    <div class="columns">
+                      ###RECORD_BROWSER###
+                      ###TX_ORG_CAL.TITLE###
+                      <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+                      <!-- ###BACKBUTTON### begin -->
+                      <p class="backbutton">
+                        ###MY_SINGLEVIEWBACKBUTTON###
+                      </p>
+                      <!-- ###BACKBUTTON### end -->
+                      <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
+                    </div>
                   </div>
                 </div>
                 <!-- ###AREA_FOR_AJAX_LIST_02### end -->
