@@ -27,15 +27,17 @@ plugin.tx_browser_pi1 {
                   <div class="row">
                     <div class="columns">
                       ###RECORD_BROWSER###
-                      ###TX_ORG_CAL.TITLE###
-                      <!-- ###AREA_FOR_AJAX_LIST_01### end -->
-                      <!-- ###BACKBUTTON### begin -->
-                      <p class="backbutton">
-                        ###MY_SINGLEVIEWBACKBUTTON###
-                      </p>
-                      <!-- ###BACKBUTTON### end -->
-                      <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
                     </div>
+                  </div>
+                  <div class="row">
+                    ###TX_ORG_CAL.TITLE###
+                    <!-- ###AREA_FOR_AJAX_LIST_01### end -->
+                    <!-- ###BACKBUTTON### begin -->
+                    <p class="backbutton">
+                      ###MY_SINGLEVIEWBACKBUTTON###
+                    </p>
+                    <!-- ###BACKBUTTON### end -->
+                    <!-- ###AREA_FOR_AJAX_LIST_02### begin -->
                   </div>
                 </div>
                 <!-- ###AREA_FOR_AJAX_LIST_02### end -->
