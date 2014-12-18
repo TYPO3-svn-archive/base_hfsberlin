@@ -8,10 +8,10 @@ plugin.tx_caddy_pi1 {
           wrap = <span class="small-7 large-7 columns">|</span>
         }
         30 {
-          wrap  = <span class="small-2 large-2 columns">|</span>
+          wrap  = <span class="small-1 large-1 columns">|</span>
         }
         40 {
-          wrap = <span class="small-2 large-2 columns caddy-right">|</span>
+          wrap = <span class="small-1 large-1 columns caddy-right">|</span>
         }
         50 {
           wrap  = <span class="small-1 large-1 columns">|</span>
