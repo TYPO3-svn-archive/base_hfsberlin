@@ -1,0 +1,25 @@
+plugin.caddy {
+  html {
+    powermail {
+      classes {
+        buttonWrap  = large-5 columns
+        fieldsWrap  = large-5 columns
+        tab         = columns small-5 medium-5 large-5
+      }
+    }
+  }
+  options {
+    payment {
+      default = 4
+      1 {
+        enabled = 0
+      }
+      2 {
+        enabled = 0
+      }
+      3 {
+        enabled = 0
+      }
+    }
+  }
+}
