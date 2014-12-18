@@ -73,7 +73,7 @@ plugin.tx_caddy_pi1 {
           }
           noTrimWrap = ||: |
         }
-          // quantity, item || items
+          // quantity, item || itemsConfiguration/TypoScript/BAT/Caddy/constants.txt
         20 = COA
         20 {
             // quantity
