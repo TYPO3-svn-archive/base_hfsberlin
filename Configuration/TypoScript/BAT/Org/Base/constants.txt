@@ -1,3 +1,21 @@
+  /////////////////////////////////////////
+  //
+  // plugin.caddy
+  // plugin.org
+
+plugin.caddy {
+  pages {
+    caddy       = 380
+    caddymini   = 381
+    revocation  =
+    shop        =   5
+    terms       = 112
+  }
+  url {
+    showUid = calendarUid
+  }
+}
+
 plugin.org {
   pages {
     calendar          =    5
