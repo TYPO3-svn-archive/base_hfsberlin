@@ -50,10 +50,10 @@ switch( true )
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Calendar/201/',         'HfS Berlin: BAT [3] +Org Calendar');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Calendar/201/list/outOfDate/', 'HfS Berlin: BAT [3.1] +Org Calendar out of date');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Org/Headquarters/511/',     'HfS Berlin: BAT [4] +Org Headquarters - marginal');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Caddy/',                    'HfS Berlin: BAT [6] +Caddy');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/BAT/Debug/',                    'HfS Berlin: BAT [9] Debug');
     break;
 }
-
 
 /* * ****************************************************************************
  * Add pagetree icons
