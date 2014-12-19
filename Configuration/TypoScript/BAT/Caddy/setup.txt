@@ -1,2 +1,13 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Caddy/htmlmarker.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Caddy/Foundation/_setup.ts">
+plugin.tx_caddy_pi1 {
+  _HTMLMARKER {
+    caddy_bankaccount {
+      4 {
+        value = Please pay the tickets on pick up.
+        lang {
+          de = Bitte bezahlen Sie die Karten bei der Abholung.
+          en = Please pay the tickets on pick up.
+        }
+      }
+    }
+  }
+}
