@@ -1,5 +1,13 @@
 plugin.caddy {
   html {
+    accordion {
+      classes {
+        column {
+          1 = small-1 large-1 columns
+          2 = small-1 large-1 columns caddy-right
+        }
+      }
+    }
     powermail {
       classes {
         buttonWrap  = large-5 columns
@@ -20,6 +28,11 @@ plugin.caddy {
       3 {
         enabled = 0
       }
+    }
+  }
+  templates {
+    html {
+      caddy = EXT:base_hfsberlin/Resources/Public/Html/Caddy/caddy.html
     }
   }
 }
