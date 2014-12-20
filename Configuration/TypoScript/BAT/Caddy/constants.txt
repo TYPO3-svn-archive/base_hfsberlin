@@ -12,8 +12,8 @@ plugin.caddy {
       classes {
         column {
           0 = large-2 columns
-          1 = large-5 columns
-          2 = large-5 columns caddy-right
+          1 = large-4 columns
+          2 = large-4 columns caddy-right
         }
       }
     }
