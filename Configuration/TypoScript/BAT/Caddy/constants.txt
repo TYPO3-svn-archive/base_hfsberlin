@@ -9,8 +9,10 @@ plugin.caddy {
       }
     }
     color {
-      icon.caddy            = EXT:caddy/Resources/Public/Images/ticket_booked.png
-      icon.caddyempty       = EXT:caddy/Resources/Public/Images/ticket.png
+      icon {
+        caddy      = EXT:caddy/Resources/Public/Images/ticket_booked.gif
+        caddyempty = EXT:caddy/Resources/Public/Images/ticket.gif
+      }
     }
     minicaddy {
       classes {
