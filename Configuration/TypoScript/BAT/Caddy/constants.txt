@@ -3,8 +3,17 @@ plugin.caddy {
     accordion {
       classes {
         column {
-          1 = small-1 large-1 columns
-          2 = small-1 large-1 columns caddy-right
+          1 = large-1 columns
+          2 = large-1 columns caddy-right
+        }
+      }
+    }
+    minicaddy {
+      classes {
+        column {
+          0 = large-2 columns
+          1 = large-5 columns
+          2 = large-5 columns caddy-right
         }
       }
     }
@@ -12,7 +21,7 @@ plugin.caddy {
       classes {
         buttonWrap  = large-5 columns
         fieldsWrap  = large-5 columns
-        tab         = columns small-5 medium-5 large-5
+        tab         = large-5 columns
       }
     }
   }
