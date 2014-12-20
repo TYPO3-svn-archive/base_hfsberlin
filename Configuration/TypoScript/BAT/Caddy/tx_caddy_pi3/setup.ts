@@ -21,4 +21,9 @@ plugin.tx_caddy_pi3 {
       }
     }
   }
+  _HTMLMARKER {
+    linktocaddy {
+      10 >
+    }
+  }
 }
