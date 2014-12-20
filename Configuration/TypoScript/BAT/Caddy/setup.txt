@@ -1,13 +1,2 @@
-plugin.tx_caddy_pi1 {
-  _HTMLMARKER {
-    caddy_bankaccount {
-      4 {
-        value = Please pay the tickets on pick up.
-        lang {
-          de = Bitte bezahlen Sie die Karten bei der Abholung.
-          en = Please pay the tickets on pick up.
-        }
-      }
-    }
-  }
-}
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/tx_browser_pi1/_setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/tx_browser_pi3/_setup.ts">
