@@ -1,3 +1,4 @@
+
 .tx-browser-pi1 .datesheet {
     background-color: #B02015 !important;
     border-color: #B02015 !important;
@@ -10,6 +11,10 @@
 .tx-browser-pi1 .datesheet_expired a:visited {
   color: #FFF;
 }
+.tx-browser-pi1-single-201 ul.tx_org_location {
+  margin-top:1.7em;
+}
+
 .footer .row:nth-child(1),
 .header .main:nth-child(1),
 .maincontent > div:nth-child(1) {
@@ -38,16 +43,27 @@
 }
 
 .listview-201 h2,
-.listview-201 h3 {
+.listview-201 h3,
+.singleview-201 h1,
+.singleview-201 h2 {
   font-size:1em !important;
+  font-weight:bold;
   margin:0;
 }
+.singleview-201 h1 {
+  color:#B02015;
+}
+
 .listview-201 h2,
 .listview-201 h3,
-.listview-201 p {
+.listview-201 p,
+.singleview-201 h1,
+.singleview-201 h2,
+.singleview-201 p {
   line-height:1em !important;
 }
-.listview-201 h3 {
+.listview-201 h3,
+.singleview-201 h2 {
   color: #FF594D;
   font-weight:bold;
 }
@@ -56,6 +72,9 @@
   font-size:0.85em;
 }
 
+.sub-nav dt {
+  display:none;
+}
 /***************************************************************************************
 * INITIAL
 */
@@ -91,14 +110,14 @@ h1 {
   line-height:1em;
   margin: 1em 0 .4em 0;
 }
-.csc-header-n1 h1,
+/*.csc-header-n1 h1,
 .csc-header-n1 h2,
 .csc-header-n1 h3 {
   margin: 0 0 .4em 0;
 }
 .csc-header-n2 h1 {
   margin: .4em 0 .4em 0;
-}
+}*/
 h2 {
   font-size: 1.4em;
   line-height:1em;
