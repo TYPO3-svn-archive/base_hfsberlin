@@ -10,7 +10,7 @@ plugin.tx_browser_pi1 {
               first_item {
                 cObject {
                   20 {
-                    data = >
+                    data >
                     value = Unit
                     lang {
                       de = Bereich
