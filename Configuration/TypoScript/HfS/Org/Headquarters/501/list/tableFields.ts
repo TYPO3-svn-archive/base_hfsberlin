@@ -2,25 +2,11 @@ plugin.tx_browser_pi1 {
   views {
     list {
       501 {
+        tx_org_headquarters >
         tx_org_headquarters {
-            // placeholder: radialsearch HTML class depending on radius
-          crdate < plugin.tx_radialsearch.masterTemplates.htmlClass
-            // placeholder: radialsearch linear distance
-          deleted < plugin.tx_radialsearch.masterTemplates.linearDistanceString
             // image, bookmarks; name, bodytext || vita
           title = COA
           title {
-              // image
-            10 = COA
-            10 {
-                // image
-              10 = COA
-              10 {
-                10 < plugin.tx_browser_pi1.displayList.master_templates.tableFields.image.0
-                wrap = <div>|</div>
-              }
-              wrap = <div class="show-for-large-up columns small-12 medium-12 large-4">|</div>
-            }
               // bookmarks, title, subline
             20 = COA
             20 {
@@ -81,7 +67,7 @@ plugin.tx_browser_pi1 {
                   // link to the single view (record), internal page, external URL or no link (empty value)
                 30 < plugin.tx_browser_pi1.displayList.master_templates.tableFields.details.0
               }
-              wrap = <div class="columns small-12 medium-12 large-8">|</div>
+              wrap = <div class="columns">|</div>
             }
             wrap = <div class="row">|</div>
           }
