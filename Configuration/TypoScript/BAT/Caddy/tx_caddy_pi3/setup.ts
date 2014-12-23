@@ -25,9 +25,33 @@ plugin.tx_caddy_pi3 {
     linktocaddy {
       30 < plugin.tx_caddy_pi3._HTMLMARKER.linktocaddy.10
       10 >
+      20 {
+        altText {
+          data >
+          value = send the booking
+          lang {
+            de = Reservierung absenden
+            en = send the booking
+          }
+        }
+        titleText >
+        titleText < . altText
+      }
     }
     linktoshop {
       10 >
+      20 {
+        altText {
+          data >
+          value = book a ticket
+          lang {
+            de = Tickets reservieren
+            en = book a ticket
+          }
+        }
+        titleText >
+        titleText < . altText
+      }
     }
   }
 }
