@@ -50,7 +50,7 @@ plugin.tx_caddy_pi3 {
           }
         }
         titleText >
-        titleText < . altText
+        titleText < .altText
       }
     }
   }
