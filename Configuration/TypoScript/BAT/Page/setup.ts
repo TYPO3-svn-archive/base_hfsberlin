@@ -42,3 +42,5 @@ page {
     base_hfsberlin_bat = {$base_hfsberlin.bat.path.css.styles}
   }
 }
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Page/Foundation/setup.ts">
