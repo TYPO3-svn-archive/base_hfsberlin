@@ -7,6 +7,18 @@ plugin.tx_browser_pi1 {
           tx_org_headquarterscat >
           tx_org_headquarters {
             title {
+              first_item {
+                cObject {
+                  20 {
+                    data = >
+                    value = Unit
+                    lang {
+                      de = Bereich
+                      en = Unit
+                    }
+                  }
+                }
+              }
               wrap = <div class="columns category_menu category_menu_treeview">|</div>
             }
           }
