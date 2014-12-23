@@ -1,7 +1,7 @@
 plugin.tx_browser_pi1 {
   views {
     list {
-      201 {
+      501 {
         htmlSnippets >
         htmlSnippets {
           marker {
