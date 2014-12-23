@@ -1,4 +1,6 @@
-
+.caddymini .sum {
+  padding:0 !important;
+}
 .tx-browser-pi1 .datesheet {
     background-color: #B02015 !important;
     border-color: #B02015 !important;
