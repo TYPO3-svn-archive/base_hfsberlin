@@ -10,8 +10,8 @@ plugin.caddy {
     }
     color {
       icon {
-        caddy      = EXT:caddy/Resources/Public/Images/ticket_booked.gif
-        caddyempty = EXT:caddy/Resources/Public/Images/ticket.gif
+        caddy = EXT:caddy/Resources/Public/Images/ticket_booked.gif
+        shop  = EXT:caddy/Resources/Public/Images/ticket.gif
       }
     }
     minicaddy {
