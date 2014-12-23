@@ -64,8 +64,6 @@ plugin.tx_browser_pi1 {
                   field = tx_org_headquarters.mail_city
                   noTrimWrap = || |
                 }
-                  // link to the single view (record), internal page, external URL or no link (empty value)
-                30 < plugin.tx_browser_pi1.displayList.master_templates.tableFields.details.0
               }
               wrap = <div class="columns">|</div>
             }
