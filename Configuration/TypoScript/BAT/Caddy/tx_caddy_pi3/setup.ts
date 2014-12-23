@@ -23,7 +23,7 @@ plugin.tx_caddy_pi3 {
   }
   _HTMLMARKER {
     linktocaddy {
-      30 < plugin.tx_caddy_pi3._HTMLMARKER.linktocaddy.10
+      XX30 < plugin.tx_caddy_pi3._HTMLMARKER.linktocaddy.10
       10 >
       20 {
         altText {
