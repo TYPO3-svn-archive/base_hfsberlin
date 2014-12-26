@@ -91,7 +91,7 @@ base_hfsberlin {
             }
             stdWrap {
               required  = 1
-              wrap      = <!--contentmain--><!--TYPO3SEARCH_begin--><section class="content contentmain"><div class="row"><div class="small-10 columns"> |</div></div></section><!--TYPO3SEARCH_end--><!--/contentmain-->
+              wrap      = <!--contentmain--><!--TYPO3SEARCH_begin--><section class="content contentmain"><div class="row"><div class="columns"> |</div></div></section><!--TYPO3SEARCH_end--><!--/contentmain-->
             }
           }
         }
