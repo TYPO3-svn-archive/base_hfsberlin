@@ -38,7 +38,6 @@ plugin.tx_browser_pi1 {
                 10 = TEXT
                 10 {
                   field = {$plugin.tx_browser_pi1.templates.singleview.image.0.imagecols}
-                  // #i0003, dwildt, 1-: wrap = <div class="columns large-10 above-center"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
                 }
                   // image
                 20 < plugin.tx_browser_pi1.displaySingle.master_templates.tableFields.image.0
@@ -49,48 +48,6 @@ plugin.tx_browser_pi1 {
                 30 = TEXT
                 30 {
                   value = </ul></div>
-                }
-              }
-              // above-right: div.column ul.block-grid image /ul /div
-              1 < .0
-              1 {
-                10 {
-                  wrap = <div class="columns large-5 large-offset-5 above-right"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // above-left: div.column ul.block-grid
-              2 < .0
-              2 {
-                10 {
-                  wrap = <div class="columns large-5 above-left"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // intext-right: div.columns ul.block-grid
-              17 < .0
-              17 {
-                10 {
-                  wrap = <div class="columns large-3 large-push-7 intext-right"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // intext-left: div.columns ul.block-grid
-              18 < .0
-              18 {
-                10 {
-                  wrap = <div class="columns large-3 intext-left"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // intext-right-nowrap: div.columns ul.block-grid
-              25 < .0
-              25 {
-                10 {
-                  wrap = <div class="columns large-3 large-push-7 intext-right-nowrap"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // intext-left-nowrap: div.columns ul.block-grid
-              26 < .0
-              26 {
-                10 {
-                  wrap = <div class="columns large-3 intext-left-nowrap"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
                 }
               }
             }
@@ -104,56 +61,6 @@ plugin.tx_browser_pi1 {
               default = TEXT
               default {
                 value =
-              }
-              // above-center: div.columns
-              0 = COA
-              0 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // above-right: div.columns
-              1 < .0
-              1 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // above-left: div.columns
-              2 < .0
-              2 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // below-center: div.columns
-              8 < .0
-              8 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // below-right: div.columns
-              9 < .0
-              9 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // below-left: div.columns
-              10 < .0
-              10 {
-                wrap = <div class="columns large-10">|</div>
-              }
-              // intext-right: div.columns
-              17 < .0
-              17 {
-                wrap = <div class="columns large-7 large-pull-3">|</div>
-              }
-              // intext-left: div.columns
-              18 < .0
-              18 {
-                wrap = <div class="columns large-7">|</div>
-              }
-              // intext-right-nowrap: div.columns
-              25 < .0
-              25 {
-                wrap = <div class="columns large-7 large-pull-3">|</div>
-              }
-              // intext-left-nowrap: div.columns
-              26 < .0
-              26 {
-                wrap = <div class="columns large-7">|</div>
               }
             }
               // image in case of: below ...
@@ -173,7 +80,6 @@ plugin.tx_browser_pi1 {
                 10 = TEXT
                 10 {
                   field = {$plugin.tx_browser_pi1.templates.singleview.image.0.imagecols}
-                  wrap = <div class="columns large-10 below-center"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
                 }
                   // image
                 20 < plugin.tx_browser_pi1.displaySingle.master_templates.tableFields.image.0
@@ -184,20 +90,6 @@ plugin.tx_browser_pi1 {
                 30 = TEXT
                 30 {
                   value = </ul></div>
-                }
-              }
-              // below-right: div.column ul.block-grid
-              9 < .8
-              9 {
-                10 {
-                  wrap = <div class="columns large-5 large-offset-5 below-right"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
-                }
-              }
-              // below-left: div.column ul.block-grid
-              10 < .8
-              10 {
-                10 {
-                  wrap = <div class="columns large-5 below-left"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
                 }
               }
             }

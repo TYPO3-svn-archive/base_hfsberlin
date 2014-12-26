@@ -15,9 +15,6 @@ base_hfsberlin {
           20 < styles.content.get
           20 {
             select.pidInList = {$base_hfsberlin.hfs.pages.libraries.footer}
-            stdWrap {
-              // #i0003, dwildt, 1-: wrap = <div class="small-10 medium-6 columns">|</div>
-            }
           }
           wrap = <div class="row"><footer class="columns">|</footer></div>
         }
