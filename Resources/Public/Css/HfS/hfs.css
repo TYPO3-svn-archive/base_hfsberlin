@@ -100,6 +100,7 @@ p {
   text-align:left;
   /*    width: 600px;*/
 }
+#nav_icons_bottom,
 #nav_icons_top {
   float:right;
 }
@@ -201,8 +202,8 @@ footer a:visited,
 #box_menu ol,
 #quicknav ul,
 #quicknav ol,
-#nav_icons_bottom ul,
-#nav_icons_bottom ol {
+footer ul,
+footer ol {
   color:white;
   font-size:0.85em;
   list-style:none;
@@ -217,7 +218,7 @@ footer a:visited,
 #quicknav ol {
   color:#AAA;
 }
-#nav_icons_bottom ul {
+footer ul {
   float:right;
 }
 #box_menu ul ul,
@@ -233,7 +234,7 @@ footer a:visited,
 
 #box_menu li,
 #quicknav li,
-#nav_icons_bottom li {
+footer li {
   background-repeat: no-repeat;
   background-position: 0 .1em;
   line-height:1.2em;
@@ -241,7 +242,7 @@ footer a:visited,
   padding-left: 1.2em;
 }
 #quicknav li,
-#nav_icons_bottom li {
+footer li {
   border-left:1px solid white;
   float:left;
   padding: 0 .6em;
@@ -251,19 +252,19 @@ footer a:visited,
 }
 #quicknav li.firstitem,
 #nav_icons_top li,
-#nav_icons_bottom li {
+footer li {
   border-left:0;
   padding-left: 0;
 }
 #nav_icons_top li.last,
-#nav_icons_bottom li.last {
+footer li.last {
   border-left:1px solid white;
   padding: 0 0 0 .6em;
 }
-#nav_icons_bottom {
+footer {
   font-size: .85em;
 }
-#nav_icons_bottom a {
+footer a {
   color: #AAA;
 }
 
