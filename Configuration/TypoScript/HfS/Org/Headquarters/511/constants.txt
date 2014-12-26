@@ -4,11 +4,11 @@ plugin.tx_browser_pi1 {
       url {
         2 {
           key       = tx_org_headquarters.type
-          page      = tx_org_headquarters.page
-          record    = tx_org_headquarters.uid
+          page      = tx_org_headquarters.page  // page
+          record    = tx_org_headquarters.uid // uid
           showUid   = headquartersUid
           #singlePid =
-          url       = tx_org_headquarters.url
+          url       = tx_org_headquarters.url // url
         }
       }
     }
