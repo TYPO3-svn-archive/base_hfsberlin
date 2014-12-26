@@ -1,3 +1,7 @@
+.caddymini {
+  margin:1em 0 0 0 !important;
+  padding:inherit !important;
+}
 .caddymini .sum {
   padding:0 !important;
 }
@@ -69,9 +73,20 @@
   color: #FF594D;
   font-weight:bold;
 }
+.tx-browser-pi1-list-211,
 .tx-browser-pi1-list-511 {
-  background-color:rgb(238,238,238);
+  background-color:#E3E3E3;
   font-size:0.85em;
+  margin-bottom:1em !important;
+}
+.tx-browser-pi1-list-211 .datetime {
+  font-weight:bold;
+  padding-top:1em;
+}
+.tx-browser-pi1-list-211 .linkToList,
+.tx-browser-pi1-list-511 .linkToList {
+  padding-top:1em;
+  text-align:right;
 }
 
 .sub-nav dt {
