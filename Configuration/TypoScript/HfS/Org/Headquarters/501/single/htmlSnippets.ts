@@ -10,7 +10,7 @@ plugin.tx_browser_pi1 {
               value (
                 <!-- ###SINGLEVIEW### begin --><!-- ###SINGLEBODY### begin --><!-- ###SINGLEBODYROW### begin -->
                 <!-- ###AREA_FOR_AJAX_LIST_01### begin -->
-                <div class="columns small-12 medium-12 large-3">
+                <div class="columns">
                   ###MAP###
                   ###RECORD_BROWSER###
                   ###TX_ORG_HEADQUARTERS.TITLE###
