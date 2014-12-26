@@ -8,10 +8,6 @@
 #box_margin .tx_org_staff_name {
   padding-left:0;
 }
-#headerimage {
-  left:-0.9375rem;
-  position:relative;
-}
 .hfsnewsdate {
   float:left;
   font-size:0.85em;
@@ -98,9 +94,9 @@ p {
   background-color:#333;
   height:1.4em;
   font-size:0.85em;
-  left: -15px;
+  /*left: -15px;*/
   padding:0.2em 0.9375rem;
-  position:relative;
+  /*position:relative;*/
   text-align:left;
   /*    width: 600px;*/
 }
@@ -112,9 +108,9 @@ footer {
   background-color: #333;
   color:#AAA;
   height:1.4em;
-  left:-15px;
+  /*left:-15px;*/
   padding-top:0.2em;
-  position:relative;
+  /*position:relative;*/
 }
 footer p {
   font-size:.75em;
@@ -144,11 +140,11 @@ footer p {
 #box_margin .tx-browser-pi1-list {
   margin-bottom:1em;
 }
-.contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
-  /*width: 600px;*/
+/*.contentmain > .row:nth-child(1) > .columns:nth-child(1) > .csc-default:nth-child(1) {
+  width: 600px;
   left: -15px;
   position: relative;
-}
+}*/
 
 
 /***************************************************************************************
