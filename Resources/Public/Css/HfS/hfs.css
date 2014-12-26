@@ -30,6 +30,15 @@ body {
   body {
     background-image:url(Images/hfs_logo.gif);
   }
+  #box_content {
+    width:60%
+  }
+  #box_menu {
+    width:20%
+  }
+  #box_margin {
+    width:20%
+  }
 }
 
 a,
