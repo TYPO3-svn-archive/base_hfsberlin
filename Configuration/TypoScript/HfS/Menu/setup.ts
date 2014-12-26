@@ -236,7 +236,7 @@ base_hfsberlin {
 
     menu.menuIconsBottom < base_hfsberlin.hfs.menu.menuIcons
     menu.menuIconsBottom {
-      wrap = <div id="nav_icons_bottom"><ul> | </ul></div>
+      wrap = <ul id="nav_icons_bottom"> | </ul>
     }
       // menu.menuIcons, menu.menuIconsTop, menu.menuIconsBottom
   }

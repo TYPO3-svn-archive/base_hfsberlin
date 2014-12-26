@@ -11,18 +11,15 @@ base_hfsberlin {
       content {
         footer = COA
         footer {
-          10 < styles.content.get
-          10 {
+          10 < base_hfsberlin.hfs.menu.menuIconsBottom
+          20 < styles.content.get
+          20 {
             select.pidInList = {$base_hfsberlin.hfs.pages.libraries.footer}
             stdWrap {
               // #i0003, dwildt, 1-: wrap = <div class="small-10 medium-6 columns">|</div>
             }
           }
-          20 < base_hfsberlin.hfs.menu.menuIconsBottom
-          20 {
-            wrap = <div id="nav_icons_bottom" class="show-for-medium-up medium-4 columns"><ul> | </ul></div>
-          }
-          wrap = <div class="row"><footer>|</footer></div>
+          wrap = <div class="row"><footer class="columns">|</footer></div>
         }
         main = COA
         main {
