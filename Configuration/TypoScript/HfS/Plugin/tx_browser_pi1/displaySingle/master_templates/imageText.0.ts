@@ -38,7 +38,7 @@ plugin.tx_browser_pi1 {
                 10 = TEXT
                 10 {
                   field = {$plugin.tx_browser_pi1.templates.singleview.image.0.imagecols}
-                  wrap = <div class="columns large-10 above-center"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
+                  // #i0003, dwildt, 1-: wrap = <div class="columns large-10 above-center"><ul class="clearing-thumbs small-block-grid-|" data-clearing>
                 }
                   // image
                 20 < plugin.tx_browser_pi1.displaySingle.master_templates.tableFields.image.0

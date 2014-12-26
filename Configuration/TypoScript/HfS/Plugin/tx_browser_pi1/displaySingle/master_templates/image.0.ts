@@ -5,7 +5,7 @@ plugin.tx_browser_pi1 {
         image {
           0 = COA
           0 {
-            wrap = <ul class="small-block-grid-3 columns small-10">|</ul>
+            // #i0003, dwildt, 1-: wrap = <ul class="small-block-grid-3 columns small-10">|</ul>
           }
         }
       }
