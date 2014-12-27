@@ -37,19 +37,19 @@ plugin.tx_browser_pi1 {
                         <!-- FILTER marker will replaced by plugin.tx_browser_pi1.views.list.###MODE###.htmlSnippets.marker.filter while runtime ... -->
                         ###FILTER###
                         <div class="row">
-                          <div class="columns small-10 medium-3">
+                          <div class="columns medium-4">
                             <button class="tiny expand secondary reset" role="button" type="reset" onclick="location = '###MY_URL###'">
                               ###MY_RESET###
                             </button>
                           </div><!-- /columns -->
-                          <div class="columns small-10 medium-4">
+                          <div class="columns medium-4">
                             <!-- ###BUTTON_CSV-EXPORT### begin -->
                             <button class="tiny expand hidesubmit" role="button">
                               ###MY_CSV_EXPORT###
                             </button>
                             <!-- ###BUTTON_CSV-EXPORT### end -->
                           </div><!-- /columns -->
-                          <div class="columns small-10 medium-3">
+                          <div class="columns medium-4">
                             <button class="tiny expand hidesubmit" role="button">
                               ###MY_SEARCH###
                             </button>
