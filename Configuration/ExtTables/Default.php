@@ -41,7 +41,7 @@ switch( true )
   default:
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/',                          'HfS Berlin: HfS [1] Base');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/Base/',                 'HfS Berlin: HfS [2] +Org Base');
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/Calendar/201/',         'HfS Berlin: BAT [3] +Org Calendar');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/Calendar/201/',         'HfS Berlin: HfS [3] +Org Calendar');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/Headquarters/501/',     'HfS Berlin: HfS [3] +Org Headquarters');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/News/401/',             'HfS Berlin: HfS [3] +Org News');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/HfS/Org/Staff/101/',            'HfS Berlin: HfS [3] +Org People');
