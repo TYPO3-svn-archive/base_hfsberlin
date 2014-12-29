@@ -8,7 +8,8 @@ plugin.tx_browser_pi1 {
     listview {
       image {
         0 {
-          default = EXT:base_hfsberlin/Resources/Public/Images/HfS/alternate_image_400x300_grey.gif
+          //default = EXT:base_hfsberlin/Resources/Public/Images/HfS/alternate_image_400x300_grey.gif
+          default =
         }
       }
     }
