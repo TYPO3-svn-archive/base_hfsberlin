@@ -1,8 +1,11 @@
 plugin.org {
   pages {
-    headquarters  = 20
-    news          =  1
-    staff         = 22
+    calendar          = 164
+    calendar_expired  = 223
+    headquarters      =  20
+    location          =  25
+    news              =   1
+    staff             =  22
   }
   sysfolder {
     calendar      = 116
