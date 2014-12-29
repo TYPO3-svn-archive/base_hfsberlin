@@ -4,9 +4,7 @@ plugin.tx_browser_pi1 {
       201 {
         filter {
           radialsearch >
-          tx_org_cal {
-            datetime >
-          }
+          tx_org_cal >
           tx_org_location >
         }
         tx_org_cal {
