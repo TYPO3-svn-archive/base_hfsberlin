@@ -29,6 +29,7 @@ plugin.tx_browser_pi1 {
               }
             }
           }
+          crdate >
         }
       }
     }
