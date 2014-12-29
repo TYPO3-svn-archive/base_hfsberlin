@@ -70,19 +70,19 @@ plugin.tx_browser_pi1 {
                 20 {
                   10 {
                     default {
-                      strftime = %A
+                      strftime = %Y
                     }
                     notype {
-                      strftime = %A
+                      strftime = %Y
                     }
                     page {
-                      strftime = %A
+                      strftime = %Y
                     }
                     tx_org_event {
-                      strftime = %A
+                      strftime = %Y
                     }
                     url {
-                      strftime = %A
+                      strftime = %Y
                     }
                   }
                   20 {
