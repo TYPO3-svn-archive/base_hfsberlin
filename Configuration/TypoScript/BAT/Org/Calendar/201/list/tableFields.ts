@@ -25,6 +25,22 @@ plugin.tx_browser_pi1 {
                 }
                 wrap = <div class="cal_datetime">|</div>
               }
+              20 {
+                  // link to tx_org_repertoire
+                tx_org_repertoire >
+                tx_org_repertoire = COA
+                tx_org_repertoire {
+                  10 < plugin.tx_browser_pi1.views.list.201.tx_org_cal.title.10.20.default
+                  10 {
+                    wrap >
+                  }
+                  20 = TEXT
+                  20 {
+                    field = tx_org_repertoire.producer
+                  }
+                  wrap = <h1>|</h1>
+                }
+              }
                 // image
               39 >
               40.tx_org_repertoire.10.field := prependString(tx_org_cal.marginal_title // tx_org_repertoire.teaser_short // tx_org_repertoire.bodytext // )
