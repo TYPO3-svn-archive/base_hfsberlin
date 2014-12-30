@@ -2,8 +2,9 @@ plugin.tx_browser_pi1 {
   views {
     list {
       201 {
-        htmlSnippets >
+        XXXhtmlSnippets >
         htmlSnippets {
+          marker >
           marker {
             filter = TEXT
             filter {
@@ -63,8 +64,8 @@ plugin.tx_browser_pi1 {
                 </div><!-- /row -->
 )
             }
-            XXXlistview = TEXT
-            XXXlistview {
+            listview = TEXT
+            listview {
               value (
                 <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
                   <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
