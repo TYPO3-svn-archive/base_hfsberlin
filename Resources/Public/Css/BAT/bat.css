@@ -1,11 +1,13 @@
-.maincontentleft {
-  width:19%;
-}
-.maincontentmain {
-  width:61%;
-}
-.maincontentright {
-  width:20%;
+@media only screen and (min-width: 40.063em) {
+  .maincontentleft {
+    width:20%;
+  }
+  .maincontentmain {
+    width:60%;
+  }
+  .maincontentright {
+    width:20%;
+  }
 }
 .caddymini {
   margin:1em 0 0 0 !important;
@@ -22,7 +24,7 @@
   opacity:0.5;
 }
 .tx-browser-pi1 .datesheet_expired a,
-.tx-browser-pi1 .datesheet_expired a:link, 
+.tx-browser-pi1 .datesheet_expired a:link,
 .tx-browser-pi1 .datesheet_expired a:visited {
   color: #FFF;
 }
