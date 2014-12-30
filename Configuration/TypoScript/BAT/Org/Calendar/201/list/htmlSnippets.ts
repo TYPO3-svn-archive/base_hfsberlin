@@ -16,8 +16,8 @@ plugin.tx_browser_pi1 {
 )
             }
           }
-          subparts >
-          subparts {
+          XXXsubparts >
+          XXXsubparts {
             searchform = TEXT
             searchform {
               value (
@@ -63,8 +63,8 @@ plugin.tx_browser_pi1 {
                 </div><!-- /row -->
 )
             }
-            listview = TEXT
-            listview {
+            XXXlistview = TEXT
+            XXXlistview {
               value (
                 <div id="c###TT_CONTENT.UID###-listview-###MODE###" class="listview listview-content listview-###MODE### listview-content-###MODE###">
                   <!-- ###LISTBODY### begin --><!-- ###LISTBODYITEM### begin -->
