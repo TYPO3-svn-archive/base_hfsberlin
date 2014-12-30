@@ -4,7 +4,7 @@ plugin.tx_browser_pi1 {
       501 {
         filter {
           radialsearch >
-          tx_org_headquarterscat >
+          XXXtx_org_headquarterscat >
           tx_org_headquarters {
             title {
               first_item {
