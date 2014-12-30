@@ -12,9 +12,7 @@ plugin.tx_browser_pi1 {
                   20 {
                     data = LLL:EXT:org/locallang_db.xml:filter_phrase.schedule
                     append >
-
                   }
-                  wrap = <dd###CLASS###><a href="###URL###">|</a>:</dd>
                 }
               }
               wrap = <div class="columns"><dl class="sub-nav"><dt>###TITLE###</dt>|</dl></div>
