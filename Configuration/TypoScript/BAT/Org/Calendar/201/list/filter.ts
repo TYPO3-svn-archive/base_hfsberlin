@@ -14,9 +14,10 @@ plugin.tx_browser_pi1 {
                     append >
 
                   }
+                  wrap = <dd###CLASS###><a href="###URL###">|</a>:</dd>
                 }
               }
-              wrap = <div class="columns"><dl class="sub-nav"><dt>###TITLE###</dt>|:</dl></div>
+              wrap = <div class="columns"><dl class="sub-nav"><dt>###TITLE###</dt>|</dl></div>
               order.field = uid
               area < plugin.tx_browser_pi1.displayList.master_templates.areas.sample_period
               area {
