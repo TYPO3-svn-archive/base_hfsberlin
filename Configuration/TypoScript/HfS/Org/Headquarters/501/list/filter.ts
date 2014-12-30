@@ -22,6 +22,23 @@ plugin.tx_browser_pi1 {
               wrap = <div class="columns category_menu category_menu_treeview">|</div>
             }
           }
+          tx_org_headquarterscat {
+            title {
+              first_item {
+                cObject {
+                  20 {
+                    data >
+                    value = Group
+                    lang {
+                      de = Gruppe
+                      en = Group
+                    }
+                  }
+                }
+              }
+              wrap = <div class="columns category_menu category_menu_treeview">|</div>
+            }
+          }
         }
       }
     }
