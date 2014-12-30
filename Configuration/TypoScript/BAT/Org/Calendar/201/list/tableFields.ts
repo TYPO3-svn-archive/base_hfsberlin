@@ -28,10 +28,48 @@ plugin.tx_browser_pi1 {
                 // image
               39 >
               40.tx_org_repertoire.10.field := prependString(tx_org_cal.marginal_title // tx_org_repertoire.teaser_short // tx_org_repertoire.bodytext // )
-              XXXwrap = <div class="columns small-10 medium-10 large-8">|</div>
             }
-            XXX20 {
-              wrap = <div class="columns small-10 medium-10 large-2">|</div>
+            20 {
+              10 {
+                10 {
+                  30 {
+                    default {
+                      strftime = %b
+                    }
+                    notype {
+                      strftime = %b
+                    }
+                    page {
+                      strftime = %b
+                    }
+                    tx_org_event {
+                      strftime = %b
+                    }
+                    url {
+                      strftime = %b
+                    }
+                  }
+                }
+                20 {
+                  30 {
+                    default {
+                      strftime = %b
+                    }
+                    notype {
+                      strftime = %b
+                    }
+                    page {
+                      strftime = %b
+                    }
+                    tx_org_event {
+                      strftime = %b
+                    }
+                    url {
+                      strftime = %b
+                    }
+                  }
+                }
+              }
             }
           }
         }
