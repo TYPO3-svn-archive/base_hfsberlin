@@ -13,7 +13,7 @@ plugin.tx_browser_pi1 {
                     data >
                     value = Unit
                     lang {
-                      de = Bereich
+                      de = Hochschule für Schauspielkunst Ernst Busch - Berlin
                       en = Unit
                     }
                   }
