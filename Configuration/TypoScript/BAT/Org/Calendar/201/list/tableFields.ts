@@ -32,6 +32,7 @@ plugin.tx_browser_pi1 {
                 tx_org_repertoire {
                   10 < plugin.tx_browser_pi1.views.list.201.tx_org_cal.title.10.20.default
                   10 {
+                    stdWrap.crop >
                     wrap >
                   }
                   20 = TEXT
