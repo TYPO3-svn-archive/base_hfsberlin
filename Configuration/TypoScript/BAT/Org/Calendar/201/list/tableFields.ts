@@ -36,9 +36,11 @@ plugin.tx_browser_pi1 {
                   }
                   20 = TEXT
                   20 {
+                    if.isTrue.field = tx_org_repertoire.producer
                     field = tx_org_repertoire.producer
+                    wrap = <span class="orange_bold">|</span>
                   }
-                  wrap = <h1>|</h1>
+                  wrap = <div class="cal_title">|</div>
                 }
               }
                 // image
