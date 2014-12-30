@@ -1,6 +1,7 @@
 6.0.3
-  14-12-26
+  14-12-30
   Improvement
+  * #i0004: BAT: Back from 10 columns to 12 columns
   * #i0003: HfS: Back from 10 columns to 12 columns
 
 6.0.2
