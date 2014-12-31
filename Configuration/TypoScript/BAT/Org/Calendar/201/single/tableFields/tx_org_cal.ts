@@ -25,12 +25,38 @@ plugin.tx_browser_pi1 {
                     }
                     wrap = <div class="cal_datetime">|</div>
                   }
+                  20 >
+                  20 = COA
+                  20 {
+                    10 = TEXT
+                    10 {
+                      field = tx_org_repertoire.title // tx_org_event.title // tx_org_cal.title
+                    }
+                    20 = TEXT
+                    20 {
+                      required = 1
+                      field = tx_org_repertoire.producer
+                      noTrimWrap = | <span class="orange_bold">|</span>|
+                    }
+                    wrap = <h1>|</h1>
+                  }
                   30 = COA
                   30 {
                     field >
                     required >
+                    if {
+                      isTrue {
+                        field = tx_org_repertoire.staff // tx_org_repertoire.bodytext // tx_org_event.bodytext // tx_org_cal.bodytext
+                      }
+                    }
                     10 = TEXT
                     10 {
+                      field = tx_org_repertoire.staff
+                      required = 1
+                      noTrimWrap = |<strong>|</strong> |
+                    }
+                    20 = TEXT
+                    20 {
                       field = tx_org_repertoire.bodytext // tx_org_event.bodytext // tx_org_cal.bodytext
                     }
                   }

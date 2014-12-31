@@ -39,7 +39,7 @@ plugin.tx_browser_pi1 {
                   20 {
                     required = 1
                     field = tx_org_repertoire.producer
-                    noTrimWrap = | <span class="orange_bold">|</span>|s
+                    noTrimWrap = | <span class="orange_bold">|</span>|
                   }
                   wrap = <div class="cal_title">|</div>
                 }
