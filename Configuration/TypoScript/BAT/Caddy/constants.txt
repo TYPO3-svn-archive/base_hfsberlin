@@ -1,6 +1,6 @@
 plugin.caddy {
   html {
-    accordion {
+    XXXaccordion {
       classes {
         column {
           1 = large-1 columns
