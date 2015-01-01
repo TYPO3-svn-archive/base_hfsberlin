@@ -21,6 +21,9 @@ plugin.org {
     calendar          =    5
     calendar_expired  =   96
     headquarters      =   80
+    location          =   78
+    news              =
+    staff             =   
     shopping_cart     =  110
     terms             =  112
   }
@@ -28,5 +31,7 @@ plugin.org {
     calendar      = 116
     headquarters  = 119
     location      = 120
+    news          = 117
+    staff         = 114
   }
 }
