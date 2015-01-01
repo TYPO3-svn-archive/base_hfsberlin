@@ -1,4 +1,4 @@
-plugin.tx_browser_pi1 {
+XXXplugin.tx_browser_pi1 {
   displaySingle {
     master_templates {
       tableFields {

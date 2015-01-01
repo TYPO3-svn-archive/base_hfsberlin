@@ -41,10 +41,10 @@ plugin.tx_browser_pi1 {
                 }
                 wrap = <div class="hfsnewsdate">|</div>
               }
-              wrap = <div class="columns small-10 medium-10 large-7">|</div>
+              wrap = <div class="columns large-8">|</div>
             }
             20 {
-              wrap = <div class="show-for-large-up columns small-10 medium-10 large-3">|</div>
+              wrap = <div class="show-for-large-up columns large-4">|</div>
             }
           }
         }
