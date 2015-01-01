@@ -14,7 +14,7 @@ plugin.caddy {
         shop  = EXT:caddy/Resources/Public/Images/ticket.gif
       }
     }
-    minicaddy {
+    XXXminicaddy {
       classes {
         column {
           0 = large-2 columns
@@ -23,7 +23,7 @@ plugin.caddy {
         }
       }
     }
-    powermail {
+    XXXpowermail {
       classes {
         buttonWrap  = large-5 columns
         fieldsWrap  = large-5 columns
