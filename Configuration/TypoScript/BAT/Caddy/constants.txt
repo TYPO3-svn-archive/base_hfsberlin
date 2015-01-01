@@ -23,11 +23,11 @@ plugin.caddy {
         }
       }
     }
-    XXXpowermail {
+    powermail {
       classes {
-        buttonWrap  = large-5 columns
-        fieldsWrap  = large-5 columns
-        tab         = large-5 columns
+        buttonWrap  = large-6 columns
+        fieldsWrap  = large-6 columns
+        tab         = large-6 columns
       }
     }
   }
