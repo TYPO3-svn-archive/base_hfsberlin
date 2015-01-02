@@ -55,8 +55,8 @@ base_hfsberlin {
         }
         margin = COA
         margin {
-          10 < styles.content.get
-          10 {
+          XXX10 < styles.content.get
+          XXX10 {
             select.pidInList = {$base_hfsberlin.bat.pages.margin}
             XXXstdWrap {
               wrap = <div class="row"><div class="columns">|</div></div>
