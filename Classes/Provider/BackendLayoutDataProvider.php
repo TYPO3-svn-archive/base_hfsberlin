@@ -158,7 +158,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
           }
         }
       ',
-      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/HfS/BackendLayouts/bat_margin.gif'
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BAT/BackendLayouts/bat_margin.gif'
     ),
   );
 
