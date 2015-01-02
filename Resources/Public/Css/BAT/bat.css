@@ -9,6 +9,10 @@
     width:20%;
   }
 }
+.maincontentright ul.csc-uploads {
+  font-size:0.7em;
+}
+
 .caddymini {
   margin:1em 0 0 0 !important;
   padding:inherit !important;
