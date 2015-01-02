@@ -39,7 +39,7 @@ page {
       }
     }
     base_hfsberlin__bat_margin < .base_hfsberlin__bat_default
-    base_hfsberlin__bat_default {
+    base_hfsberlin__bat_margin {
       file = {$base_hfsberlin.bat.fluid.path.templates}bat_margin.html
     }
   }
