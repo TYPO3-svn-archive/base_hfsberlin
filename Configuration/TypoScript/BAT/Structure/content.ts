@@ -55,8 +55,8 @@ base_hfsberlin {
         }
         margin = COA
         margin {
-          XXX10 < styles.content.get
-          XXX10 {
+          10 < styles.content.get
+          10 {
             select.pidInList = {$base_hfsberlin.bat.pages.margin}
             XXXstdWrap {
               wrap = <div class="row"><div class="columns">|</div></div>
@@ -81,6 +81,20 @@ base_hfsberlin {
             select.pidInList = {$base_hfsberlin.bat.pages.libraries.menu}
           }
           20 < base_hfsberlin.bat.menu.menuMain
+        }
+        right = COA
+        right {
+          // table, select, stdWrap
+          20 < styles.content.get
+          20 {
+            select {
+              where = colPos=2
+            }
+            slide = -1
+            XXXstdWrap {
+              wrap = <div class="row"><div class="columns">|</div></div>
+            }
+          }
         }
       }
     }
