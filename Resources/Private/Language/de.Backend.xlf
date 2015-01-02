@@ -13,9 +13,9 @@
         <source>BAT-Berlin default</source>
         <target>BAT-Berlin Standard</target>
       </trans-unit>
-      <trans-unit id="backend_layout.bat_root">
-        <source>BAT-Berlin home</source>
-        <target>BAT-Berlin Startseite</target>
+      <trans-unit id="backend_layout.bat_margin">
+        <source>BAT-Berlin margin</source>
+        <target>BAT-Berlin mit Randspalte</target>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_default">
         <source>HfS-Berlin default</source>

@@ -51,7 +51,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_root',
       'config' => '
         backend_layout {
-          colCount = 10
+          colCount = 12
           rowCount = 2
           rows {
             1 {
@@ -59,13 +59,13 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
                   colPos  = 3
-                  colspan = 7
+                  colspan = 8
                 }
                 2 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.navigation
                   colPos  = 1
-                  colspan = 3
-                  rowspan = 3
+                  colspan = 4
+                  rowspan = 2
                 }
               }
             }
@@ -74,7 +74,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
-                  colspan = 7
+                  colspan = 8
                 }
               }
             }
@@ -87,15 +87,15 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.hfs_default',
       'config' => '
         backend_layout {
-          colCount = 10
-          rowCount = 2
+          colCount = 12
+          rowCount = 1
           rows {
             1 {
               columns {
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.header
                   colPos  = 3
-                  colspan = 10
+                  colspan = 12
                 }
               }
             }
@@ -104,7 +104,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
                 1 {
                   name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
                   colPos  = 0
-                  colspan = 10
+                  colspan = 12
                 }
               }
             }
@@ -133,6 +133,32 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
         }
       ',
       'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/BAT/BackendLayouts/bat_default.gif'
+    ),
+    'bat_margin' => array(
+      'title' => 'LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.bat_margin',
+      'config' => '
+        backend_layout {
+          colCount = 12
+          rowCount = 1
+          rows {
+            1 {
+              columns {
+                1 {
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.main
+                  colPos  = 0
+                  colspan = 12
+                }
+                2 {
+                  name = LLL:EXT:base_hfsberlin/Resources/Private/Language/Backend.xlf:backend_layout.column.content.margin
+                  colPos  = 2
+                  colspan = 12
+                }
+              }
+            }
+          }
+        }
+      ',
+      'icon' => 'EXT:base_hfsberlin/Resources/Public/Images/HfS/BackendLayouts/bat_margin.gif'
     ),
   );
 

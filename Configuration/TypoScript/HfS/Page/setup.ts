@@ -27,16 +27,16 @@ page {
       }
       noTrimWrap = |Current backend layout: "|". Please choose another backend layout. This is a prompt of the TYPO3 HfS Berlin Template (base_hfsberlin). |
     }
-    base_hfsberlin__hfs_default = FLUIDTEMPLATE
-    base_hfsberlin__hfs_default {
-      file = {$base_hfsberlin.hfs.fluid.path.templates}hfs_default.html
+    base_hfsberlin__bat_default = FLUIDTEMPLATE
+    base_hfsberlin__bat_default {
+      file = {$base_hfsberlin.hfs.fluid.path.templates}bat_default.html
       layoutRootPath  = {$base_hfsberlin.hfs.fluid.path.layouts}
       partialRootPath = {$base_hfsberlin.hfs.fluid.path.partials}
       variables {
 
       }
     }
-    base_hfsberlin__hfs_root < .base_hfsberlin__hfs_default
+    base_hfsberlin__bat_margin < .base_hfsberlin__bat_default
   }
   includeCSS {
     base_hfsberlin_hfs = {$base_hfsberlin.hfs.path.css.styles}

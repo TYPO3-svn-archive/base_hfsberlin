@@ -11,8 +11,8 @@
       <trans-unit id="backend_layout.bat_default">
         <source>BAT-Berlin default</source>
       </trans-unit>
-      <trans-unit id="backend_layout.bat_root">
-        <source>BAT-Berlin home</source>
+      <trans-unit id="backend_layout.bat_margin">
+        <source>BAT-Berlin margin</source>
       </trans-unit>
       <trans-unit id="backend_layout.hfs_default">
         <source>HfS-Berlin default</source>
