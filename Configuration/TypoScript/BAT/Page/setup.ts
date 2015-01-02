@@ -39,6 +39,9 @@ page {
       }
     }
     base_hfsberlin__bat_margin < .base_hfsberlin__bat_default
+    base_hfsberlin__bat_default {
+      file = {$base_hfsberlin.bat.fluid.path.templates}bat_margin.html
+    }
   }
   includeCSS {
     base_hfsberlin_bat = {$base_hfsberlin.bat.path.css.styles}
