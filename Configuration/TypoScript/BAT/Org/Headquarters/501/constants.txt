@@ -1,0 +1,3 @@
+plugin.tx_browser_pi1.map.design.width = 570
+plugin.tx_browser_pi1.map.icon.listNum.categoryIconMap =
+plugin.tx_browser_pi1.map.icon.listNum.categoryIconMapSingle = 
