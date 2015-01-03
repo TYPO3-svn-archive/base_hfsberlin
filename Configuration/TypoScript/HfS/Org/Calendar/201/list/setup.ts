@@ -26,7 +26,21 @@ plugin.tx_browser_pi1 {
                       strftime = %A
                     }
                     tx_org_event {
-                      strftime = %A
+                      default {
+                        strftime = %A
+                      }
+                      notype {
+                        strftime = %A
+                      }
+                      page {
+                        strftime = %A
+                      }
+                      tx_org_event {
+                        strftime = %A
+                      }
+                      url {
+                        strftime = %A
+                      }
                     }
                     url {
                       strftime = %A
@@ -43,7 +57,21 @@ plugin.tx_browser_pi1 {
                       strftime = %d.%m
                     }
                     tx_org_event {
-                      strftime = %d.%m
+                      default {
+                        strftime = %d.%m
+                      }
+                      notype {
+                        strftime = %d.%m
+                      }
+                      page {
+                        strftime = %d.%m
+                      }
+                      tx_org_event {
+                        strftime = %d.%m
+                      }
+                      url {
+                        strftime = %d.%m
+                      }
                     }
                     url {
                       strftime = %d.%m
@@ -60,7 +88,21 @@ plugin.tx_browser_pi1 {
                       strftime = %H:%M Uhr
                     }
                     tx_org_event {
-                      strftime = %H:%M Uhr
+                      default {
+                        strftime = %H:%M Uhr
+                      }
+                      notype {
+                        strftime = %H:%M Uhr
+                      }
+                      page {
+                        strftime = %H:%M Uhr
+                      }
+                      tx_org_event {
+                        strftime = %H:%M Uhr
+                      }
+                      url {
+                        strftime = %H:%M Uhr
+                      }
                     }
                     url {
                       strftime = %H:%M Uhr
@@ -79,7 +121,21 @@ plugin.tx_browser_pi1 {
                       strftime = %Y
                     }
                     tx_org_event {
-                      strftime = %Y
+                      default {
+                        strftime = %Y
+                      }
+                      notype {
+                        strftime = %Y
+                      }
+                      page {
+                        strftime = %Y
+                      }
+                      tx_org_event {
+                        strftime = %Y
+                      }
+                      url {
+                        strftime = %Y
+                      }
                     }
                     url {
                       strftime = %Y
@@ -96,7 +152,21 @@ plugin.tx_browser_pi1 {
                       strftime = %d.%m
                     }
                     tx_org_event {
-                      strftime = %d.%m
+                      default {
+                        strftime = %d.%m
+                      }
+                      notype {
+                        strftime = %d.%m
+                      }
+                      page {
+                        strftime = %d.%m
+                      }
+                      tx_org_event {
+                        strftime = %d.%m
+                      }
+                      url {
+                        strftime = %d.%m
+                      }
                     }
                     url {
                       strftime = %d.%m
@@ -113,7 +183,21 @@ plugin.tx_browser_pi1 {
                       strftime = %H:%M Uhr
                     }
                     tx_org_event {
-                      strftime = %H:%M Uhr
+                      default {
+                        strftime = %H:%M Uhr
+                      }
+                      notype {
+                        strftime = %H:%M Uhr
+                      }
+                      page {
+                        strftime = %H:%M Uhr
+                      }
+                      tx_org_event {
+                        strftime = %H:%M Uhr
+                      }
+                      url {
+                        strftime = %H:%M Uhr
+                      }
                     }
                     url {
                       strftime = %H:%M Uhr
