@@ -1,0 +1,7 @@
+plugin.tx_seodynamictag {
+  condition {
+    single {
+      begin = globalVar = GP:tx_browser_pi1|repertoireUid > 0] && [globalVar = TSFE:id = 95
+    }
+  }
+}

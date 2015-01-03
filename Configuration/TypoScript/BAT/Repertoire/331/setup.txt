@@ -1,0 +1,2 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Repertoire/331/list/_setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:base_hfsberlin/Configuration/TypoScript/BAT/Repertoire/331/single/_setup.ts">
