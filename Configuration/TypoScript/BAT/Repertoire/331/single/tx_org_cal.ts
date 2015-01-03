@@ -20,7 +20,7 @@ plugin.tx_browser_pi1 {
               10 {
                 value = Events
                 lang {
-                  de = Veranstaltungen
+                  de = Vorstellungen
                   en = Events
                 }
                 wrap = <li class="header">|</li>
