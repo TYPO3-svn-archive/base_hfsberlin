@@ -21,7 +21,7 @@ plugin.tx_browser_pi1 {
                   10 < lib.org_repertoire.title
                   10 {
                     stdWrap.crop >
-                    wrap >
+                    //wrap >
                   }
                   20 = TEXT
                   20 {
