@@ -70,7 +70,7 @@ plugin.tx_browser_pi1 {
                   10 {
                     field = tx_org_repertoire.staff
                     required = 1
-                    noTrimWrap = || |
+                    noTrimWrap = |<span style="font-weight:bold;">|</span> |
                   }
                   20 < lib.org_repertoire.bodytext
                   20 {
