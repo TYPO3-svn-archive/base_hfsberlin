@@ -80,7 +80,7 @@ plugin.tx_browser_pi1 {
                   stdWrap {
                     parseFunc < lib.parseFunc_RTE
                   }
-                  wrap = <div class="cal_title">|</div>
+                  wrap = <div class="repertoire_bodytext">|</div>
                 }
                   // length
                 31 = COA
