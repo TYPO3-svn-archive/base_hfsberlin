@@ -88,7 +88,7 @@ class BackendLayoutDataProvider implements \TYPO3\CMS\Backend\View\BackendLayout
       'config' => '
         backend_layout {
           colCount = 12
-          rowCount = 1
+          rowCount = 2
           rows {
             1 {
               columns {
