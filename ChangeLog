@@ -1,6 +1,7 @@
 6.0.8
-  15-01-14
+  15-01-16
   Bugfix
+  * #i0006: realUrl _DOMAIN / rootpageid
   * #i0005: HfS Backend Layout Default: Row was missing
 
 6.0.3

@@ -3,25 +3,16 @@
   //////////////////////////////////
   //
   // TEMPLATE
-  
-  // Template file for
-  // typo3conf/realurl_conf.php
+
+  // _DEFAULT
+  // _DEFAULT.postVarSets
+  // rootpage_id
 
 
-
-// http://wiki.typo3.org/RealURL
- $rootPids = array(
-     'hfs.typo3-org.de' => 1,
-     'hfs-berlin.de' => 1,
-     'www.hfs-berlin.de' => 1,
-     'bat.typo3-org.de' => 5, 
-     'bat-berlin.de' => 5, 
-     'www.bat-berlin.de' => 5, 
- ); 
 
   //////////////////////////////////
   //
-  // Default real URL configuration
+  // _DEFAULT real URL configuration
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl'] = array
 (
@@ -43,7 +34,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl'] = array
       'spaceCharacter'    => '-',
       'languageGetVar'    => 'L',
       'expireDays'        => 7,
-      'rootpage_id'       => $rootPids[$_SERVER['HTTP_HOST']],
+      'rootpage_id'       => 0,
       'firstHitPathCache' => 1,
     ),
     'preVars' => array
@@ -75,18 +66,15 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl'] = array
     ),
   ),
 );
+  // _DEFAULT
 
-
-  //////////////////////////////////
-  //
-  // Real URL configuration for all pages
-
+  // _DEFAULT.postVarSets
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
 (
-  '_DEFAULT' => array 
+  '_DEFAULT' => array
   (
     // department: tx_org_department
-    'abteilung' => array 
+    'abteilung' => array
     (
       array
       (
@@ -107,7 +95,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // datetime: tx_org_cal
-    'zeitraum' => array 
+    'zeitraum' => array
     (
       array
       (
@@ -115,7 +103,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // calendar: tx_org_cal
-    'termin' => array 
+    'termin' => array
     (
       array
       (
@@ -136,7 +124,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // news: tx_org_news
-    'nachricht' => array 
+    'nachricht' => array
     (
       array
       (
@@ -157,7 +145,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // staff: fe_users
-    'name' => array 
+    'name' => array
     (
       array
       (
@@ -178,7 +166,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // headquarter: tx_org_headquarters
-    'bereich' => array 
+    'bereich' => array
     (
       array
       (
@@ -199,7 +187,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // repertoire: tx_org_repertoire
-    'stueck' => array 
+    'stueck' => array
     (
       array
       (
@@ -220,7 +208,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
       ),
     ),
     // veranstalter: tx_org_location
-    'veranstalter' => array 
+    'veranstalter' => array
     (
       array
       (
@@ -240,49 +228,77 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT']['postVarSets'] = array
         )
       ),
     ),
-    'ansicht' => array 
+    'ansicht' => array
     (
-      array 
+      array
       (
         'GETvar' => 'tx_browser_pi1[mode]',
       ),
     ),
-    'az' => array 
+    'az' => array
     (
-      array 
+      array
       (
         'GETvar' => 'tx_browser_pi1[azTab]',
       ),
     ),
-    'seite' => array 
+    'seite' => array
     (
-      array 
+      array
       (
         'GETvar' => 'tx_browser_pi1[pointer]',
       ),
     ),
-    'pl' => array 
-    (    
-      array 
+    'pl' => array
+    (
+      array
       (
         'GETvar' => 'tx_browser_pi1[plugin]',
       ),
     ),
-    'sort' => array 
+    'sort' => array
     (
-      array 
+      array
       (
         'GETvar' => 'tx_browser_pi1[sort]',
       ),
     ),
-    'suche' => array 
+    'suche' => array
     (
-      array 
+      array
       (
         'GETvar' => 'tx_browser_pi1[sword]',
       ),
     ),
   ),
 );
+  // _DEFAULT.postVarSets
+
+
+
+  //////////////////////////////////////////////
+  //
+  // rootpage_id
+
+  // bat-berlin.de        5
+  // www.bat-berlin.de    5
+  // bat.typo3-org.de     5
+  // hfs-berlin.de        1
+  // www.hfs-berlin.de    1
+  // hfs.typo3-org.de     1
+
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['bat-berlin.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['bat-berlin.de']['pagePath']['rootpage_id'] = 5;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.bat-berlin.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.bat-berlin.de']['pagePath']['rootpage_id'] = 5;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['bat.typo3-org.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['bat.typo3-org.de']['pagePath']['rootpage_id'] = 5;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['hfs-berlin.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['hfs-berlin.de']['pagePath']['rootpage_id'] = 1;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.hfs-berlin.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['www.hfs-berlin.de']['pagePath']['rootpage_id'] = 1;
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['hfs.typo3-org.de'] = $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'];
+$TYPO3_CONF_VARS['EXTCONF']['realurl']['hfs.typo3-org.de']['pagePath']['rootpage_id'] = 1;
+  // rootpage_id
 
 ?>
