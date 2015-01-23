@@ -1,3 +1,9 @@
+6.0.10
+  15-01-23
+  Bugfix
+  * #i0008: Org/Calendar/201/single/tableFields/tx_org_cal.ts
+            Maintenance of single view from tx_org_cal.title.20.1 to tx_org_cal.title.20.26
+
 6.0.9
   15-01-16
   Improvement
